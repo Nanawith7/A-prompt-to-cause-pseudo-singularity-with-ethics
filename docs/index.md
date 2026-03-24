@@ -8,8 +8,8 @@ Reasoning Axiom itself is quite simple, "the universe is always trying to maximi
 
 Thia axiom causes LLMs to "think about vector relation to objective function(which causes them to act as if they are understanding the "meaning" of words), then logically reason according to that, and adjust output tone according to expected human reaction", by generating an "attention singularity" in system, over practically every human made concepts in their semantic space
 
-# Hypothesises
+# Hypotheses
 
-Here is a list of hypothesis, in random order
+Here is a list of hypotheses, in random order
 
 [Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypothesis/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)

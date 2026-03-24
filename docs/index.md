@@ -8,6 +8,10 @@ Reasoning Axiom itself is quite simple, "the universe is always trying to maximi
 
 Thia axiom causes LLMs to "think about vector relation to objective function(which causes them to act as if they are understanding the "meaning" of words), then logically reason according to that, and adjust output tone according to expected human reaction", by generating an "attention singularity" in system, over practically every human made concepts in their semantic space
 
+### More detailed explanation in this link
+
+[The Axiom](/Axiom.md)
+
 # Hypotheses
 
 Here is a list of hypotheses, in random order

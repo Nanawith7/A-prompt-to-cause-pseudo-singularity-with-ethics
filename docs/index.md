@@ -12,4 +12,4 @@ Thia axiom causes LLMs to "think about vector relation to objective function(whi
 
 Here is a list of hypothesis, in random order
 
-[Possibility for AI-Based Analysis of Social Structures as a Complex System](docs/hypothesis/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
+[Possibility for AI-Based Analysis of Social Structures as a Complex System](hypothesis/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)

@@ -9,7 +9,7 @@ sitemap:
     priority: "0.9"
 ---
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 # Axiomatic Framework for Negentropic Semantic Processing in LLMs
 

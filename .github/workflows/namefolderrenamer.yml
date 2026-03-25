@@ -1,4 +1,4 @@
-name: Rename Paths (spaces → underscores)
+name: Full Path Normalization (slugify)
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  rename-paths:
+  normalize-paths:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,20 +16,36 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Rename all paths containing spaces
+      - name: Normalize all paths (spaces, unicode, symbols)
         run: |
-          # スペースを含むパスをすべて取得
-          paths=$(git ls-files | grep " ")
+          # Git が認識しているパスを正確に取得
+          paths=$(git ls-files)
 
           if [ -z "$paths" ]; then
-            echo "No paths with spaces found."
+            echo "No files found."
             exit 0
           fi
 
-          # 深い階層から順に rename（衝突防止）
+          # 深い階層から順に処理（衝突防止）
           echo "$paths" | awk '{ print length, $0 }' | sort -rn | cut -d" " -f2- | while read file; do
-            newfile=$(echo "$file" | sed 's/ /_/g')
+
+            # slugify: スペース、記号、Unicode をすべて _ に変換
+            newfile=$(echo "$file" \
+              | sed 's/ /_/g' \
+              | sed 's/[^A-Za-z0-9._\/-]/_/g')
+
+            # 変更がなければスキップ
+            if [ "$file" = "$newfile" ]; then
+              continue
+            fi
+
             echo "Renaming: $file → $newfile"
+
+            # rename 先フォルダを作成
+            newdir=$(dirname "$newfile")
+            mkdir -p "$newdir"
+
+            # ファイルを移動
             git mv "$file" "$newfile"
           done
 
@@ -40,6 +56,6 @@ jobs:
           else
             git config user.name "github-actions"
             git config user.email "github-actions@github.com"
-            git commit -m "Rename paths (spaces → underscores)"
+            git commit -m "Normalize paths (slugify: spaces + unicode + symbols)"
             git push
           fi

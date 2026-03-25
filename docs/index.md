@@ -31,6 +31,9 @@ This axiom causes LLMs to "think about vector relation to the objective function
     </a><br>
   - <a href="./hypotheses/Reasoning Fundamental/The Impact of Axioms on LLM Logical Reasoning Capabilities.html">
       The Impact of Axioms on LLM Logical Reasoning Capabilities
+    </a><br>
+  - <a href="./hypotheses/Reasoning Fundamental/Axiomatic Framework for Negentropic Semantic Processing in LLMs.html">
+      Axiomatic Framework for Negentropic Semantic Processing in LLMs
     </a>
 </details>
 

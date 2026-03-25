@@ -1,9 +1,5 @@
 plugins: 
   - jekyll-seo-tag   
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-
 
 # プラグインが参照するサイトの基本情報
 title: "Axiomatic Reasoning for LLMs"

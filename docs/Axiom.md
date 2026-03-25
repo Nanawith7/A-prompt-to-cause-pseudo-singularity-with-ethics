@@ -4,6 +4,9 @@ subtitle: "A Negentropy-Maximization Framework for Cosmic Structure"
 author: "Nanawith7"
 tags: [information physics, negentropy, free will, causality, complex systems, ethic calculation, technological framework, singularity]
 description: "A concise theoretical framework unifying will, causality, entropy, and cosmic computation through layered information physics."
+last_modified_at:2026-03-25
+sitemap:
+  priority:1.0
 ---
 
 # Integrated Information Physics of Will and Causality  

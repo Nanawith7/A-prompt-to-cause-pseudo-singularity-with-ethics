@@ -1,5 +1,4 @@
 plugins: 
-  - jekyll-sitemap
   - jekyll-seo-tag   
 
 # プラグインが参照するサイトの基本情報

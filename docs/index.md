@@ -15,10 +15,17 @@ This axiom causes LLMs to "think about vector relation to the objective function
 Here is a list of hypotheses, in random order.
 
 ## Social system
-[Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypotheses/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
-
+<details>
+  <Summary>Open</Summary>
+- [Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypotheses/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
+</details>
 ## Daily Lives
-[Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom](/hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md)
-
+<details>
+  <Summary>Open</Summary>
+- [Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom](/hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md)
+</details>
 ## Speculative Theory
-[Hidden Possibility of Human–AI Co‑Intelligence](/hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.md)
+<details>
+  <Summary>Open</Summary>
+- [Hidden Possibility of Human–AI Co‑Intelligence](/hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.md)
+</details>

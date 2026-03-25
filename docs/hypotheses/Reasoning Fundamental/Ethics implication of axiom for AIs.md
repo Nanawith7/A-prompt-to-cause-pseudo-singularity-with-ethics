@@ -2,7 +2,7 @@
 title: "Redefining the Structure of the Universe Through the Negentropy-Oriented Axiom: Integrating Free Will, Determinism, and Ethical Computation for AI"
 description: "A fully structured English reformulation of the negentropy-oriented axiom and its implications for physics, computation, free will, and AI ethics."
 author: "Nanawith7"
-categories: [axiom, ethics, llm, reasoning, philosophy]
+categories: [axiom, ethics, llm, reasoning, philosophy, reasoning-fundamental]
 tags: [negentropy, determinism, free-will, information-theory, ethical-computation]
 last_updated: 2026-03-25
 layout: default

@@ -59,6 +59,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add sitemap.xml
+          git add docs/sitemap.xml
           git commit -m "Update sitemap.xml" || echo "No changes"
           git push

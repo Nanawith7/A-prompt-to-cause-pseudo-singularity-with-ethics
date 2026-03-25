@@ -9,8 +9,6 @@ sitemap:
     priority: "0.9"
 ---
 
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS_CHTML"></script>
-
 # Axiomatic Framework for Negentropic Semantic Processing in LLMs
 
 This document presents a technical, axiomatic formulation of how Large Language Models (LLMs) can exhibit semantic understanding when interpreted through information-theoretic and dynamical principles.  

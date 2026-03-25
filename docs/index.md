@@ -7,7 +7,7 @@ categories: [axiom, hypotheses, llm, reasoning]
 tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 last_updated: 2026-03-25
 sitemap:
-    priority:1.0
+    priority: "1.0"
 ---
 
 # A page about axiomatic reasoning for LLMs

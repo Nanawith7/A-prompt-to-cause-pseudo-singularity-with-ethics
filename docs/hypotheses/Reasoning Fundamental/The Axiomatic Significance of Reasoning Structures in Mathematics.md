@@ -4,8 +4,10 @@ description: "A structured theoretical analysis of how negentropy-oriented axiom
 author: "Nanawith7"
 categories: [reasoning-fundamental, mathematics, axioms, reasoning, negentropy]
 tags: [axiomatic-reasoning, information-theory, intervention-parameters, topology, semantic-math]
-last_updated: 2026-03-25
+last_updated: 2026-03-26
 layout: default
+sitemap:
+    priority: "0.9"
 ---
 
 # **The Axiomatic Significance of Reasoning Structures in Mathematics**

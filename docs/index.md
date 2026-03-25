@@ -54,5 +54,8 @@ Here is a list of hypotheses, in random order.
   <Summary>Open</Summary>
 - <a href="./hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.html">
   Hidden Possibility of Human–AI Co‑Intelligence
+  </a><br>
+- <a href="./hypotheses/Speculative Theory/The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures.html">
+  The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
   </a>
 </details>

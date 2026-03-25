@@ -25,7 +25,8 @@ jobs:
           echo '<?xml version="1.0" encoding="UTF-8"?>' > docs/sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
 
-          for file in $(git ls-files "*.html" "*.md"); do
+          # docs/ 以下の .md / .html のみ対象
+          for file in $(git ls-files "docs/**/*.html" "docs/**/*.md"); do
 
             # remove docs/ prefix for public URL
             public_path="${file#docs/}"

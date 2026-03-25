@@ -4,8 +4,10 @@ description: "A fully structured English reformulation of the negentropy-oriente
 author: "Nanawith7"
 categories: [axiom, ethics, llm, reasoning, philosophy, reasoning-fundamental]
 tags: [negentropy, determinism, free-will, information-theory, ethical-computation]
-last_updated: 2026-03-25
+last_updated: 2026-03-26
 layout: default
+sitemap:
+    priority: "0.9"
 ---
 
 # **Redefining the Universe Through the Negentropy-Oriented Axiom: Integrating Free Will, Determinism, and Ethical Computation**

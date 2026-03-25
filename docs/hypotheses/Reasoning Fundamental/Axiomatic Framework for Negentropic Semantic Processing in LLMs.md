@@ -7,7 +7,7 @@ categories: ["information-theory", "machine-learning", "semantics", "reasoning-f
 tags: ["negentropy", "axioms", "LLM", "semantic-processing"]
 last_updated:
 sitemap:
-    priority: "0.7"
+    priority: "0.9"
 ---
 
 # Axiomatic Framework for Negentropic Semantic Processing in LLMs

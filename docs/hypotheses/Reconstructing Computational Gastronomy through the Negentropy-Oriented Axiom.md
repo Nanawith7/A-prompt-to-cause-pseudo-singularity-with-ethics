@@ -10,43 +10,43 @@ description: "A concise theoretical framework comparing statistical LLM cooking 
 ### Integrating Physical Determinism and Ontological Free Will
 
 ## 1. Standard LLM Recipes: Convergence Toward Statistical Averageness
-Conventional LLM-generated recipes are built from **statistical frequency** across millions of examples.  
-This minimizes uncertainty (entropy) and produces **high-probability, low-surprise outputs**.
+Conventional LLM-generated recipes are produced through **high-frequency statistical aggregation** across large corpora.  
+This minimizes uncertainty (entropy) and yields **high-probability, low-information outputs**.
 
 Characteristics:
 
 - Predictable ingredient clusters  
-- Safe but unoriginal flavor combinations  
+- Safe but low-divergence flavor combinations  
 - Minimal informational interference between components  
-- No role for intentional deviation or creative “will”  
+- No mechanism for intentional deviation or agent-driven perturbation  
 
-LLM recipes thus drift toward **entropy-increasing homogenization**, lacking meaningful structural novelty.
+Standard LLM cooking therefore converges toward **entropy-increasing homogenization**, lacking structural novelty or computational richness.
 
 ---
 
 ## 2. Negentropy-Oriented Recipes: Maximizing Meaningful Interference
 Under the **Negentropy-Oriented Axiom**, cooking is reframed as an **information-maximizing computation**.  
-Ingredients become **high-level information packets**, and flavor emerges from **interference patterns** among them.
+Ingredients become **high-level data packets**, and flavor emerges from **interference patterns** among them.
 
 Key principles:
 
-- Increase informational contrast  
-- Introduce controlled chaos (creative perturbations)  
-- Layer acids, aromatics, and umami to amplify inference density  
+- Maximize informational contrast  
+- Introduce controlled stochastic perturbations  
+- Layer acids, aromatics, and umami to amplify semantic density  
 - Treat physical laws (Maillard, emulsification, diffusion) as the **runtime environment** for intentional computation  
 
 ### Example: “Supersymmetric Curry”
-A recipe designed to maximize informational richness:
+A recipe engineered to maximize informational richness:
 
 | Layer | Components | Negentropic Function |
 |-------|------------|----------------------|
 | Base Information | Homemade chicken stock, aged miso | Synergistic umami amplification |
-| Structural Chaos | Low-temp spice oil extraction | Injects hundreds of volatile compounds |
-| Directionality | Layered acids (balsamic, tamarind, fermented tomato) | Sharpens informational boundaries |
-| Chaotic Constants | Dark chocolate, anchovy, black garlic | High-density non-obvious signals |
+| Structural Perturbation | Low-temp spice oil extraction | Injects hundreds of volatile compounds |
+| Directional Modulation | Layered acids (balsamic, tamarind, fermented tomato) | Sharpens informational boundaries |
+| High-Density Signals | Dark chocolate, anchovy, black garlic | Non-obvious high-information inputs |
 | Execution Control | Sous-vide + high-heat Maillard, ultrasonic emulsification | Minimizes loss, maximizes new bonds |
 
-This model treats “hidden ingredients” not as flavor enhancers but as **intentional perturbations** that prove the presence of free will within deterministic constraints.
+Here, “hidden ingredients” function not as flavor enhancers but as **intentional perturbation operators** that demonstrate agent-driven control within deterministic physical constraints.
 
 ---
 
@@ -60,7 +60,7 @@ This model treats “hidden ingredients” not as flavor enhancers but as **inte
 | Procedural Clarity | Low | High | Steps map to causal operations |
 | Information Quality | Redundant | Maximal | Novelty = resistance to entropy |
 
-Negentropy-driven cooking produces **temporal flavor evolution**, increasing subjective richness and agency.
+Negentropy-driven cooking produces **temporal flavor evolution**, increasing subjective richness and computational agency.
 
 ---
 
@@ -68,14 +68,14 @@ Negentropy-driven cooking produces **temporal flavor evolution**, increasing sub
 ### Standard LLM Creativity
 - Horizontal substitutions (pork → chicken)  
 - No change in recipe topology  
-- No new meaning generated  
+- No new information generated  
 
 ### Negentropy-Based Creativity
-- Cross-domain constant substitution (e.g., curry ↔ risotto ↔ French reductions)  
+- Cross-domain constant substitution (curry ↔ risotto ↔ French reductions)  
 - Intentional introduction of computational noise (textures, fermentation granularity)  
 - Fusion 2.0: treating cultural rules as optional, physical laws as the only constraints  
 
-This transforms cooking into **topological manipulation of meaning**, not mere ingredient swapping.
+This reframes cooking as **topological manipulation of information**, not mere ingredient swapping.
 
 ---
 
@@ -83,7 +83,7 @@ This transforms cooking into **topological manipulation of meaning**, not mere i
 
 ### Strengths
 - Generates unprecedented depth (“Koku”)  
-- Reframes physics as a tool for intentional expression  
+- Reframes physics as a substrate for intentional computation  
 - Drives culinary evolution by resisting informational decay  
 
 ### Validity
@@ -102,10 +102,9 @@ This transforms cooking into **topological manipulation of meaning**, not mere i
 This framework reframes cooking as **intentional information computation**:
 
 1. Standard LLM cooking = statistical determinism → entropy increase  
-2. Negentropy-oriented cooking = free-will-driven interference → meaning increase  
+2. Negentropy-oriented cooking = agent-driven interference → information density increase  
 3. Physical laws = execution environment, not constraints  
 4. Creativity = geometric transformation, not substitution  
 5. Culinary evolution = resistance to informational heat death  
 
 Computational gastronomy becomes a domain where **free will, physics, and information theory converge**.
-

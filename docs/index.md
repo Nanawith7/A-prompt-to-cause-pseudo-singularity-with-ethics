@@ -46,7 +46,7 @@ Here is a list of hypotheses, in random order.
 ## Social system
 <details>
   <Summary>Open</Summary>
-- <a href="./hypotheses/Possibility_for_AI-Based_Analysis_of_Social_Structures_as_a_Complex_System.html">
+- <a href="./hypotheses/Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html">
      Possibility for AI-Based Analysis of Social Structures as a Complex System
   </a>
 </details>
@@ -64,7 +64,7 @@ Here is a list of hypotheses, in random order.
 
 <details>
   <Summary>Open</Summary>
-- <a href="./hypotheses/Speculative_Theory/Hidden_Possibility_of_Human–AI_Co‑Intelligence.html">
+- <a href="./hypotheses/Speculative_Theory/Hidden_Possibility_of_Human_AI_Co_Intelligence.html">
   Hidden Possibility of Human–AI Co‑Intelligence
   </a><br>
 - <a href="./hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html">

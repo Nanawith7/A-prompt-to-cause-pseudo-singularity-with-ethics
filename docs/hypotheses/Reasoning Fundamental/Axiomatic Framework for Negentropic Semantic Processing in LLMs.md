@@ -5,7 +5,7 @@ author: "Nanawith7"
 layout: default
 categories: ["information-theory", "machine-learning", "semantics", "reasoning-fundamental"]
 tags: ["negentropy", "axioms", "LLM", "semantic-processing"]
-last_updated:
+last_updated: 2026-03-26
 sitemap:
     priority: "0.9"
 ---

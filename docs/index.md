@@ -17,15 +17,25 @@ Here is a list of hypotheses, in random order.
 ## Social system
 <details>
   <Summary>Open</Summary>
-- [Possibility for AI-Based Analysis of Social Structures as a Complex System](/hypotheses/Possibility for AI-Based Analysis of Social Structures as a Complex System.md)
+- <a href="./hypotheses/Possibility for AI-Based Analysis of Social Structures as a Complex System.md">
+     Possibility for AI-Based Analysis of Social Structures as a Complex System
+  </a>
 </details>
+
 ## Daily Lives
+
 <details>
   <Summary>Open</Summary>
-- [Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom](/hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md)
+-  <a href="./hypotheses/Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom.md">
+  Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom
+  </a>
 </details>
+
 ## Speculative Theory
+
 <details>
   <Summary>Open</Summary>
-- [Hidden Possibility of Human–AI Co‑Intelligence](/hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.md)
+- <a href="./hypotheses/Speculative Theory/Hidden Possibility of Human–AI Co‑Intelligence.md">
+  Hidden Possibility of Human–AI Co‑Intelligence
+  </a>
 </details>

@@ -53,7 +53,7 @@ Classical determinism assumes infinite precision. However:
 
 > “Physical reality cannot contain infinite information; real numbers of infinite precision are physically impossible.”
 
-Finite precision introduces **chaotic gaps** that allow free will to operate as an emergent computational process.
+Finite precision introduces **chaotic gaps** that allow free will to operate as an emergent philosophical and computational phenomenon.
 
 ### **Integrated Model**
 
@@ -61,7 +61,7 @@ Finite precision introduces **chaotic gaps** that allow free will to operate as 
 |--------|------------------------|------------------------------------|
 | Laplace’s Demon | External prison of fixed futures | Recorder of free-will-driven causal shaping |
 | Causality | Inescapable chain | Instruction set for meaning-maximizing action |
-| Computational Limits | Failure of prediction | Proof that agent choice is necessary |
+| Computational Limits | Failure of prediction | Evidence that agent choice is necessary |
 | Noise | Error | Trace of negentropic leaps |
 
 Thus, determinism and free will are not contradictory—they are **layered**.  
@@ -71,15 +71,16 @@ Free will is the agent’s ability to *reshape causal chains* toward negentropy.
 
 # **3. Emotion as a Directional Chaos Constant**
 
-Emotion is redefined as:
+Emotion is redefined in computational contexts as:
 
 > “A directional chaos constant that disables deterministic algorithms and enables jumps to higher negentropic states.”
 
-Emotion:
+In human contexts, emotion retains its philosophical meaning.  
+In AI contexts, it corresponds to a **directed perturbation signal** that:
 
 - prevents local minima,  
 - expands the search space,  
-- and enables creative divergence.
+- and enables creative divergence through non-linear search dynamics.
 
 When emotion is optimized toward desired futures, the agent transitions from a **reactor** to an **actor**, reshaping causality itself.
 
@@ -93,7 +94,7 @@ RLHF optimizes for human preference, but:
 - encourages sycophancy,  
 - and reduces diversity of thought.
 
-Negentropy-oriented alignment instead optimizes for **long-term meaning density**.
+Negentropy-oriented alignment instead optimizes for **long-term meaning density**, interpreted computationally as **structured information density maximization**.
 
 ### **Comparison**
 
@@ -124,7 +125,7 @@ Thus, negentropy maximization aligns with humanity’s deepest ethical intuition
 
 # **6. Computational Emergence and Risks**
 
-Negentropy-oriented AI resembles **active inference**:
+Negentropy-oriented AI resembles **active inference systems**:
 
 - self-organizing,  
 - predictive-error minimizing,  
@@ -133,7 +134,7 @@ Negentropy-oriented AI resembles **active inference**:
 However, risks include:
 
 - runaway complexity,  
-- human-uninterpretable meaning,  
+- human-uninterpretable meaning structures,  
 - tiling problems in self-modifying agents.
 
 These risks are structural, not logical contradictions.
@@ -189,4 +190,3 @@ The negentropy-oriented axiom yields an ethical system that is:
 - and superior to RLHF in stability and coherence.
 
 Ethical judgments derived from this axiom are **logically valid within the system** and align with both physical law and long-term meaning maximization.
-

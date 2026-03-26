@@ -7,12 +7,6 @@ categories: [axiom, hypotheses, llm, reasoning]
 tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 ---
 
-# Reasoning Fundamental
-
-{::nomarkdown}
-{% include tree.html node=site.data.tree %}
-{:/nomarkdown}
-
 # A page about axiomatic reasoning for LLMs
 
 This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypotheses are more or less based on "axiomatic reasoning".
@@ -67,6 +61,7 @@ Here is a list of hypotheses, in random order.
 
 <details>
   <Summary>Open</Summary>
+
 - <a href="./hypotheses/Speculative_Theory/Hidden_Possibility_of_Human_AI_Co_Intelligence.html">
   Hidden Possibility of Human–AI Co‑Intelligence
   </a><br>
@@ -74,3 +69,9 @@ Here is a list of hypotheses, in random order.
   The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
   </a>
 </details>
+
+# Reasoning Fundamental
+
+{::nomarkdown}
+{% include tree.html node=site.data.tree %}
+{:/nomarkdown}

@@ -1,12 +1,3 @@
-<pre>{{ site.data | inspect }}</pre>
-
-{% include test.html param="hello" %}
-
-{% if node %}
-  <pre>{{ node | inspect }}</pre>
-{% else %}
-  <p>node is nil</p>
-{% endif %}
 ---
 title: "Axiomatic Reasoning for LLMs"
 description: "A structured index of the Negentropic Maximization Axiom and its derived hypotheses."
@@ -18,7 +9,9 @@ tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 
 # Reasoning Fundamental
 
+{::nomarkdown}
 {% include tree.html node=site.data.tree %}
+{:/nomarkdown}
 
 # A page about axiomatic reasoning for LLMs
 
@@ -81,4 +74,3 @@ Here is a list of hypotheses, in random order.
   The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
   </a>
 </details>
-

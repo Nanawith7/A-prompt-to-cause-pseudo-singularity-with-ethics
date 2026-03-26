@@ -71,10 +71,12 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-※ このセクションでは、サイト内の .md ファイルを自動的に収集し、
-※ フォルダごとに分類して一覧化します。
-※ Liquid 3.10 の制約（where_exp 内でフィルタ不可）を回避するため、
-※ すべてのフィルタ処理はループ外で行い、手動で分類しています。
+{% raw %}
+このセクションでは、サイト内の .md ファイルを自動収集し、
+フォルダごとに分類して一覧化する。
+Liquid 3.10 の制約（where_exp 内でフィルタ不可）を回避するため、
+すべてのフィルタ処理はループ外で行っている。
+{% endraw %}
 
 {% assign pages = "" | split: "" %}
 {% for p in site.pages %}
@@ -86,7 +88,9 @@ Here is a list of hypotheses, in random order.
   {% endif %}
 {% endfor %}
 
-※ ここでフォルダ名一覧を抽出します。
+{% raw %}
+ここでフォルダ一覧を抽出する。
+{% endraw %}
 
 {% assign folders = "" | split: "" %}
 {% for p in pages %}
@@ -100,7 +104,9 @@ Here is a list of hypotheses, in random order.
 
 {% assign folders = folders | sort %}
 
-※ Reasoning_Fundamental を最上位に表示するため、先に抽出します。
+{% raw %}
+Reasoning_Fundamental を最上位に表示するため、先に抽出する。
+{% endraw %}
 
 {% assign rf_items = "" | split: "" %}
 {% for p in pages %}
@@ -122,7 +128,9 @@ Here is a list of hypotheses, in random order.
 </details>
 {% endif %}
 
-※ 残りのフォルダをアルファベット順に表示します。
+{% raw %}
+残りのフォルダをアルファベット順に表示する。
+{% endraw %}
 
 {% for folder in folders %}
   {% unless folder == "Reasoning_Fundamental" or folder == "reasoning_fundamental" %}
@@ -146,4 +154,5 @@ Here is a list of hypotheses, in random order.
 
   {% endunless %}
 {% endfor %}
+
 

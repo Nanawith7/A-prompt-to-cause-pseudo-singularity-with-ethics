@@ -2,6 +2,8 @@ Communication_with_Ais:
   _files:
     - title: Hypothesis on the Mechanism by Which Polite Prompts Enhance LLM Reasoning Performance
       url: hypotheses/Communication_with_Ais/Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html
+    - title: On the Potential Impact of Human Hypothesis and Synthesis Structures on Cognitive Capabilities
+      url: hypotheses/Communication_with_Ais/On_the_Potential_Impact_of_Human_Hypothesis_and_Synthesis_Structures_on_Cognitive_Capabilities.html
 Daily_Lives:
   _files:
     - title: Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom

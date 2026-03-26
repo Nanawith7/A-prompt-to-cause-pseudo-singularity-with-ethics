@@ -1,22 +1,15 @@
 {% for key in node %}
-  {% assign value = node[key] %}
-
-  {% if value.first.title %}
-    <h3>{{ key }}</h3>
-    <details open>
-      <summary>open</summary>
-      <ul>
-        {% for item in value %}
-          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
-
+  {% if key == "_files" %}
+    <ul>
+      {% for item in node[key] %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
   {% else %}
-    <h3>{{ key }}</h3>
+    <h3>{{ key | replace: "_", " " }}</h3>
     <details open>
       <summary>open</summary>
-      {% include tree.html node=value %}
+      {% include tree.html node=node[key] %}
     </details>
   {% endif %}
 {% endfor %}

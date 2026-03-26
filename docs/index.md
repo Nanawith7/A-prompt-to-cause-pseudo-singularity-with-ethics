@@ -75,10 +75,11 @@ Here is a list of hypotheses, in random order.
 # Reasoning Fundamental
 
 {% assign pages = site.pages | where_exp: "p", "p.path != '/index.md'" %}
-{% assign grouped = pages | group_by_exp: "p", "p.path | split: '/' | slice: 1,1" %}
+{% assign grouped = pages | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first" %}
 {% assign sorted = grouped | sort: "name" %}
 
 {% for folder in sorted %}
+  {% unless folder.name == "" %}
   <details>
     <summary>{{ folder.name | capitalize }}</summary>
     <ul>
@@ -87,7 +88,9 @@ Here is a list of hypotheses, in random order.
       {% endfor %}
     </ul>
   </details>
+  {% endunless %}
 {% endfor %}
+
 
 
 

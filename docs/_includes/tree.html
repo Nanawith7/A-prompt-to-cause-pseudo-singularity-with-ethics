@@ -4,7 +4,7 @@
   <p>node is nil, cannot render tree</p>
 {% else %}
 
-  {% comment %} ========== 1階層目: ルートフォルダのリストを作成 ========== {% endcomment %}
+  {% comment %} ========== ルートフォルダのリストを作成 ========== {% endcomment %}
   {% assign folders = "" | split: "" %}
   {% for folder in node %}
     {% if folder[0] != "_files" %}
@@ -12,24 +12,27 @@
     {% endif %}
   {% endfor %}
 
-  {% comment %} 「Reasoning Fundamental」を先頭に移動 {% endcomment %}
-  {% assign reordered_folders = "" | split: "" %}
+  {% comment %} 「Reasoning Fundamental」を先頭に移動（concat 不使用）{% endcomment %}
   {% assign target = nil %}
+  {% assign others = "" | split: "" %}
   {% for folder in folders %}
     {% if folder[0] == "Reasoning_Fundamental" %}
       {% assign target = folder %}
     {% else %}
-      {% assign reordered_folders = reordered_folders | push: folder %}
+      {% assign others = others | push: folder %}
     {% endif %}
   {% endfor %}
+
+  {% assign final_folders = "" | split: "" %}
   {% if target != nil %}
-    {% assign reordered_folders = target | concat: reordered_folders %}
-  {% else %}
-    {% assign reordered_folders = folders %}
+    {% assign final_folders = final_folders | push: target %}
   {% endif %}
+  {% for folder in others %}
+    {% assign final_folders = final_folders | push: folder %}
+  {% endfor %}
 
   {% comment %} ========== 表示ループ ========== {% endcomment %}
-  {% for folder in reordered_folders %}
+  {% for folder in final_folders %}
     {% assign folder_name = folder[0] %}
     {% assign folder_data = folder[1] %}
     {% assign files_1 = folder_data._files %}
@@ -38,7 +41,6 @@
     <details open>
       <summary>open</summary>
 
-      {% comment %} 1階層目のファイル一覧 {% endcomment %}
       {% if files_1 %}
         <ul>
           {% for file in files_1 %}
@@ -66,7 +68,7 @@
               </ul>
             {% endif %}
 
-            {% comment %} ========== 3階層目: サブサブフォルダ ========== {% endcomment %}
+            {% comment %} ========== 3階層目 ========== {% endcomment %}
             {% for subsubfolder in subfolder_data %}
               {% if subsubfolder[0] != "_files" %}
                 {% assign subsubfolder_name = subsubfolder[0] %}
@@ -85,7 +87,7 @@
                     </ul>
                   {% endif %}
 
-                  {% comment %} ========== 4階層目: さらに深いフォルダ ========== {% endcomment %}
+                  {% comment %} ========== 4階層目 ========== {% endcomment %}
                   {% for subsubsubfolder in subsubfolder_data %}
                     {% if subsubsubfolder[0] != "_files" %}
                       {% assign subsubsubfolder_name = subsubsubfolder[0] %}
@@ -121,6 +123,5 @@
 
     </details>
   {% endfor %}
-  {% comment %} ========== 1階層目ここまで ========== {% endcomment %}
 
 {% endif %}

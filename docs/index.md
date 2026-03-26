@@ -71,56 +71,101 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-{% assign pages = site.pages
-  | where_exp: "p", "p.path contains '.md'"
-  | where_exp: "p", "p.path != '/index.md'"
-  | where_exp: "p", "p.path != '/axiom.md'"
-  | where_exp: "p", "p.path | split: '/' | size > 2"
-%}
+{% assign pages = "" | split: "" %}
+{% for p in site.pages %}
+  {% if p.path contains '.md' %}
+    {% if p.path != '/index.md' and p.path != '/axiom.md' %}
+      {% assign parts = p.path | split: '/' %}
+      {% if parts.size > 2 %}
+        {% assign pages = pages | push: p %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
-{% assign grouped = pages
-  | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first"
-%}
+{% assign grouped = "" | split: "" %}
+{% for p in pages %}
+  {% assign parts = p.path | split: '/' %}
+  {% assign folder = parts[1] %}
+  {% assign exists = false %}
+  {% for g in grouped %}
+    {% if g.name == folder %}
+      {% assign exists = true %}
+    {% endif %}
+  {% endfor %}
+  {% if exists == false %}
+    {% assign grouped = grouped | push: folder %}
+  {% endif %}
+{% endfor %}
 
-{% assign cleaned = grouped
-  | reject: "name", "css"
-  | reject: "name", "index.md"
-  | reject: "name", "Axiom.md"
-%}
+{% assign folder_objects = "" | split: "" %}
+{% for folder in grouped %}
+  {% assign items = "" | split: "" %}
+  {% for p in pages %}
+    {% assign parts = p.path | split: '/' %}
+    {% if parts[1] == folder %}
+      {% assign items = items | push: p %}
+    {% endif %}
+  {% endfor %}
+  {% assign folder_objects = folder_objects | push: 
+    (folder | append: ':::' | append: items | join: '|||') 
+  %}
+{% endfor %}
 
-{% assign sorted = cleaned | sort: "name" %}
+{% assign cleaned = "" | split: "" %}
+{% for f in folder_objects %}
+  {% assign name = f | split: ':::' | first %}
+  {% unless name == "css" or name == "index.md" or name == "Axiom.md" %}
+    {% assign cleaned = cleaned | push: f %}
+  {% endunless %}
+{% endfor %}
 
-{% assign rf = nil %}
+{% assign sorted = cleaned | sort %}
+
+{% assign rf = "" %}
 {% for f in sorted %}
-  {% if f.name == "Reasoning_Fundamental" or f.name == "reasoning_fundamental" %}
+  {% assign name = f | split: ':::' | first %}
+  {% if name == "Reasoning_Fundamental" or name == "reasoning_fundamental" %}
     {% assign rf = f %}
   {% endif %}
 {% endfor %}
 
-{% if rf %}
+{% if rf != "" %}
+{% assign name = rf | split: ':::' | first %}
+{% assign items_raw = rf | split: ':::' | last %}
+{% assign items = items_raw | split: '|||' %}
+
 ## Reasoning Fundamental
 <details open>
   <summary>open</summary>
   <ul>
-    {% for p in rf.items %}
-      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% for p in items %}
+      {% assign url = p | split: ' ' | last %}
+      <li><a href="{{ url | relative_url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </details>
 {% endif %}
 
-{% for folder in sorted %}
-  {% unless folder.name == "Reasoning_Fundamental" or folder.name == "reasoning_fundamental" %}
-## {{ folder.name | capitalize }}
+{% for f in sorted %}
+  {% assign name = f | split: ':::' | first %}
+  {% unless name == "Reasoning_Fundamental" or name == "reasoning_fundamental" %}
+    {% assign items_raw = f | split: ':::' | last %}
+    {% assign items = items_raw | split: '|||' %}
+
+## {{ name | capitalize }}
 <details>
   <summary>open</summary>
   <ul>
-    {% for p in folder.items %}
-      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% for p in items %}
+      {% assign url = p | split: ' ' | last %}
+      <li><a href="{{ url | relative_url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </details>
+
   {% endunless %}
 {% endfor %}
+
 
 

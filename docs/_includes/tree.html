@@ -1,0 +1,7 @@
+<p>DEBUG: tree.html is called</p>
+<p>node is nil? {{ node == nil }}</p>
+{% if node %}
+  <pre>{{ node | inspect }}</pre>
+{% else %}
+  <p>node is nil, cannot render tree</p>
+{% endif %}

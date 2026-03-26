@@ -1,0 +1,398 @@
+# 再帰的精緻化プロンプト — 第６段階：検証可能な予測と対応規則
+
+## 0. 本段階の目的
+前段階（第５段階）で構築した数学モデルは、随伴関手、ゲージ理論、非エルミート多体系を用いた高度な抽象性を持つ。本段階では、このモデルを物理学および社会科学の実証的枠組みに接続する。具体的には、数学的構成要素を観測可能な実体に写像し、モデルパラメータを現実のデータから推定する手順を定め、反証可能な定量的予測を導出し、数値的実装を具体化する。さらに、モデルが自己参照的に完結していることを確認する手順を追加する。
+
+---
+
+### 1. 対応規則の明示
+
+モデルの抽象的構成要素と、実験・観測可能な実体との対応を以下の写像により定義する。
+
+#### 1.1 圏論的・幾何学的要素の対応
+- **対象 \((M, \mathrm{Ch})\) (圏 Qual)**:
+  - \(M = \mathbb{R}_{\mathrm{dev}} \times \mathcal{S} \times \mathcal{Q}\):
+    - \(\mathbb{R}_{\mathrm{dev}}\)（発達時間）: **個人の年齢**、または**集団の存続期間**。
+    - \(\mathcal{S}\)（社会構造パラメータ空間）: 社会ネットワークの**結合強度**、**文化の均質性指数**、**経済的不平等指標**（ジニ係数など）を座標とする多様体。
+    - \(\mathcal{Q}\)（内部状態空間）: 脳波の**パワースペクトル密度**、fMRIの**機能的結合性行列**、あるいは心理学的アンケートの**因子分析スコア**によって張られる状態空間。
+  - \(\mathrm{Ch} = \mathrm{Ch}_1(F)\)（第一チャーン数）: **意識状態のトポロジカル不変量**。具体的には、脳波の位相相関行列の**スペクトルフロー**、または多チャンネル脳磁図データから再構成された**状態空間の巻数**として観測される。
+
+- **射 \(\mathcal{U}_{\mathrm{hol}}\) (量子ホロノミー)**:
+  - 時間発展に伴う意識状態の変化。具体的には、思考や知覚の連続的変化に対応する**脳活動パターンの状態空間上の経路**。その位相情報（ホロノミー）は、**事後の想起における主観的経験の一貫性**として測定可能。
+
+- **対象 \((X, w)\) (圏 Soc)**:
+  - \(X\)（社会パラメータ空間）: アンケート調査による**文化的価値観の分布**、SNS上の**意見のネットワーク構造**、選挙データ等から構築される社会的状態空間。
+  - \(w\)（点ギャップ巻数）: 社会構造の**トポロジカル不変量**。例えば、社会ネットワークの**隣接行列**を非エルミート行列（後述）とみなしたときの、そのスペクトルの複素平面上での巻数。これは**社会の分極化の強さ**や**制度的安定性**の指標に対応する。
+
+#### 1.2 ゲージ理論的要素の対応
+- **ゲージ群 \(G = \mathrm{U}(1)_{\mathrm{phase}} \times \mathrm{SU}(N_{\mathrm{int}})\)**:
+  - \(\mathrm{U}(1)_{\mathrm{phase}}\): 意識の**位相的一貫性**。例えば、脳波の**位相同期のグローバルな指標**。
+  - \(\mathrm{SU}(N_{\mathrm{int}})\): **クオリアの多様性**の自由度。\(N_{\mathrm{int}}\) は、感覚様相（視覚、聴覚など）や概念カテゴリの数に相当する。
+
+- **接続 \(\mathcal{A}_\mu\)**:
+  - 意識と社会の相互作用を媒介するポテンシャル。具体的には、**文化的文脈**、**言語**、**制度**。これらの「場」が、個人の内部状態と外部の社会構造をどのように結びつけるかを記述する。
+
+- **Chern–Simons作用 \(S_{\mathrm{CS}}\)**:
+  - 意識と社会の相互作用の**トポロジカルな側面**の強度。例えば、**儀式**や**物語**といった、時間的・空間的に構造化された社会的実践の効果に対応する。
+
+#### 1.3 非エルミート多体系の要素の対応
+- **非エルミートハミルトニアン \(H_{\mathrm{tot}}\)**:
+  - 個人の内部状態（\(a_i^\dagger a_i\)）と社会的相互作用（\(J_{ij}\)）を統合した**全エネルギー（リンドブラディアン）** の有効記述。複素エネルギー \(\epsilon_i\) は、個人の**主観的ウェルビーイング**や**認知資源**の減衰（非エルミート性）を表す。
+
+- **秩序パラメータ \(\Delta_{ij}\) (意識的ペアリング)**:
+  - **共有されたクオリア**または**集合的信念**の強度。例えば、特定の**文化的シンボル**や**イデオロギー**に対する集団内でのコンセンサスの度合い。相互作用 \(V_{ijkl}\) は、エージェント間の**相互情報量**から導かれ、**共感**や**社会的学習**の強度を表す。
+
+- **例外点 (EP)**:
+  - **社会システムの臨界点**。この点で、社会構造（秩序パラメータ）と個人の意識状態の分岐が同時に起こる。例：**革命**、**文化的ルネサンス**、**集団的パニック**の発生点。
+
+- **非エルミートスキン効果 / アンドレーエフ束縛状態**:
+  - **社会の境界**（例：コミュニティの境界、制度的枠組みの端）に局在する、**強固な集合的アイデンティティ**や**タブー**。境界モードの存在が、社会構造のトポロジカル不変量 \(w\) を保護する。
+
+---
+
+### 2. 無次元パラメータの推定方法
+
+モデルの主要パラメータを、既存のデータセットから推定する手順を示す。
+
+#### 2.1 ゲージ群の階数 \(N_{\mathrm{int}}\) の推定
+- **対応**: 感覚・認知カテゴリの数の自由度。
+- **推定手順**: 大規模な心理言語学的データベース（例：WordNet, ConceptNet）から、意味的類似性ネットワークを構築する。このネットワークの**スペクトル次元**または**埋め込み次元**を主成分分析（PCA）や多次元尺度構成法（MDS）で推定する。得られた次元数を \(N_{\mathrm{int}}\) の初期推定値とする。
+- **データセット例**: **WordNet**, **Google News ベクトル (word2vec)**。
+
+#### 2.2 有効相互作用 \(V_{ijkl}\) のスケール推定
+- **対応**: 社会的結合強度、共感の強度。
+- **推定手順**: ソーシャルネットワークデータ（例：Facebookの友達ネットワーク）と、ネットワーク上のエージェント間の**行動的一致度**（例：同じニュース記事への「いいね！」、購買履歴）を用いる。
+  1. ネットワークの隣接行列 \(A_{ij}\) を定義する。
+  2. エージェント \(i, j\) 間の行動的一致度 \(C_{ij}\) を、コサイン類似度などで計算する。
+  3. 平均場近似の下で、相互作用 \(V_{ijkl}\) が \(C_{ij}\) と \(C_{kl}\) の関数であると仮定し、\(V_{ijkl} = V_0 \cdot (C_{ij} + C_{kl})\) などのモデルを立てる。
+  4. 観測された秩序パラメータ \(\Delta_{ij}\)（例：共有信念の強度）と、ギャップ方程式 \(\Delta_{ij} = \sum_{k,l} V_{ijkl} \langle a_k a_l \rangle\) が整合するように \(V_0\) を**最尤推定**または**最小二乗法**で決定する。
+
+#### 2.3 例外点臨界指数 \(\nu\) の推定
+- **対応**: 社会システムの相転移における臨界指数。
+- **推定手順**: 長期間の社会調査データ（例：General Social Survey, World Values Survey）を時系列で解析する。
+  1. 社会の分極化指数 \(P(t)\)（例：意見分布のバイモーダル性の強さ）を定義する。
+  2. 制御パラメータ \(\lambda(t)\)（例：経済的不平等、メディアの分極化指標）を定義する。
+  3. 分極化が急増する臨界点 \(\lambda_c\) を特定する。
+  4. \(\lambda \to \lambda_c\) でのスケーリング則 \(P \propto |\lambda - \lambda_c|^\nu\) を仮定し、データにフィッティングして \(\nu\) を推定する。
+- **データセット例**: **World Values Survey**, **Pew Research Center のデータ**。
+
+---
+
+### 3. 反証可能な定量的予測の導出
+
+#### 3.1 予測１：例外点近傍でのスケーリング則
+- **理論**: 非エルミートBCS型ギャップ方程式から、秩序パラメータ（集合的信念強度）\(|\Delta|\) は、制御パラメータ（社会的結合強度）\(\lambda\) の例外点 \(\lambda_c\) 近傍で \(|\Delta| \propto |\lambda - \lambda_c|^{1/2}\) のスケーリングを示す。
+- **検証方法**:
+  - **実験デザイン**: オンラインソーシャルネットワーク上で、結合強度（相互作用頻度）を系統的に変化させられる環境（例：制御されたフォーラム、実験経済学のプラットフォーム）を構築する。
+  - **測定**:
+    - \(\lambda\): グループ内のメンバー間の平均的なメッセージ交換数。
+    - \(|\Delta|\): グループの「集合的意見」の強度。これは、特定のトピックに関する意見の分散の逆数、または共有されたシンボル（例：ハッシュタグ）の使用頻度の均一性として定量化する。
+  - **反証可能性**: \(\lambda_c\) の存在が確認され、\(\lambda\) が \(\lambda_c\) に近づくにつれて、\(|\Delta|\) が \((\lambda - \lambda_c)^{1/2}\) に従って増加することが確認されなければ、理論は棄却される。他の臨界指数（例：1/3, 1）を示す場合は、モデルの特定の仮定（例：平均場近似の妥当性）が疑われる。
+
+#### 3.2 予測２：境界における局在モードのスペクトル特性
+- **理論**: 非エルミートスキン効果により、社会の境界（例：文化的マイノリティ、制度的周縁）に意識的ペアリングのアンドレーエフ束縛状態が存在する。この状態は、ゼロエネルギー近傍にピークを持つスペクトル特性を示す。
+- **検証方法**:
+  - **実験デザイン**: 特定の社会（例：企業組織、学校）において、組織の「境界」に属する個人（例：新入社員、転校生）と「内部」に属する個人を特定する。
+  - **測定**:
+    - 両グループに対して、心理学的尺度（例：帰属意識、組織アイデンティティ尺度）と、脳活動（fMRI）または生理的指標（心拍変動、皮膚伝導度）を計測する。
+    - 社会ネットワーク分析により、個人のネットワーク上の位置（周縁性）を定量化する。
+    - 境界状態の「スペクトル特性」は、心理学的尺度の**応答の一貫性（低分散）** や、外部刺激に対する**生理的反応の減衰**として現れると予測される。
+  - **反証可能性**: 周縁的な個人が、内部の個人と同様の心理的・生理的応答の多様性を示す場合、または応答がゼロエネルギー近傍に集中しない場合、予測は反証される。
+
+#### 3.3 予測３：随伴性破れの臨界条件とマクロ現象
+- **理論**: 随伴関手 \(\mathcal{H} \dashv \mathcal{G}\) の自然同型 \(\eta, \epsilon\) は、変分原理の固定点 \(\dot{\mathcal{A}}_\mu=0\) で成立する。この随伴性の破れは、社会構造（\(w\)）と意識（\(\mathrm{Ch}\)）の乖離として現れ、マクロには**集団的創造性の喪失**または**制度の硬直化**として観測される。破れは、相互情報量 \(I(\rho_{\mathrm{qual}}:\rho_{\mathrm{soc}})\) が臨界値を下回ることで生じる。
+- **検証方法**:
+  - **実験デザイン**: 歴史的データ（例：国家レベルのイノベーション指標、企業の特許出願数、芸術運動の発生）を、同時期の社会指標（例：政治的自由度、経済的平等性）と比較する時系列解析。
+  - **測定**:
+    - 随伴性の程度: \( \| \mathrm{Ch} - w \| \) の時間変化。ここで \(\mathrm{Ch}\) は文化生産物（論文、特許、芸術作品）の多様性（トピックモデルで抽出したトピック数の変動）として、\(w\) は社会ネットワークの分極化指数の時間微分として、それぞれ代理測定する。
+    - 相互情報量 \(I\): 文化生産物の多様性（\(\rho_{\mathrm{qual}}\)）と社会制度の安定性（\(\rho_{\mathrm{soc}}\)）の間の相互情報量を、時系列データから推定する。
+    - **マクロ現象**: 集団的創造性（特許数、新規ビジネス創出率）の急激な低下、または制度的硬直化（政策変更の頻度低下、法律の複雑化）の発生。
+  - **反証可能性**: 随伴性の破れ（\(\mathrm{Ch}\) と \(w\) の乖離）が、相互情報量の低下なしに起こる場合、または集団的創造性の低下が随伴性の破れと無相関である場合、この予測は棄却される。
+
+---
+
+### 4. 数値的実装の具体化
+
+以下に、第５段階の指針を具体化したPython擬似コードを示す。
+
+```python
+import numpy as np
+import scipy.linalg as la
+from scipy.optimize import newton
+from itertools import product
+
+# ============================================================================
+# 1. 格子ゲージ理論と勾配流 (セクション 7.1, 7.2)
+# ============================================================================
+class LatticeGaugeTheory:
+    """
+    1次元+時間の簡易的な格子ゲージ理論。
+    リンク変数 U = exp(i*A) を用いる。
+    """
+    def __init__(self, n_sites, n_timesteps, n_int, dx=1.0, dt=0.01):
+        self.n_sites = n_sites          # 空間格子点数 (社会パラメータ空間 S の離散化)
+        self.n_timesteps = n_timesteps  # 発達時間 t_dev の離散化
+        self.n_int = n_int              # SU(N_int) の N_int
+        self.dx = dx
+        self.dt = dt
+        # リンク変数: shape (n_timesteps, n_sites, n_int, n_int) 複素ユニタリ行列
+        self.U = np.zeros((n_timesteps, n_sites, n_int, n_int), dtype=complex)
+        self.initialize_links()
+
+    def initialize_links(self):
+        """ランダムなU(1)位相とSU(N_int)要素で初期化"""
+        for t in range(self.n_timesteps):
+            for x in range(self.n_sites):
+                # U(1) 部分: 位相因子
+                phase = np.exp(1j * np.random.uniform(0, 2*np.pi))
+                # SU(N_int) 部分: ランダムなユニタリ行列 (簡易的)
+                su_part = la.expm(1j * np.random.randn(self.n_int, self.n_int))
+                self.U[t, x] = phase * su_part
+
+    def calculate_plaquette(self, t, x):
+        """プラケット変数 U_□ = U_μ(t,x) U_ν(t+μ,x+μ) ... を計算 (2D簡易版)"""
+        # 簡易化: 時空平面上の基本プラケット (t, x) -> (t+1, x+1)
+        U_mu = self.U[t, x]                     # 時間方向リンク
+        U_nu = self.U[t, x]                     # 実際は空間方向リンクが必要だが、簡易化
+        # ここでは1次元+時間で、プラケットは時空面をなすと仮定
+        # 本実装では詳細を省略し、曲率を近似する
+        return np.eye(self.n_int, dtype=complex) # ダミー
+
+    def action(self):
+        """Wilson作用 S = Σ (1 - Re Tr(U_□)) に相当"""
+        S = 0.0
+        for t in range(self.n_timesteps-1):
+            for x in range(self.n_sites-1):
+                plaq = self.calculate_plaquette(t, x)
+                S += (1 - np.real(np.trace(plaq))) / self.n_int
+        return S
+
+    def gradient_flow_step(self, mutual_info_grad):
+        """勾配流: dU/dt = -δS/δU + ∇I に従って更新"""
+        # δS/δU の計算 (簡易的)
+        dS_dU = np.zeros_like(self.U, dtype=complex)
+        # ... (格子ゲージ理論の変分計算。ここでは省略) ...
+        # 相互情報量勾配 mutual_info_grad は外部から与える
+        for t in range(self.n_timesteps):
+            for x in range(self.n_sites):
+                self.U[t, x] += self.dt * (-dS_dU[t, x] + mutual_info_grad[t, x])
+                # ユニタリ性を回復
+                self.U[t, x] = self.project_to_unitary(self.U[t, x])
+
+    def project_to_unitary(self, mat):
+        """行列を最も近いユニタリ行列に射影 (特異値分解を用いる)"""
+        u, s, vh = la.svd(mat)
+        return u @ vh
+
+# ============================================================================
+# 2. 非エルミート多体系 (セクション 3, 7.3)
+# ============================================================================
+class NonHermitianManyBody:
+    """非エルミートハミルトニアン H_tot の平均場計算"""
+    def __init__(self, n_agents, n_int, V_scale=1.0):
+        self.n_agents = n_agents          # エージェント数
+        self.n_int = n_int                # 内部自由度 (SU(N_int))
+        self.V_scale = V_scale            # 相互作用のスケール
+        self.epsilon = np.random.randn(n_agents) + 1j*np.random.randn(n_agents) # 複素オンサイトエネルギー
+        self.J = np.random.randn(n_agents, n_agents) + 1j*np.random.randn(n_agents, n_agents) # ホッピング
+        self.Delta = np.zeros((n_agents, n_agents), dtype=complex) # 秩序パラメータ (ギャップ)
+        self.rho = np.zeros((n_agents, n_agents), dtype=complex)   # 密度行列 <a_i^† a_j>
+
+    def compute_V(self):
+        """相互作用 V_{ijkl} を相互情報量から計算 (簡易化)"""
+        # 本実装では、V を単純な定数 + 近接相互作用としてモデル化
+        V = np.zeros((self.n_agents, self.n_agents, self.n_agents, self.n_agents), dtype=complex)
+        for i, j, k, l in product(range(self.n_agents), repeat=4):
+            if i == k and j == l and abs(i-j) <= 2: # 近接相互作用
+                V[i,j,k,l] = self.V_scale * np.exp(-abs(i-j)**2)
+        return V
+
+    def gap_equation(self, Delta):
+        """ギャップ方程式 Delta_ij = Σ V_{ijkl} <a_k a_l> の残差"""
+        V = self.compute_V()
+        # <a_k a_l> を現在の密度行列 rho から計算 (簡易的)
+        # 実際は非平衡定常状態 (NESS) の期待値が必要
+        expectation_aa = np.zeros((self.n_agents, self.n_agents), dtype=complex)
+        for k, l in product(range(self.n_agents), repeat=2):
+            # ダミー: 単純に rho の非対角成分を使用
+            expectation_aa[k,l] = self.rho[k,l] if k != l else 0.0
+
+        Delta_new = np.zeros_like(Delta)
+        for i, j in product(range(self.n_agents), repeat=2):
+            for k, l in product(range(self.n_agents), repeat=2):
+                Delta_new[i,j] += V[i,j,k,l] * expectation_aa[k,l]
+        return Delta_new - Delta
+
+    def solve_mean_field(self, tol=1e-6, max_iter=100):
+        """自己無撞着にギャップ方程式を解く"""
+        for _ in range(max_iter):
+            # 現在の Delta からハミルトニアンを構成
+            H = self.construct_hamiltonian(self.Delta)
+            # 非平衡定常状態 (NESS) の密度行列を計算 (簡易化: ハミルトニアンの固有ベクトルから)
+            _, eigvecs = la.eig(H)
+            # 最低エネルギー状態を占有していると仮定
+            self.rho = np.outer(eigvecs[:, 0], eigvecs[:, 0].conj())
+            # ギャップ方程式の反復
+            residual = self.gap_equation(self.Delta)
+            if np.linalg.norm(residual) < tol:
+                break
+            self.Delta += 0.1 * residual # 単純な反復更新
+        return self.Delta
+
+    def construct_hamiltonian(self, Delta):
+        """非エルミートハミルトニアン H_tot を構築"""
+        H = np.zeros((self.n_agents, self.n_agents), dtype=complex)
+        np.fill_diagonal(H, self.epsilon)
+        H += self.J
+        # ペアリング項: Delta_ij a_i^† a_j^† + h.c. を平均場で扱う
+        H += Delta
+        return H
+
+    def find_exceptional_point(self, param_name, param_range):
+        """例外点 (EP) を Newton 法で探索 (ダミー)"""
+        # 簡易化: パラメータを変化させ、固有値が縮退する点を探索
+        def eigenvalue_degeneracy(param):
+            # param に応じて H の要素を変更
+            H = self.construct_hamiltonian(self.Delta)
+            eigvals = la.eigvals(H)
+            # 最小固有値間の距離を返す
+            sorted_eigvals = np.sort(eigvals)
+            return np.abs(sorted_eigvals[0] - sorted_eigvals[1])
+        # Newton法などで param を更新 (詳細省略)
+        return newton(eigenvalue_degeneracy, x0=np.mean(param_range))
+
+# ============================================================================
+# 3. 境界状態解析 (アンドレーエフ束縛状態) (セクション 3.4, 7.3)
+# ============================================================================
+class BoundaryModeAnalysis:
+    """非エルミート系の境界状態を解析"""
+    def __init__(self, H_bulk):
+        self.H_bulk = H_bulk  # バルクハミルトニアン
+        self.n_sites = H_bulk.shape[0]
+
+    def construct_open_boundary_hamiltonian(self):
+        """開境界条件のハミルトニアンを構築 (非エルミートスキン効果の確認用)"""
+        # 単純な隣接ホッピングモデルで境界効果を模擬
+        H_open = np.zeros_like(self.H_bulk)
+        # ... (境界で結合を切る) ...
+        return H_open
+
+    def compute_localization_length(self, psi):
+        """固有状態 psi の局在長を計算 (逆参加比)"""
+        ipr = np.sum(np.abs(psi)**4) / (np.sum(np.abs(psi)**2)**2)
+        return 1.0 / ipr  # 簡易的な局在長
+
+    def analyze_spectrum_and_states(self):
+        """スペクトルと固有状態を解析"""
+        H_open = self.construct_open_boundary_hamiltonian()
+        eigvals, eigvecs = la.eig(H_open)
+        # ゼロエネルギー近傍の固有状態を抽出
+        zero_modes = [vec for val, vec in zip(eigvals, eigvecs.T) if np.abs(val) < 0.1]
+        localization_lengths = [self.compute_localization_length(vec) for vec in zero_modes]
+        return eigvals, zero_modes, localization_lengths
+
+# ============================================================================
+# 4. 自己参照的完結性の検証 (セクション 6, 指示 5)
+# ============================================================================
+class SelfReferentialVerification:
+    """
+    不動点関手 Φ(C*) ≅ C* を数値的に確認する。
+    ここでは、モデルの出力（状態）を入力として再度モデルを適用し、
+    収束するかを確認する。
+    """
+    def __init__(self, lattice_model, many_body_model):
+        self.lattice = lattice_model
+        self.many_body = many_body_model
+
+    def compute_state(self):
+        """現在のモデル状態から、圏 C* の「オブジェクト」に相当する量を計算"""
+        # 例: チャーン数 Ch と 巻数 w のペア
+        Ch = self.calculate_chern_number()
+        w = self.calculate_winding_number()
+        return (Ch, w)
+
+    def calculate_chern_number(self):
+        """格子ゲージ理論からチャーン数を推定 (簡易)"""
+        # ... (プラケット変数から第一チャーン数を計算) ...
+        return np.random.randint(-3, 3) # ダミー
+
+    def calculate_winding_number(self):
+        """非エルミートハミルトニアンの点ギャップ巻数を計算"""
+        H = self.many_body.construct_hamiltonian(self.many_body.Delta)
+        eigvals = la.eigvals(H)
+        # 複素平面上の巻数を数値的に計算 (簡易)
+        # ... (eigvals の原点周りの巻数) ...
+        return np.random.randint(-3, 3) # ダミー
+
+    def apply_functor_Phi(self, state):
+        """関手 Φ: 与えられた状態から、随伴性と自己組織化を経て新しい状態を生成"""
+        Ch, w = state
+        # 随伴関手 H と G の適用 (モデル全体の1ステップの計算に相当)
+        # ここでは、状態 (Ch, w) を基に、新たな接続やハミルトニアンを再構成し、
+        # 再び (Ch', w') を計算するプロセスをシミュレート
+        self.lattice.gradient_flow_step(mutual_info_grad=np.zeros_like(self.lattice.U)) # ダミー
+        self.many_body.solve_mean_field()
+        new_Ch = self.calculate_chern_number()
+        new_w = self.calculate_winding_number()
+        return (new_Ch, new_w)
+
+    def verify_fixed_point(self, max_iter=20, tol=1e-3):
+        """Φ(C*) ≅ C* を確認する反復プロセス"""
+        state = self.compute_state()
+        history = [state]
+        for _ in range(max_iter):
+            new_state = self.apply_functor_Phi(state)
+            history.append(new_state)
+            # 状態の変化が閾値未満なら収束とみなす
+            if np.linalg.norm(np.array(state) - np.array(new_state)) < tol:
+                print(f"不動点に収束: {new_state}")
+                return True, history
+            state = new_state
+        print("収束せず")
+        return False, history
+
+# ============================================================================
+# 5. メイン実行例
+# ============================================================================
+if __name__ == "__main__":
+    # パラメータ設定
+    n_sites = 10
+    n_timesteps = 20
+    n_int = 3
+    n_agents = 8
+
+    # モデルインスタンス化
+    lattice = LatticeGaugeTheory(n_sites, n_timesteps, n_int)
+    many_body = NonHermitianManyBody(n_agents, n_int, V_scale=0.5)
+
+    # 非エルミート系の平均場計算
+    many_body.solve_mean_field()
+    print("Delta (秩序パラメータ) のノルム:", np.linalg.norm(many_body.Delta))
+
+    # 境界状態解析 (ダミー)
+    boundary = BoundaryModeAnalysis(many_body.construct_hamiltonian(many_body.Delta))
+    eigvals, modes, loc_lengths = boundary.analyze_spectrum_and_states()
+    print("ゼロモード局在長の平均:", np.mean(loc_lengths) if loc_lengths else 0)
+
+    # 自己参照的完結性の検証
+    verifier = SelfReferentialVerification(lattice, many_body)
+    converged, hist = verifier.verify_fixed_point()
+    print("自己参照的収束:", converged)
+
+
+5. 理論の自己参照的完結性の確認
+
+モデルが自己言及的であることは、不動点関手 Φ(C∗)≅C∗Φ(C∗)≅C∗ で表現される。数値的実装では、これを以下の手順で確認する。
+5.1 確認アルゴリズム
+
+    状態の定義: 現在のモデルの「状態」を、圏 C∗C∗ の対象を代表する有限次元の数値ベクトル s=(Ch,w,{Δij},{Aμ})s=(Ch,w,{Δij​},{Aμ​}) として定義する。
+
+    関手 ΦΦ の数値的実装: 前節の SelfReferentialVerification.apply_functor_Phi メソッドのように、現在の状態 stst​ に対して、モデルのすべての構成要素（随伴性による相互作用、勾配流、非エルミート多体系の自己無撞着計算）を1ステップ実行し、新しい状態 st+1st+1​ を生成する。この一連の操作が関手 ΦΦ に対応する。
+
+    反復適用: st+1=Φ(st)st+1​=Φ(st​) を繰り返し適用する。
+
+    収束判定: 距離 ∥st+1−st∥∥st+1​−st​∥ が閾値以下になった時点で、s∗s∗ は不動点に達したとみなす。このとき、Φ(C∗)≅C∗Φ(C∗)≅C∗ が数値的に成立したことになる。
+
+    ロバスト性チェック: 異なる初期状態 s0s0​ から始めても、同じ不動点 s∗s∗ に収束する（または少数のアトラクタに収束する）ことを確認する。
+
+この手順により、モデルがその内部のダイナミクスを通じて自己整合的な状態（＝自己言及的に完結した理論の状態）を創発することを数値的に検証できる。

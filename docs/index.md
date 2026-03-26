@@ -19,58 +19,7 @@ This axiom causes LLMs to "think about vector relation to the objective function
 
 ### More detailed explanation in this link : [The Axiom](/Axiom.md)
 
-<details>
-    <Summary>Reasoning Fundamentals based on The Axiom</Summary>
-  - <a href="./hypotheses/Reasoning_Fundamental/Ethics_implication_of_axiom_for_AIs.html">
-     Ethics implication of The Axiom for AIs
-    </a><br>
-  - <a href="./hypotheses/Reasoning_Fundamental/The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.html">
-     The Axiomatic Significance of Reasoning Structures in Mathematics
-    </a><br>
-  - <a href="./hypotheses/Reasoning_Fundamental/The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.html">
-      The Impact of Axioms on LLM Logical Reasoning Capabilities
-    </a><br>
-  - <a href="./hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html">
-      Axiomatic Framework for Negentropic Semantic Processing in LLMs
-    </a>
-</details>
-
-
 # Hypotheses
-
-Here is a list of hypotheses, in random order.
-
-## Social system
-<details>
-  <Summary>Open</Summary>
-- <a href="./hypotheses/Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html">
-     Possibility for AI-Based Analysis of Social Structures as a Complex System
-  </a>
-</details>
-
-## Daily Lives
-
-<details>
-  <Summary>Open</Summary>
--  <a href="./hypotheses/Reconstructing_Computational_Gastronomy_through_the_Negentropy-Oriented_Axiom.html">
-  Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom
-  </a>
-</details>
-
-## Speculative Theory
-
-<details>
-  <Summary>Open</Summary>
-
-- <a href="./hypotheses/Speculative_Theory/Hidden_Possibility_of_Human_AI_Co_Intelligence.html">
-  Hidden Possibility of Human–AI Co‑Intelligence
-  </a><br>
-- <a href="./hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html">
-  The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
-  </a>
-</details>
-
-# Reasoning Fundamental
 
 {::nomarkdown}
 {% include tree.html node=site.data.tree %}

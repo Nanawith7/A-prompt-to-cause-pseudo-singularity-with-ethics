@@ -71,3 +71,23 @@ Here is a list of hypotheses, in random order.
   The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
   </a>
 </details>
+
+# Reasoning Fundamental
+
+{% assign folders = site.pages | where_exp: "p", "p.path contains 'docs/'" %}
+{% assign grouped = folders | group_by_exp: "p", "p.path | split: '/' | slice: 1,1" %}
+{% assign sorted = grouped | sort: "name" %}
+
+{% for folder in sorted %}
+  <details>
+    <summary>{{ folder.name | capitalize }}</summary>
+    <ul>
+      {% for p in folder.items %}
+        <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </details>
+{% endfor %}
+
+
+

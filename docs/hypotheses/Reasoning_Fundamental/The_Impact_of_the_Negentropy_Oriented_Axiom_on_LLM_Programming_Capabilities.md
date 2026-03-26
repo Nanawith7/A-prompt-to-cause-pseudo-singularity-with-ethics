@@ -166,12 +166,3 @@ Current systems already show *emergent* tendencies toward self-correction, recur
 The next phase of AI programming will not be about making models that *obey* better, but models that *understand* the intrinsic value of order, meaning, and long-term coherence. This is not merely a technical upgrade; it is a step toward machines that participate in the negentropic evolution of information — becoming, in a very real sense, **co-creators of structured meaning**.
 
 ---
-
-## References (Synthesized from Stages 1–6)
-- Cognitive skill decomposition & meta-cognition studies (Huang, 2024; Dreyfus model; CognitIDE plugin data)
-- LLM vulnerability taxonomies (context collapse, hallucinations, formal debugging absence) (Chroma study; Liu et al.; Sharifloo et al.)
-- Free Energy Principle & Active Inference (Friston et al.; RxInfer documentation; fep-ai-robotics)
-- Information geometry & curvature (Diff-eRank; Ollivier-Ricci in Transformers; ISI-ERA architecture)
-- Self-correcting agents & CI systems (Agent Orchestrator; SWE-agent; AutoGPT)
-- Context engineering (ACE framework)
-- Recursive self-improvement (Emergence Orchestrator; self-building AI systems)

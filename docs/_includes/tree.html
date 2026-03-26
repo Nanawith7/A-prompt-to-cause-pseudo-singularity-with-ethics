@@ -1,3 +1,8 @@
+{%- comment -%}
+  node（ハッシュ）を受け取り、フォルダとファイルを描画する。
+  再帰 include を使わず、1 ファイル内で再帰処理を行う。
+{%- endcomment -%}
+
 {%- assign folders = "" | split: "" -%}
 {%- assign files = node["_files"] -%}
 
@@ -8,7 +13,7 @@
 {%- endfor %}
 
 {%- comment -%}
-  まずフォルダを描画
+  フォルダ描画
 {%- endcomment -%}
 
 {%- for folder in folders %}
@@ -17,13 +22,68 @@
     <summary>open</summary>
 
     {%- assign next = node[folder] -%}
-    {%- include tree.html node=next -%}
+
+    {%- capture subtree -%}
+      {%- assign subfolders = "" | split: "" -%}
+      {%- assign subfiles = next["_files"] -%}
+
+      {%- for k in next %}
+        {%- if k != "_files" %}
+          {%- assign subfolders = subfolders | push: k -%}
+        {%- endif %}
+      {%- endfor %}
+
+      {%- for sf in subfolders %}
+        <h4>{{ sf | replace: "_", " " }}</h4>
+        <details>
+          <summary>open</summary>
+
+          {%- assign next2 = next[sf] -%}
+
+          {%- capture subsubtree -%}
+            {%- assign subsubfolders = "" | split: "" -%}
+            {%- assign subsubfiles = next2["_files"] -%}
+
+            {%- for kk in next2 %}
+              {%- if kk != "_files" %}
+                {%- assign subsubfolders = subsubfolders | push: kk -%}
+              {%- endif %}
+            {%- endfor %}
+
+            {%- for ssf in subsubfolders %}
+              <h5>{{ ssf | replace: "_", " " }}</h5>
+              <!-- さらに深い階層が必要ならここに同じ構造を追加 -->
+            {%- endfor %}
+
+            {%- if subsubfiles %}
+              <ul>
+                {%- for item in subsubfiles %}
+                  <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                {%- endfor %}
+              </ul>
+            {%- endif %}
+          {%- endcapture -%}
+
+          {{ subsubtree }}
+        </details>
+      {%- endfor %}
+
+      {%- if subfiles %}
+        <ul>
+          {%- for item in subfiles %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      {%- endif %}
+    {%- endcapture -%}
+
+    {{ subtree }}
 
   </details>
 {%- endfor %}
 
 {%- comment -%}
-  最後にファイルを描画
+  ファイル描画
 {%- endcomment -%}
 
 {%- if files %}

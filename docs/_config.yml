@@ -2,6 +2,7 @@ plugins:
   - jekyll-seo-tag   
 baseurl: "/A-prompt-to-cause-pseudo-singularity-with-ethics"
 theme: jekyll-theme-primer
+source: docs
 # プラグインが参照するサイトの基本情報
 title: "Axiomatic Reasoning for LLMs"
 description: "A framework for understanding the universe as a negentropic information system."

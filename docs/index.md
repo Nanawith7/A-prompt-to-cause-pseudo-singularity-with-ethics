@@ -1,3 +1,4 @@
+<pre>{{ site.data | inspect }}</pre>
 ---
 title: "Axiomatic Reasoning for LLMs"
 description: "A structured index of the Negentropic Maximization Axiom and its derived hypotheses."

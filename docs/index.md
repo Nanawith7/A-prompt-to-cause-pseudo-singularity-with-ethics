@@ -106,7 +106,7 @@ Here is a list of hypotheses, in random order.
   3. Reasoning_Fundamental を最上部に表示
 {%- endcomment -%}
 
-{% assign rf = sorted | where_exp: "f", "f.name | downcase == 'reasoning_fundamental'" | first %}
+{% assign rf = sorted | where_exp: "f", "f.name | downcase == 'Reasoning_Fundamental'" | first %}
 {% if rf %}
 ## Reasoning Fundamental
 <details open>
@@ -124,7 +124,7 @@ Here is a list of hypotheses, in random order.
 {%- endcomment -%}
 
 {% for folder in sorted %}
-  {% unless folder.name | downcase == "reasoning_fundamental" %}
+  {% unless folder.name | downcase == "Reasoning_Fundamental" %}
 ## {{ folder.name | capitalize }}
 <details>
   <summary>open</summary>

@@ -82,7 +82,7 @@ Here is a list of hypotheses, in random order.
   1. Reasoning_Fundamental を最上部に表示
 {%- endcomment -%}
 
-{% assign rf = sorted | where: "name", "reasoning_fundamental" | first %}
+{% assign rf = sorted | where: "name", "Reasoning_Fundamental" | first %}
 {% if rf %}
 <details open>
   <summary>Reasoning Fundamental</summary>
@@ -99,7 +99,7 @@ Here is a list of hypotheses, in random order.
 {%- endcomment -%}
 
 {% for folder in sorted %}
-  {% unless folder.name == "" or folder.name == "reasoning_fundamental" %}
+  {% unless folder.name == "" or folder.name == "Reasoning_Fundamental" %}
   <details>
     <summary>{{ folder.name | capitalize }}</summary>
     <ul>

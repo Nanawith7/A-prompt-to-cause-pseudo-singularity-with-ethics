@@ -78,15 +78,33 @@ Here is a list of hypotheses, in random order.
 {% assign grouped = pages | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first" %}
 {% assign sorted = grouped | sort: "name" %}
 
+{%- comment -%}
+  1. Reasoning_Fundamental を最上部に表示
+{%- endcomment -%}
+
+{% assign rf = sorted | where: "name", "reasoning_fundamental" | first %}
+{% if rf %}
+<details open>
+  <summary>Reasoning Fundamental</summary>
+  <ul>
+    {% for p in rf.items %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}
+
+{%- comment -%}
+  2. その他のフォルダを A→Z で表示
+{%- endcomment -%}
+
 {% for folder in sorted %}
-  {% unless folder.name == "" %}
+  {% unless folder.name == "" or folder.name == "reasoning_fundamental" %}
   <details>
     <summary>{{ folder.name | capitalize }}</summary>
     <ul>
       {% for p in folder.items %}
-        <li>
-          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-        </li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
       {% endfor %}
     </ul>
   </details>

@@ -5,11 +5,15 @@
         <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
+
   {% else %}
     <h3>{{ key | replace: "_", " " }}</h3>
     <details open>
       <summary>open</summary>
-      {% include tree.html node=node[key] %}
+
+      {% assign next = node[key] %}
+      {% include tree.html node=next %}
+
     </details>
   {% endif %}
 {% endfor %}

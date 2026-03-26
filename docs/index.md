@@ -71,15 +71,6 @@ Here is a list of hypotheses, in random order.
 
 # Reasoning Fundamental
 
-<!--
-  0. Collect all valid content pages.
-     Exclude:
-       - root-level index.md / axiom.md
-       - non-.md files (e.g., css)
-       - files not inside a folder (/folder/file.md のみ)
-     Liquid コメントは構文をパースするため、HTML コメントを使用して安全化。
--->
-
 {% assign pages = site.pages
   | where_exp: "p", "p.path contains '.md'"
   | where_exp: "p", "p.path != '/index.md'"
@@ -87,21 +78,9 @@ Here is a list of hypotheses, in random order.
   | where_exp: "p", "p.path | split: '/' | size > 2"
 %}
 
-<!--
-  1. Group pages by their top-level folder.
-     例: /Reasoning_Fundamental/Axiom.md → "Reasoning_Fundamental"
--->
-
 {% assign grouped = pages
   | group_by_exp: "p", "p.path | split: '/' | slice: 1,1 | first"
 %}
-
-<!--
-  2. Remove pseudo-folders:
-       - css
-       - index.md
-       - Axiom.md
--->
 
 {% assign cleaned = grouped
   | reject: "name", "css"
@@ -111,21 +90,12 @@ Here is a list of hypotheses, in random order.
 
 {% assign sorted = cleaned | sort: "name" %}
 
-<!--
-  3. Extract Reasoning_Fundamental manually.
-     Liquid 3.10 の制約により、フィルタを使わずに比較。
--->
-
 {% assign rf = nil %}
 {% for f in sorted %}
   {% if f.name == "Reasoning_Fundamental" or f.name == "reasoning_fundamental" %}
     {% assign rf = f %}
   {% endif %}
 {% endfor %}
-
-<!--
-  4. Render Reasoning_Fundamental at the top.
--->
 
 {% if rf %}
 ## Reasoning Fundamental
@@ -138,10 +108,6 @@ Here is a list of hypotheses, in random order.
   </ul>
 </details>
 {% endif %}
-
-<!--
-  5. Render all other folders in alphabetical order.
--->
 
 {% for folder in sorted %}
   {% unless folder.name == "Reasoning_Fundamental" or folder.name == "reasoning_fundamental" %}
@@ -156,7 +122,5 @@ Here is a list of hypotheses, in random order.
 </details>
   {% endunless %}
 {% endfor %}
-
-
 
 

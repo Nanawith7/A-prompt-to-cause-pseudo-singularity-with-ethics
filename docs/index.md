@@ -117,12 +117,12 @@ Here is a list of hypotheses, in random order.
   3. Extract the Reasoning_Fundamental folder manually.
      IMPORTANT:
        Liquid 3.10 cannot use filters (| downcase) inside where_exp.
-       Therefore, we must loop and compare safely.
+       Therefore, we compare using multiple literal strings.
 {%- endcomment -%}
 
 {% assign rf = nil %}
 {% for f in sorted %}
-  {% if f.name | downcase == "reasoning_fundamental" %}
+  {% if f.name == "Reasoning_Fundamental" or f.name == "reasoning_fundamental" %}
     {% assign rf = f %}
   {% endif %}
 {% endfor %}
@@ -154,7 +154,7 @@ Here is a list of hypotheses, in random order.
 {%- endcomment -%}
 
 {% for folder in sorted %}
-  {% unless folder.name | downcase == "reasoning_fundamental" %}
+  {% unless folder.name == "Reasoning_Fundamental" or folder.name == "reasoning_fundamental" %}
 ## {{ folder.name | capitalize }}
 <details>
   <summary>open</summary>

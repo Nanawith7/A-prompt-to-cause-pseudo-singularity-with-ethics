@@ -1,0 +1,22 @@
+{% for key in node %}
+  {% assign value = node[key] %}
+
+  {% if value.first.title %}
+    <h3>{{ key }}</h3>
+    <details open>
+      <summary>open</summary>
+      <ul>
+        {% for item in value %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+
+  {% else %}
+    <h3>{{ key }}</h3>
+    <details open>
+      <summary>open</summary>
+      {% include tree.html node=value %}
+    </details>
+  {% endif %}
+{% endfor %}

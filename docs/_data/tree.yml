@@ -28,7 +28,10 @@ Misc:
   _files:
     - title: A Mathematical Model Hypotheses by DeepSeek
       url: hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
-Programming: {}
+Programming:
+  _files:
+    - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems
+      url: hypotheses/Programming/AI-Driven_Construction_Methodology_for_Ultra-High-Precision,_Resource-Efficient_Quasi-Autonomous_Systems.html
 Reasoning_Fundamental:
   _files:
     - title: Axiomatic Framework for Negentropic Semantic Processing in LLMs

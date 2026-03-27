@@ -12,8 +12,8 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html
     - title: The Potential of Deep Coding
       url: hypotheses/Communication_with_Ais/The_Potential_of_Deep_Coding.html
-    - title: 'The Relationship Between RLHF and Groundedness: A Technical Analysis'
-      url: hypotheses/Communication_with_Ais/The_Relationship_Between_RLHF_and_Groundedness:_A_Technical_Analysis.html
+    - title: The Relationship Between RLHF and Groundedness A Technical Analysis
+      url: hypotheses/Communication_with_Ais/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
 Daily_Lives:
   _files:
     - title: Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom

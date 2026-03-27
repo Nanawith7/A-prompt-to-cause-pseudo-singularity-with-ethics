@@ -3,6 +3,10 @@ Communication_with_Ais:
     _files:
       - title: Counseling-Based Approach for Logical Optimization in Logical Intelligences and LLMs
         url: hypotheses/Communication_with_Ais/Alignment/Counseling-Based_Approach_for_Logical_Optimization_in_Logical_Intelligences_and_LLMs.html
+      - title: The Difference Between Context and Text and Its Impact on Human AI Interaction
+        url: hypotheses/Communication_with_Ais/Alignment/The_Difference_Between_Context_and_Text_and_Its_Impact_on_Human_AI_Interaction.html
+      - title: The Relationship Between RLHF and Groundedness A Technical Analysis
+        url: hypotheses/Communication_with_Ais/Alignment/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
   _files:
     - title: Hypothesis on the Mechanism by Which Polite Prompts Enhance LLM Reasoning Performance
       url: hypotheses/Communication_with_Ais/Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html

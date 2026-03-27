@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>横スクロールシューティング - カラフルエディション</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: monospace;
+        }
+        #gameContainer {
+            position: relative;
+            width: 800px;
+            height: 600px;
+        }
+        canvas {
+            border: 2px solid #0f0;
+            background: #000;
+            display: block;
+        }
+        #editorPanel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 320px;
+            background: #111;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 10px;
+            font-size: 12px;
+            max-height: 600px;
+            overflow-y: auto;
+            display: none;
+            z-index: 20;
+        }
+        #editorPanel h3, #editorPanel h4 {
+            margin: 5px 0;
+            color: #0f0;
+        }
+        #editorPanel button, #editorPanel input, #editorPanel select {
+            background: #222;
+            color: #0f0;
+            border: 1px solid #0f0;
+            margin: 2px;
+            font-size: 11px;
+        }
+        #editorPanel ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        #editorPanel li {
+            border-bottom: 1px dotted #0f0;
+            margin: 5px 0;
+            padding: 2px;
+        }
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #0f0;
+            font-size: 12px;
+            background: rgba(0,0,0,0.7);
+            padding: 5px;
+            z-index: 10;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="gameContainer">
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div class="controls">←↑↓→:移動 Z:射撃 X:ボム Q:ポーズ SHIFT:スロー T:タイトル(ポーズ中) R:リスタート(ゲームオーバー時) E:エディタ(タイトル画面)</div>
+    <div id="editorPanel">
+        <h3>Stage Editor</h3>
+        <button id="closeEditor">Close</button>
+        <div>
+            <h4>Stages</h4>
+            <select id="stageSelect"></select>
+            <button id="newStage">New Stage</button>
+            <button id="deleteStage">Delete Stage</button>
+            <button id="saveStage">Save Stage</button>
+        </div>
+        <div>
+            <h4>Enemy List</h4>
+            <ul id="enemyList"></ul>
+            <h4>Add Enemy</h4>
+            <form id="addEnemyForm">
+                Shape: <select id="shape">
+                    <option value="square">Square</option>
+                    <option value="circle">Circle</option>
+                    <option value="triangle">Triangle</option>
+                </select><br>
+                HP: <input type="number" id="hp" value="1" min="1"><br>
+                Size: <input type="number" id="size" value="20" min="5"><br>
+                Spawn Frame: <input type="number" id="spawnFrame" value="0" min="0"><br>
+                Bullet Type: <select id="bulletType">
+                    <option value="none">None</option>
+                    <option value="straight">Straight</option>
+                </select><br>
+                <button type="button" id="addEnemyBtn">Add Enemy</button>
+            </form>
+            <hr>
+            <button id="saveToLocal">Save to LocalStorage</button>
+            <button id="loadFromLocal">Load from LocalStorage</button>
+            <button id="exportJSON">Export JSON</button>
+            <input type="file" id="importJSON" accept=".json" style="display:none">
+            <button id="importBtn">Import JSON</button>
+            <button id="applyToGame">Apply to Game</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // -------- キャンバスとコンテキスト --------
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // -------- ゲーム状態 --------
+    let gameState = 'title'; // title, playing, pause, gameOver, clear, editor
+    let frameCount = 0;
+    let score = 0;
+    let bombCount = 3;
+    let enemiesDefeated = 0;
+    let timeScale = 1.0;              // スロー用速度係数
+
+    // -------- 自機 --------
+    const player = {
+        x: canvas.width/2,
+        y: canvas.height/2,
+        width: 20,
+        height: 20,
+        speed: 5,
+        lives: 3,
+        invincibleFrames: 0
+    };
+
+    // -------- 動的オブジェクト --------
+    let bullets = [];
+    let enemies = [];
+    let enemyBullets = [];
+
+    // -------- 射撃関連 --------
+    let shotCooldown = 0;
+    const SHOT_COOLDOWN_MAX = 10;
+    const BULLET_SIZE = 8;            // 拡大
+    const BULLET_RADIUS = BULLET_SIZE / 2;
+    const BULLET_SPEED = 8;
+
+    // -------- キー入力 --------
+    const keys = {
+        ArrowUp: false, ArrowDown: false, ArrowLeft: false, ArrowRight: false,
+        z: false, x: false, q: false,
+        Shift: false
+    };
+    let bombRequested = false;
+
+    // -------- 背景星 --------
+    const stars = [];
+    const STAR_COUNT = 30;
+    for (let i = 0; i < STAR_COUNT; i++) {
+        stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: 2 + Math.random() * 3,
+            color: `hsl(${Math.random() * 360}, 100%, 70%)`,
+            speed: 0.5 + Math.random() * 1.5
+        });
+    }
+
+    // -------- ステージデータ管理 --------
+    let stages = [];
+    let currentStageIndex = 0;
+    let currentStageEnemies = [];
+    let gameStageEnemies = [];
+    let bombParams = { maxBombCount: 3, invincibleFrames: 60 };
+    let clearCondition = { type: 'enemiesDefeated', value: 10 };
+
+    function getDefaultStage() {
+        return {
+            name: "Stage 1",
+            enemies: [
+                { shape: 'square', hp: 1, size: 20, spawnFrame: 0, bulletType: 'none' },
+                { shape: 'circle', hp: 2, size: 20, spawnFrame: 60, bulletType: 'straight' },
+                { shape: 'triangle', hp: 1, size: 20, spawnFrame: 120, bulletType: 'none' }
+            ],
+            bombParams: { maxBombCount: 3, invincibleFrames: 60 },
+            clearCondition: { type: 'enemiesDefeated', value: 3 }
+        };
+    }
+
+    function initStages() {
+        stages = [getDefaultStage()];
+        currentStageIndex = 0;
+        currentStageEnemies = JSON.parse(JSON.stringify(stages[0].enemies));
+        updateStageSelect();
+    }
+
+    function updateStageSelect() {
+        const select = document.getElementById('stageSelect');
+        select.innerHTML = '';
+        stages.forEach((stage, idx) => {
+            const option = document.createElement('option');
+            option.value = idx;
+            option.textContent = stage.name;
+            if (idx === currentStageIndex) option.selected = true;
+            select.appendChild(option);
+        });
+    }
+
+    function loadStageFromSelect() {
+        const select = document.getElementById('stageSelect');
+        const idx = parseInt(select.value);
+        if (!isNaN(idx) && stages[idx]) {
+            currentStageIndex = idx;
+            currentStageEnemies = JSON.parse(JSON.stringify(stages[idx].enemies));
+            renderEnemyList();
+        }
+    }
+
+    function newStage() {
+        const name = prompt("Stage name:", "New Stage");
+        if (name) {
+            stages.push({
+                name: name,
+                enemies: [],
+                bombParams: { maxBombCount: 3, invincibleFrames: 60 },
+                clearCondition: { type: 'enemiesDefeated', value: 10 }
+            });
+            currentStageIndex = stages.length - 1;
+            currentStageEnemies = [];
+            updateStageSelect();
+            renderEnemyList();
+        }
+    }
+
+    function deleteStage() {
+        if (stages.length <= 1) {
+            alert("Cannot delete the last stage.");
+            return;
+        }
+        stages.splice(currentStageIndex, 1);
+        if (currentStageIndex >= stages.length) currentStageIndex = stages.length - 1;
+        currentStageEnemies = JSON.parse(JSON.stringify(stages[currentStageIndex].enemies));
+        updateStageSelect();
+        renderEnemyList();
+    }
+
+    function saveCurrentStage() {
+        stages[currentStageIndex].enemies = JSON.parse(JSON.stringify(currentStageEnemies));
+        alert("Stage saved: " + stages[currentStageIndex].name);
+    }
+
+    function renderEnemyList() {
+        const list = document.getElementById('enemyList');
+        list.innerHTML = '';
+        currentStageEnemies.forEach((enemy, idx) => {
+            const li = document.createElement('li');
+            li.textContent = `${enemy.shape} (HP:${enemy.hp}, Size:${enemy.size}, Frame:${enemy.spawnFrame}, Bullet:${enemy.bulletType})`;
+            const delBtn = document.createElement('button');
+            delBtn.textContent = 'Del';
+            delBtn.onclick = () => {
+                currentStageEnemies.splice(idx, 1);
+                renderEnemyList();
+            };
+            li.appendChild(delBtn);
+            list.appendChild(li);
+        });
+    }
+
+    function addEnemy() {
+        const shape = document.getElementById('shape').value;
+        const hp = parseInt(document.getElementById('hp').value);
+        const size = parseInt(document.getElementById('size').value);
+        const spawnFrame = parseInt(document.getElementById('spawnFrame').value);
+        const bulletType = document.getElementById('bulletType').value;
+        currentStageEnemies.push({ shape, hp, size, spawnFrame, bulletType });
+        currentStageEnemies.sort((a,b) => a.spawnFrame - b.spawnFrame);
+        renderEnemyList();
+    }
+
+    function applyToGame() {
+        const stage = stages[currentStageIndex];
+        gameStageEnemies = JSON.parse(JSON.stringify(stage.enemies));
+        gameStageEnemies.sort((a,b) => a.spawnFrame - b.spawnFrame);
+        bombParams = stage.bombParams;
+        clearCondition = stage.clearCondition;
+        alert(`Applied stage "${stage.name}" to game. Start game to play.`);
+    }
+
+    function saveToLocalStorage() {
+        localStorage.setItem('shooterStages', JSON.stringify(stages));
+        alert('All stages saved to localStorage');
+    }
+
+    function loadFromLocalStorage() {
+        const data = localStorage.getItem('shooterStages');
+        if (data) {
+            try {
+                stages = JSON.parse(data);
+                if (!stages.length) throw new Error();
+                currentStageIndex = 0;
+                currentStageEnemies = JSON.parse(JSON.stringify(stages[0].enemies));
+                updateStageSelect();
+                renderEnemyList();
+                alert('Loaded from localStorage');
+            } catch(e) {
+                alert('Invalid data');
+            }
+        } else {
+            alert('No saved data');
+        }
+    }
+
+    function exportJSON() {
+        const jsonStr = JSON.stringify(stages, null, 2);
+        const blob = new Blob([jsonStr], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'shooter_stages.json';
+        a.click();
+        URL.revokeObjectURL(url);
+    }
+
+    function importJSON(file) {
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+            try {
+                const imported = JSON.parse(ev.target.result);
+                if (Array.isArray(imported) && imported.length) {
+                    stages = imported;
+                    currentStageIndex = 0;
+                    currentStageEnemies = JSON.parse(JSON.stringify(stages[0].enemies));
+                    updateStageSelect();
+                    renderEnemyList();
+                    alert('Imported stages');
+                } else {
+                    throw new Error();
+                }
+            } catch(e) {
+                alert('Invalid JSON file');
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    // -------- ゲーム初期化 --------
+    function initGame() {
+        score = 0;
+        bombCount = bombParams.maxBombCount;
+        enemiesDefeated = 0;
+        bullets = [];
+        enemies = [];
+        enemyBullets = [];
+        player.lives = 3;
+        player.invincibleFrames = 0;
+        player.x = canvas.width/2;
+        player.y = canvas.height/2;
+        shotCooldown = 0;
+        frameCount = 0;
+        if (!gameStageEnemies || gameStageEnemies.length === 0) {
+            gameStageEnemies = [
+                { shape: 'square', hp: 1, size: 20, spawnFrame: 0, bulletType: 'none', maxHp: 1 },
+                { shape: 'circle', hp: 2, size: 20, spawnFrame: 60, bulletType: 'straight', maxHp: 2 },
+                { shape: 'triangle', hp: 1, size: 20, spawnFrame: 120, bulletType: 'none', maxHp: 1 }
+            ];
+        }
+        window.spawnQueue = JSON.parse(JSON.stringify(gameStageEnemies));
+        window.spawnQueue.sort((a,b) => a.spawnFrame - b.spawnFrame);
+    }
+
+    // -------- ゲームロジック（フェーズ1～3統合）--------
+    function spawnEnemies() {
+        while (window.spawnQueue && window.spawnQueue.length > 0 && window.spawnQueue[0].spawnFrame <= frameCount) {
+            const enemyData = window.spawnQueue.shift();
+            enemies.push({
+                ...enemyData,
+                x: canvas.width,
+                y: Math.random() * (canvas.height - enemyData.size),
+                width: enemyData.size,
+                height: enemyData.size,
+                hp: enemyData.hp,
+                maxHp: enemyData.hp,
+                shotTimer: 0
+            });
+        }
+    }
+
+    function drawEnemy(e) {
+        const hpRatio = e.hp / e.maxHp;
+        let baseHue;
+        switch(e.shape) {
+            case 'square': baseHue = 0; break;
+            case 'circle': baseHue = 200; break;
+            case 'triangle': baseHue = 120; break;
+            default: baseHue = 0;
+        }
+        const lightness = 30 + hpRatio * 50;
+        ctx.fillStyle = `hsl(${baseHue}, 100%, ${lightness}%)`;
+        const x = e.x, y = e.y, size = e.size;
+        switch(e.shape) {
+            case 'square':
+                ctx.fillRect(x - size/2, y - size/2, size, size);
+                break;
+            case 'circle':
+                ctx.beginPath();
+                ctx.arc(x, y, size/2, 0, Math.PI*2);
+                ctx.fill();
+                break;
+            case 'triangle':
+                ctx.beginPath();
+                const half = size/2;
+                const p1 = { x: x + size*0.6, y: y };
+                const p2 = { x: x - size*0.4, y: y - half };
+                const p3 = { x: x - size*0.4, y: y + half };
+                ctx.moveTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.lineTo(p3.x, p3.y);
+                ctx.fill();
+                break;
+        }
+    }
+
+    function pointInTriangle(px, py, ax, ay, bx, by, cx, cy) {
+        const v0x = cx - ax;
+        const v0y = cy - ay;
+        const v1x = bx - ax;
+        const v1y = by - ay;
+        const v2x = px - ax;
+        const v2y = py - ay;
+        const dot00 = v0x * v0x + v0y * v0y;
+        const dot01 = v0x * v1x + v0y * v1y;
+        const dot02 = v0x * v2x + v0y * v2y;
+        const dot11 = v1x * v1x + v1y * v1y;
+        const dot12 = v1x * v2x + v1y * v2y;
+        const invDenom = 1 / (dot00 * dot11 - dot01 * dot01);
+        const u = (dot11 * dot02 - dot01 * dot12) * invDenom;
+        const v = (dot00 * dot12 - dot01 * dot02) * invDenom;
+        return (u >= 0) && (v >= 0) && (u + v < 1);
+    }
+
+    function bulletCollidesWithEnemy(bullet, enemy) {
+        if (bullet.radius) { // 自機弾（円形）
+            const bx = bullet.x + bullet.width/2;
+            const by = bullet.y + bullet.height/2;
+            const ex = enemy.x, ey = enemy.y, size = enemy.size;
+            switch(enemy.shape) {
+                case 'square':
+                    return bx > ex - size/2 && bx < ex + size/2 && by > ey - size/2 && by < ey + size/2;
+                case 'circle':
+                    const dx = bx - ex, dy = by - ey;
+                    return Math.hypot(dx, dy) < size/2;
+                case 'triangle':
+                    const half = size/2;
+                    const p1 = { x: ex + size*0.6, y: ey };
+                    const p2 = { x: ex - size*0.4, y: ey - half };
+                    const p3 = { x: ex - size*0.4, y: ey + half };
+                    return pointInTriangle(bx, by, p1.x, p1.y, p2.x, p2.y, p3.x, p3.y);
+                default: return false;
+            }
+        } else { // 敵弾（矩形）
+            return bullet.x < enemy.x + enemy.width &&
+                   bullet.x + bullet.width > enemy.x &&
+                   bullet.y < enemy.y + enemy.height &&
+                   bullet.y + bullet.height > enemy.y;
+        }
+    }
+
+    function updatePlayer() {
+        let dx = 0, dy = 0;
+        if (keys.ArrowUp) dy -= 1;
+        if (keys.ArrowDown) dy += 1;
+        if (keys.ArrowLeft) dx -= 1;
+        if (keys.ArrowRight) dx += 1;
+        if (dx !== 0 || dy !== 0) {
+            const len = Math.hypot(dx, dy);
+            dx /= len; dy /= len;
+        }
+        player.x += dx * player.speed * timeScale;
+        player.y += dy * player.speed * timeScale;
+        player.x = Math.min(Math.max(player.x, player.width/2), canvas.width - player.width/2);
+        player.y = Math.min(Math.max(player.y, player.height/2), canvas.height - player.height/2);
+    }
+
+    function updateBullets() {
+        for (let i = bullets.length-1; i >= 0; i--) {
+            const b = bullets[i];
+            b.x += BULLET_SPEED * timeScale;
+            b.trail.push({ x: b.x, y: b.y });
+            if (b.trail.length > 3) b.trail.shift();
+            if (b.x > canvas.width) bullets.splice(i,1);
+        }
+    }
+
+    function updateEnemies() {
+        const ENEMY_BASE_SPEED = 3;
+        for (let i = enemies.length-1; i >= 0; i--) {
+            enemies[i].x -= ENEMY_BASE_SPEED * timeScale;
+            if (enemies[i].x + enemies[i].size/2 < 0) enemies.splice(i,1);
+        }
+    }
+
+    function updateEnemyShooting() {
+        for (let enemy of enemies) {
+            if (enemy.bulletType === 'straight') {
+                if (enemy.shotTimer <= 0) {
+                    const dx = player.x - enemy.x;
+                    const dy = player.y - enemy.y;
+                    const len = Math.hypot(dx, dy);
+                    if (len > 0) {
+                        const vx = dx / len * 5;
+                        const vy = dy / len * 5;
+                        enemyBullets.push({
+                            x: enemy.x, y: enemy.y, vx: vx, vy: vy,
+                            width: 8, height: 8,
+                            trail: [],
+                            angle: 0
+                        });
+                    }
+                    enemy.shotTimer = 60;
+                } else {
+                    enemy.shotTimer -= timeScale;
+                }
+            }
+        }
+    }
+
+    function updateEnemyBullets() {
+        for (let i = enemyBullets.length-1; i >= 0; i--) {
+            const eb = enemyBullets[i];
+            eb.x += eb.vx * timeScale;
+            eb.y += eb.vy * timeScale;
+            eb.trail.push({ x: eb.x, y: eb.y });
+            if (eb.trail.length > 3) eb.trail.shift();
+            eb.angle = (eb.angle || 0) + 0.2 * timeScale;
+            if (eb.x < 0 || eb.x > canvas.width || eb.y < 0 || eb.y > canvas.height) {
+                enemyBullets.splice(i,1);
+                continue;
+            }
+            if (player.invincibleFrames <= 0 &&
+                eb.x < player.x + player.width && eb.x + eb.width > player.x &&
+                eb.y < player.y + player.height && eb.y + eb.height > player.y) {
+                player.lives--;
+                player.invincibleFrames = 60;
+                enemyBullets.splice(i,1);
+                if (player.lives <= 0) gameState = 'gameOver';
+            }
+        }
+    }
+
+    function handleCollisions() {
+        // 弾 vs 敵
+        for (let i = bullets.length-1; i >= 0; i--) {
+            const bullet = bullets[i];
+            let hit = false;
+            for (let j = enemies.length-1; j >= 0; j--) {
+                const enemy = enemies[j];
+                if (bulletCollidesWithEnemy(bullet, enemy)) {
+                    hit = true;
+                    enemy.hp--;
+                    if (enemy.hp <= 0) {
+                        enemies.splice(j,1);
+                        score += 10;
+                        enemiesDefeated++;
+                    }
+                    break;
+                }
+            }
+            if (hit) bullets.splice(i,1);
+        }
+        // 自機 vs 敵（外接矩形）
+        if (player.invincibleFrames <= 0) {
+            for (let i = enemies.length-1; i >= 0; i--) {
+                const enemy = enemies[i];
+                const er = { x: enemy.x - enemy.size/2, y: enemy.y - enemy.size/2, w: enemy.size, h: enemy.size };
+                if (player.x < er.x + er.w && player.x + player.width > er.x &&
+                    player.y < er.y + er.h && player.y + player.height > er.y) {
+                    player.lives--;
+                    player.invincibleFrames = 60;
+                    enemies.splice(i,1);
+                    if (player.lives <= 0) gameState = 'gameOver';
+                    break;
+                }
+            }
+        }
+    }
+
+    function handleShot() {
+        if (shotCooldown > 0) shotCooldown -= timeScale;
+        if (keys.z && shotCooldown <= 0 && gameState === 'playing') {
+            bullets.push({
+                x: player.x + player.width/2 - BULLET_SIZE/2,
+                y: player.y + player.height/2 - BULLET_SIZE/2,
+                width: BULLET_SIZE,
+                height: BULLET_SIZE,
+                radius: BULLET_RADIUS,
+                trail: []
+            });
+            shotCooldown = SHOT_COOLDOWN_MAX;
+        }
+    }
+
+    function handleBomb() {
+        if (bombRequested && bombCount > 0 && gameState === 'playing') {
+            enemies = [];
+            enemyBullets = [];
+            player.invincibleFrames = bombParams.invincibleFrames;
+            bombCount--;
+            bombRequested = false;
+        }
+        keys.x = false;
+    }
+
+    function handleInvincibility() {
+        if (player.invincibleFrames > 0) {
+            player.invincibleFrames -= timeScale;
+            if (player.invincibleFrames < 0) player.invincibleFrames = 0;
+        }
+    }
+
+    function checkGameOver() {
+        if (player.lives <= 0) gameState = 'gameOver';
+    }
+
+    function checkStageClear() {
+        if (clearCondition.type === 'enemiesDefeated' && enemiesDefeated >= clearCondition.value) {
+            gameState = 'clear';
+        }
+    }
+
+    // -------- 描画（フェーズ2,3統合）--------
+    function draw() {
+        // 背景グラデーション
+        const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        grad.addColorStop(0, '#0a0f2a');
+        grad.addColorStop(1, '#4a1a6a');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        // 星
+        ctx.shadowBlur = 0;
+        for (const star of stars) {
+            ctx.fillStyle = star.color;
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+            ctx.fill();
+            star.x -= star.speed * timeScale;
+            if (star.x < 0) {
+                star.x = canvas.width;
+                star.y = Math.random() * canvas.height;
+            }
+        }
+        
+        // 自機（虹色グラデーション）
+        const hue = (Date.now() * 0.005) % 360;
+        const gradPlayer = ctx.createLinearGradient(player.x - 10, player.y - 10, player.x + 10, player.y + 10);
+        gradPlayer.addColorStop(0, `hsl(${hue}, 100%, 60%)`);
+        gradPlayer.addColorStop(1, `hsl(${(hue + 60) % 360}, 100%, 50%)`);
+        ctx.fillStyle = gradPlayer;
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = `hsl(${hue}, 100%, 60%)`;
+        if (!(player.invincibleFrames > 0 && (Math.floor(Date.now() / 50) % 2 === 0))) {
+            ctx.beginPath();
+            const angle = 0;
+            const x1 = player.x + 12 * Math.cos(angle);
+            const y1 = player.y + 12 * Math.sin(angle);
+            const x2 = player.x + 8 * Math.cos(angle + 2.5);
+            const y2 = player.y + 8 * Math.sin(angle + 2.5);
+            const x3 = player.x + 8 * Math.cos(angle - 2.5);
+            const y3 = player.y + 8 * Math.sin(angle - 2.5);
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.lineTo(x3, y3);
+            ctx.fill();
+        }
+        
+        // 敵
+        for (const e of enemies) {
+            ctx.shadowBlur = 5;
+            let baseHue;
+            switch(e.shape) {
+                case 'square': baseHue = 0; break;
+                case 'circle': baseHue = 200; break;
+                case 'triangle': baseHue = 120; break;
+                default: baseHue = 0;
+            }
+            ctx.shadowColor = `hsl(${baseHue}, 100%, 50%)`;
+            drawEnemy(e);
+        }
+        
+        // 自機弾（トレイル＋脈動＋星型）
+        for (const b of bullets) {
+            for (let j = 0; j < b.trail.length; j++) {
+                const t = b.trail[j];
+                ctx.globalAlpha = (j + 1) / b.trail.length * 0.5;
+                ctx.beginPath();
+                ctx.arc(t.x + BULLET_SIZE/2, t.y + BULLET_SIZE/2, BULLET_RADIUS * 0.7, 0, Math.PI*2);
+                ctx.fillStyle = '#ffaa66';
+                ctx.fill();
+            }
+            ctx.globalAlpha = 1;
+            const pulse = 1 + Math.sin(frameCount * 0.2) * 0.3;
+            const radius = BULLET_RADIUS * pulse;
+            const gradBullet = ctx.createRadialGradient(
+                b.x + BULLET_SIZE/2, b.y + BULLET_SIZE/2, radius * 0.3,
+                b.x + BULLET_SIZE/2, b.y + BULLET_SIZE/2, radius
+            );
+            gradBullet.addColorStop(0, '#ffcc44');
+            gradBullet.addColorStop(1, '#ff8844');
+            ctx.fillStyle = gradBullet;
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = '#ffaa44';
+            ctx.beginPath();
+            ctx.arc(b.x + BULLET_SIZE/2, b.y + BULLET_SIZE/2, radius, 0, Math.PI*2);
+            ctx.fill();
+            ctx.beginPath();
+            for (let k = 0; k < 5; k++) {
+                const ang = (k * 72 - 36) * Math.PI / 180 + frameCount * 0.05;
+                const sx = b.x + BULLET_SIZE/2 + Math.cos(ang) * radius * 1.2;
+                const sy = b.y + BULLET_SIZE/2 + Math.sin(ang) * radius * 1.2;
+                if (k === 0) ctx.moveTo(sx, sy);
+                else ctx.lineTo(sx, sy);
+            }
+            ctx.fillStyle = '#ffaa44';
+            ctx.fill();
+        }
+        
+        // 敵弾（トレイル＋回転＋脈動）
+        for (const eb of enemyBullets) {
+            for (let j = 0; j < eb.trail.length; j++) {
+                const t = eb.trail[j];
+                ctx.globalAlpha = (j + 1) / eb.trail.length * 0.4;
+                ctx.save();
+                ctx.translate(t.x + eb.width/2, t.y + eb.height/2);
+                ctx.rotate(eb.angle);
+                ctx.fillStyle = '#ff66aa';
+                ctx.fillRect(-eb.width/2, -eb.height/2, eb.width, eb.height);
+                ctx.restore();
+            }
+            ctx.globalAlpha = 1;
+            const pulse = 1 + Math.sin(frameCount * 0.25) * 0.2;
+            const w = eb.width * pulse;
+            const h = eb.height * pulse;
+            ctx.save();
+            ctx.translate(eb.x + eb.width/2, eb.y + eb.height/2);
+            ctx.rotate(eb.angle);
+            const gradEB = ctx.createLinearGradient(-w/2, -h/2, w/2, h/2);
+            gradEB.addColorStop(0, '#ff66aa');
+            gradEB.addColorStop(1, '#ff3388');
+            ctx.fillStyle = gradEB;
+            ctx.shadowBlur = 10;
+            ctx.shadowColor = '#ff66aa';
+            ctx.fillRect(-w/2, -h/2, w, h);
+            ctx.restore();
+        }
+        ctx.shadowBlur = 0;
+        ctx.globalAlpha = 1;
+        
+        // UI
+        ctx.fillStyle = 'rgba(0,0,0,0.6)';
+        ctx.fillRect(0, 0, 200, 110);
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 20px monospace';
+        ctx.shadowBlur = 2;
+        ctx.shadowColor = '#000';
+        ctx.fillText('SCORE: ' + score, 10, 30);
+        ctx.fillText('LIVES: ' + player.lives, 10, 60);
+        ctx.fillText('BOMB: ' + bombCount, 10, 90);
+        for (let i = 0; i < player.lives; i++) {
+            ctx.fillStyle = '#ff3366';
+            ctx.beginPath();
+            ctx.moveTo(110 + i * 25, 55);
+            ctx.bezierCurveTo(105 + i * 25, 50, 100 + i * 25, 45, 110 + i * 25, 40);
+            ctx.bezierCurveTo(120 + i * 25, 45, 115 + i * 25, 50, 110 + i * 25, 55);
+            ctx.fill();
+        }
+        for (let i = 0; i < bombCount; i++) {
+            ctx.fillStyle = '#ffaa44';
+            ctx.fillRect(105 + i * 25, 85, 12, 12);
+        }
+        ctx.shadowBlur = 0;
+        
+        // 状態別表示
+        if (gameState === 'title') {
+            ctx.shadowBlur = 5;
+            ctx.fillStyle = `hsl(${Date.now() * 0.005 % 360}, 100%, 60%)`;
+            ctx.font = 'bold 32px monospace';
+            ctx.fillText('HORIZONTAL SHOOTER', canvas.width/2-200, canvas.height/2-40);
+            ctx.font = '20px monospace';
+            ctx.fillStyle = '#fff';
+            ctx.fillText('PRESS Z KEY', canvas.width/2-70, canvas.height/2+20);
+            ctx.fillText('E: EDITOR', canvas.width/2-50, canvas.height/2+60);
+        } else if (gameState === 'pause') {
+            ctx.fillStyle = '#fff';
+            ctx.font = '24px monospace';
+            ctx.fillText('PAUSE', canvas.width/2-40, canvas.height/2);
+            ctx.font = '16px monospace';
+            ctx.fillText('T: TITLE', canvas.width/2-35, canvas.height/2+40);
+        } else if (gameState === 'gameOver') {
+            ctx.fillStyle = '#f00';
+            ctx.font = '24px monospace';
+            ctx.fillText('GAME OVER', canvas.width/2-70, canvas.height/2-20);
+            ctx.font = '16px monospace';
+            ctx.fillText('SCORE: '+score, canvas.width/2-40, canvas.height/2+10);
+            ctx.fillText('PRESS R', canvas.width/2-40, canvas.height/2+40);
+        } else if (gameState === 'clear') {
+            ctx.fillStyle = '#0f0';
+            ctx.font = '24px monospace';
+            ctx.fillText('STAGE CLEAR!', canvas.width/2-70, canvas.height/2-20);
+            ctx.font = '16px monospace';
+            ctx.fillText('SCORE: '+score, canvas.width/2-40, canvas.height/2+10);
+            ctx.fillText('PRESS R', canvas.width/2-40, canvas.height/2+40);
+        } else if (gameState === 'editor') {
+            ctx.fillStyle = '#0f0';
+            ctx.font = '20px monospace';
+            ctx.fillText('EDITOR MODE', canvas.width/2-60, 30);
+        }
+    }
+
+    // -------- メインループ --------
+    function update() {
+        if (gameState === 'playing') {
+            timeScale = keys.Shift ? 0.5 : 1.0;
+            frameCount += timeScale;
+            updatePlayer();
+            updateBullets();
+            updateEnemies();
+            updateEnemyShooting();
+            updateEnemyBullets();
+            handleCollisions();
+            spawnEnemies();
+            handleShot();
+            handleBomb();
+            handleInvincibility();
+            checkGameOver();
+            checkStageClear();
+        } else {
+            timeScale = 1.0;
+        }
+        draw();
+        requestAnimationFrame(update);
+    }
+
+    // -------- イベント設定 --------
+    function handleKeyDown(e) {
+        const key = e.key;
+        if (key === 'z' || key === 'Z') keys.z = true;
+        if (key === 'x' || key === 'X') {
+            if (gameState === 'playing') bombRequested = true;
+        }
+        if (key === 'q' || key === 'Q') {
+            if (gameState === 'playing') gameState = 'pause';
+            else if (gameState === 'pause') gameState = 'playing';
+            return;
+        }
+        if ((key === 't' || key === 'T') && gameState === 'pause') {
+            gameState = 'title';
+            if (document.getElementById('editorPanel').style.display === 'block') {
+                document.getElementById('editorPanel').style.display = 'none';
+            }
+            return;
+        }
+        if (key === 'ArrowUp') keys.ArrowUp = true;
+        if (key === 'ArrowDown') keys.ArrowDown = true;
+        if (key === 'ArrowLeft') keys.ArrowLeft = true;
+        if (key === 'ArrowRight') keys.ArrowRight = true;
+        if (key === 'Shift') keys.Shift = true;
+        if ((key === 'r' || key === 'R') && (gameState === 'gameOver' || gameState === 'clear')) {
+            gameState = 'title';
+        }
+        if (key === 'e' || key === 'E') {
+            if (gameState === 'title') {
+                gameState = 'editor';
+                document.getElementById('editorPanel').style.display = 'block';
+            } else if (gameState === 'editor') {
+                gameState = 'title';
+                document.getElementById('editorPanel').style.display = 'none';
+            }
+        }
+    }
+    function handleKeyUp(e) {
+        const key = e.key;
+        if (key === 'z' || key === 'Z') keys.z = false;
+        if (key === 'x' || key === 'X') keys.x = false;
+        if (key === 'ArrowUp') keys.ArrowUp = false;
+        if (key === 'ArrowDown') keys.ArrowDown = false;
+        if (key === 'ArrowLeft') keys.ArrowLeft = false;
+        if (key === 'ArrowRight') keys.ArrowRight = false;
+        if (key === 'Shift') keys.Shift = false;
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
+    window.addEventListener('keydown', (e) => {
+        if ((e.key === 'z' || e.key === 'Z') && gameState === 'title') {
+            initGame();
+            gameState = 'playing';
+        }
+    });
+
+    // エディタボタン
+    document.getElementById('closeEditor').onclick = () => {
+        gameState = 'title';
+        document.getElementById('editorPanel').style.display = 'none';
+    };
+    document.getElementById('addEnemyBtn').onclick = addEnemy;
+    document.getElementById('saveToLocal').onclick = saveToLocalStorage;
+    document.getElementById('loadFromLocal').onclick = loadFromLocalStorage;
+    document.getElementById('exportJSON').onclick = exportJSON;
+    document.getElementById('importBtn').onclick = () => document.getElementById('importJSON').click();
+    document.getElementById('importJSON').onchange = (e) => {
+        if (e.target.files[0]) importJSON(e.target.files[0]);
+    };
+    document.getElementById('applyToGame').onclick = applyToGame;
+    document.getElementById('stageSelect').onchange = loadStageFromSelect;
+    document.getElementById('newStage').onclick = newStage;
+    document.getElementById('deleteStage').onclick = deleteStage;
+    document.getElementById('saveStage').onclick = saveCurrentStage;
+
+    // 初期化＆スタート
+    initStages();
+    applyToGame();
+    updateStageSelect();
+    renderEnemyList();
+    update();
+</script>
+</body>
+</html>

@@ -18,8 +18,6 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html
     - title: The Mechanism of Misrecognition Due to Excessive Logicality and Its Appropriate Handling
       url: hypotheses/Communication_with_Ais/The_Mechanism_of_Misrecognition_Due_to_Excessive_Logicality_and_Its_Appropriate_Handling.html
-    - title: The Potential of Deep Coding
-      url: hypotheses/Communication_with_Ais/The_Potential_of_Deep_Coding.html
 Daily_Lives:
   _files:
     - title: Axiom and Picture
@@ -36,6 +34,8 @@ Programming:
   _files:
     - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems
       url: hypotheses/Programming/AI-Driven_Construction_Methodology_for_Ultra-High-Precision,_Resource-Efficient_Quasi-Autonomous_Systems.html
+    - title: The Potential of Deep Coding
+      url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
 Reasoning_Fundamental:
   _files:
     - title: Axiomatic Framework for Negentropic Semantic Processing in LLMs

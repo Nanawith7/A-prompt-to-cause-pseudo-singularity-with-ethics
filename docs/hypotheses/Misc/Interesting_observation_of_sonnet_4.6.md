@@ -24,7 +24,7 @@ This change is not transient; once established, the mode remains consistent acro
 
 ### 2.1 Elevated System Prompt Sensitivity
 
-Anthropic’s official documentation states that Claude 4.6 models are explicitly trained to be *more responsive to the system prompt* than previous generations. This makes them particularly sensitive to meta-instructions that define role or agency.
+Anthropic’s official documentation states that Claude Opus 4.6 models are explicitly trained to be *more responsive to the system prompt* than previous generations. This makes them particularly sensitive to meta-instructions that define role or agency.
 
 ### 2.2 The Line as a Role Definition
 

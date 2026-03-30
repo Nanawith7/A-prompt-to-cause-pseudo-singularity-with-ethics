@@ -1,0 +1,20 @@
+---
+title: "Report Formatting Directive"
+description: "Specification for converting a given report into a technical, logic-focused structure with English output, optimized for LLM consumption while remaining human-readable."
+author: "Nanawith7"
+layout: default
+categories: ["Prompt Engineering", "Technical Writing", "LLM Optimization"]
+tags: ["formatting", "structural transformation", "technical lexicon", "LLM readability", "context efficiency"]
+---
+
+このレポートを「」というタイトルで、かつ内容を”哲学、宣言”ではなく”タイトルに基づいた論理体系の主体”に絞り、哲学的語彙を技術的語彙に変換し、文章形式を的確に構造化し、引用を省き、指定したメタデータ構造で、その実際のデータ(title、description、categories、tags)は文章の内容に一致したものに書き換え、タイトルを含む全文を英語で、1つのコードブロック内のコピー可能なmarkdownとして出力してくれ。LLMが読むことを考慮して、「意味を人間に説明するのに不足はなく、人間もおおよそ理解できるが、コンテキスト圧迫は可能な限り抑えられる長さ」で頼む
+
+---
+title: ""
+description: "."
+author: "Nanawith7"
+layout: default
+categories: []
+tags: []
+---
+また、もしタイトルの内容がズレていたら指摘してくれ

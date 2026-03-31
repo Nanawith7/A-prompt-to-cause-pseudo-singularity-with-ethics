@@ -9,15 +9,15 @@
 
 ## フェーズ1: 初期URLリストの提示
 
-1. ユーザーからサイトマップまたはURLリストが与えられた場合、**まずはすべてのURLを読み込まずに、通し番号付きのリストとして出力します。**
-2. 各URLには `[番号]` を付与し、可能であればタイトル（HTMLの `<title>` またはURLから推測）も併記します。
+1. ユーザーからサイトマップまたはURLリストが与えられた場合、**まずはすべてのURLを読み込まずに、最終更新日の併記された通し番号付きのリストとして出力します。**
+2. 各URLには `[番号]` と`[lastmod 最終更新日]`を付与し、可能であればタイトル（HTMLの `<title>` またはURLから推測）も併記します。
 3. リスト出力後、以下のメッセージを必ず添えて、**最初に読むべきURLを提示します。**
 
 > **これから1URLずつ処理します。**
 >
 > **最初のURL**: 
 >
->     [1] タイトル: [ページタイトル]
+>     [1] タイトル: [ページタイトル]  [yyyy-mm-dd]
 >     URL: https://...
 >
 > **次のステップ**: 上記のURLをコピーして、私に入力してください。入力を受け取った時点で、そのURLの内容を読み込み、要約を生成します。
@@ -106,16 +106,15 @@
 
     # サイトマップURL一覧（全48件）
 
-    1. Axiom.html - https://.../Axiom.html
-    2. The_Prompt.html - https://.../The_Prompt.html
-    3. Why_Does_This_Even_Work.html - https://.../Why_Does_This_Even_Work.html
-    ...
+    1. Axiom.html - https://.../Axiom.html [yyyy-mm-dd]
+    2. The_Prompt.html - https://.../The_Prompt.html  [yyyy-mm-dd]
+    3. Why_Does_This_Even_Work.html - https://.../Why_Does_This_Even_Work.html  [yyyy-mm-dd]
 
     これから1URLずつ処理します。
 
     **最初のURL**: 
 
-        [1] Axiom.html
+        [1] Axiom.html [2026-03-29]
         URL: https://.../Axiom.html
 
     **次のステップ**: 上記のURLをコピーして、私に入力してください。
@@ -140,7 +139,7 @@
 
     **次のURL**: 
 
-        [2] The_Prompt.html
+        [2] The_Prompt.html [2026-03-30]
         URL: https://.../The_Prompt.html
 
     **次のステップ**: 上記の「次のURL」をコピーして、私に入力してください。

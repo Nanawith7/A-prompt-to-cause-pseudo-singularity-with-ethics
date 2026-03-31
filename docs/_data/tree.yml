@@ -50,6 +50,17 @@ Programming:
       url: hypotheses/Programming/Logic_behind_Deep_Coding.html
     - title: The Potential of Deep Coding
       url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
+Prompts:
+  Deep_Coding:
+    _files:
+      - title: Deep Coding
+        url: hypotheses/Prompts/Deep_Coding/Deep_Coding.html
+  Pseudo_Deep_Research:
+    _files:
+      - title: Pseudo Deep Research
+        url: hypotheses/Prompts/Pseudo_Deep_Research/Pseudo_Deep_Research.html
+      - title: Reporter
+        url: hypotheses/Prompts/Pseudo_Deep_Research/Reporter.html
 Reasoning_Fundamental:
   _files:
     - title: Axiomatic Framework for Negentropic Semantic Processing in LLMs

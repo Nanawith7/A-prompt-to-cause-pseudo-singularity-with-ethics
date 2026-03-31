@@ -22,29 +22,32 @@ jobs:
         run: |
           mkdir -p docs
 
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > docs/sitemap.xml
+          # フロントマター（Jekyllがレイアウトを適用しないようにする）
+          echo '---' > docs/sitemap.xml
+          echo 'layout: null' >> docs/sitemap.xml
+          echo '---' >> docs/sitemap.xml
+
+          # XML宣言とurlset開始（追記モードで）
+          echo '<?xml version="1.0" encoding="UTF-8"?>' >> docs/sitemap.xml
           echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
 
-          # docs/ 直下 + docs 以下すべて
-          for file in $(git ls-files "docs/*.md" "docs/*.html" "docs/**/*.md" "docs/**/*.html"); do
-
-
-            # remove docs/ prefix for public URL
+          # globstarを有効にして再帰的にファイルを取得
+          shopt -s globstar
+          for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+            # docs/ プレフィックスを除去
             public_path="${file#docs/}"
-
-            # convert .md → .html
+            # .md → .html 変換
             public_path="${public_path%.*}.html"
-
-            # construct public URL
+            # URL構築
             url="https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/$public_path"
-
-            # lastmod from git
+            # gitから最終更新日を取得
             lastmod=$(git log -1 --format="%cI" -- "$file")
-            # priority rules based on public path
+
+            # 優先度ルール
             if [[ "$public_path" == "index.html" || "$public_path" == "Axiom.html" ]]; then
               priority="1.0"
             elif [[ "$public_path" == *"Reasoning_Fundamental"* ]]; then
-            priority="0.9"
+              priority="0.9"
             else
               priority="0.8"
             fi

@@ -43,3 +43,8 @@ And here is the analyzation of it.
 {::nomarkdown}
 {% include tree.html node=site.data.tree %}
 {:/nomarkdown}
+
+---
+
+Those pages are made of PDR methodology.
+[Discussion](https://github.com/Nanawith7/A-prompt-to-cause-pseudo-singularity-with-ethics/discussions)

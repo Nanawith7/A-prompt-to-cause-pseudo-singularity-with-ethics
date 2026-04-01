@@ -1,0 +1,47 @@
+name: Generate Sitemap TXT
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write  
+
+jobs:
+  build-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap.txt
+        run: |
+          mkdir -p docs
+
+          # sitemap.txt を新規作成（空ファイル）
+          > docs/sitemap.txt
+
+          # globstarを有効にして再帰的にファイルを取得
+          shopt -s globstar
+          for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+            # docs/ プレフィックスを除去
+            public_path="${file#docs/}"
+            # .md → .html 変換
+            public_path="${public_path%.*}.html"
+            # URL構築
+            url="https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/$public_path"
+            # URLを1行ずつ追記
+            echo "$url" >> docs/sitemap.txt
+          done
+
+      - name: Commit sitemap.txt
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/sitemap.txt
+          git commit -m "Update sitemap.txt" || echo "No changes"
+          git push

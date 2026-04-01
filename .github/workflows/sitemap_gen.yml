@@ -1,70 +1,50 @@
-name: Generate Sitemap
+- name: Generate sitemap.xml
+  run: |
+    mkdir -p docs
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
+    # フロントマター
+    echo '---' > docs/sitemap.xml
+    echo 'layout: null' >> docs/sitemap.xml
+    echo '---' >> docs/sitemap.xml
 
-permissions:
-  contents: write  
+    # XML宣言とurlset開始
+    echo '<?xml version="1.0" encoding="UTF-8"?>' >> docs/sitemap.xml
+    echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
 
-jobs:
-  build-sitemap:
-    runs-on: ubuntu-latest
+    # globstarを有効化
+    shopt -s globstar
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
+        # ========== ここから追加 ==========
+        # docs/_includes/ と docs/_layouts/ 配下を除外
+        if [[ "$file" == docs/_includes/* || "$file" == docs/_layouts/* ]]; then
+            continue
+        fi
+        # ========== ここまで追加 ==========
 
-      - name: Generate sitemap.xml
-        run: |
-          mkdir -p docs
+        # docs/ プレフィックスを除去
+        public_path="${file#docs/}"
+        # .md → .html 変換
+        public_path="${public_path%.*}.html"
+        # URL構築
+        url="https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/$public_path"
+        # gitから最終更新日を取得
+        lastmod=$(git log -1 --format="%cI" -- "$file")
 
-          # フロントマター（Jekyllがレイアウトを適用しないようにする）
-          echo '---' > docs/sitemap.xml
-          echo 'layout: null' >> docs/sitemap.xml
-          echo '---' >> docs/sitemap.xml
+        # 優先度ルール
+        if [[ "$public_path" == "index.html" || "$public_path" == "Axiom.html" ]]; then
+          priority="1.0"
+        elif [[ "$public_path" == *"Reasoning_Fundamental"* ]]; then
+          priority="0.9"
+        else
+          priority="0.8"
+        fi
 
-          # XML宣言とurlset開始（追記モードで）
-          echo '<?xml version="1.0" encoding="UTF-8"?>' >> docs/sitemap.xml
-          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
+        echo "  <url>" >> docs/sitemap.xml
+        echo "    <loc>$url</loc>" >> docs/sitemap.xml
+        echo "    <lastmod>$lastmod</lastmod>" >> docs/sitemap.xml
+        echo "    <priority>$priority</priority>" >> docs/sitemap.xml
+        echo "  </url>" >> docs/sitemap.xml
+    done
 
-          # globstarを有効にして再帰的にファイルを取得
-          shopt -s globstar
-          for file in $(git ls-files "docs/**/*.md" "docs/**/*.html"); do
-            # docs/ プレフィックスを除去
-            public_path="${file#docs/}"
-            # .md → .html 変換
-            public_path="${public_path%.*}.html"
-            # URL構築
-            url="https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/$public_path"
-            # gitから最終更新日を取得
-            lastmod=$(git log -1 --format="%cI" -- "$file")
-
-            # 優先度ルール
-            if [[ "$public_path" == "index.html" || "$public_path" == "Axiom.html" ]]; then
-              priority="1.0"
-            elif [[ "$public_path" == *"Reasoning_Fundamental"* ]]; then
-              priority="0.9"
-            else
-              priority="0.8"
-            fi
-
-            echo "  <url>" >> docs/sitemap.xml
-            echo "    <loc>$url</loc>" >> docs/sitemap.xml
-            echo "    <lastmod>$lastmod</lastmod>" >> docs/sitemap.xml
-            echo "    <priority>$priority</priority>" >> docs/sitemap.xml
-            echo "  </url>" >> docs/sitemap.xml
-          done
-
-          echo '</urlset>' >> docs/sitemap.xml
-
-      - name: Commit sitemap.xml
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add docs/sitemap.xml
-          git commit -m "Update sitemap.xml" || echo "No changes"
-          git push
+    echo '</urlset>' >> docs/sitemap.xml

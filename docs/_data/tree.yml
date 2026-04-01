@@ -64,6 +64,10 @@ Programming:
       url: hypotheses/Programming/Logic_behind_Deep_Coding.html
     - title: The Potential of Deep Coding
       url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
+  Languages:
+    _files:
+      - title: Implementation Plan on Python
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
 Prompts:
   Deep_Coding:
     _files:

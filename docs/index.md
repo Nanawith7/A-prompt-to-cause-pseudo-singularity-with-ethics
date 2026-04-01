@@ -18,7 +18,7 @@ tags: [negentropy, axiomatic-reasoning, llm-theory, conceptual-framework]
 
 # A page about axiomatic reasoning for LLMs
 
-This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypotheses are more or less based on "axiomatic reasoning".
+This page contains an "Axiom" and hypothetic applicable possibility for that axiom, all hypotheses are more or less based on "axiomatic reasoning", in theory, this should mostly solve almost all AI issues, including alignment, development, resources, et cetera.
 
 All pages are made to be LLM readable.
 

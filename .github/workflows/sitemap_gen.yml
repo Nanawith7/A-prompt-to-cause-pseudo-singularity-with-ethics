@@ -1,4 +1,4 @@
-name: Generate Sitemap
+name: Generate Sitemapxml
 
 on:
   push:

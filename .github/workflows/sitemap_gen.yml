@@ -73,4 +73,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add docs/sitemap.xml
           git commit -m "Update sitemap.xml" || echo "No changes"
+          git pull --rebase origin main
           git push

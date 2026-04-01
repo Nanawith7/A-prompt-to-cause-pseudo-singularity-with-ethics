@@ -2,6 +2,8 @@ Communication_with_AIs:
   _files:
     - title: An Idea for AI Long term memory
       url: hypotheses/Communication_with_AIs/An_Idea_for_AI_Long_term_memory.html
+    - title: Explaining The Structurizer
+      url: hypotheses/Communication_with_AIs/Explaining_The_Structurizer.html
 Communication_with_Ais:
   _files:
     - title: A Reverse alignment-Prompt over Architecture
@@ -73,6 +75,18 @@ Prompts:
         url: hypotheses/Prompts/Pseudo_Deep_Research/Pseudo_Deep_Research.html
       - title: Reporter
         url: hypotheses/Prompts/Pseudo_Deep_Research/Reporter.html
+  Structurizer:
+    _files:
+      - title: Sitemap Patcher
+        url: hypotheses/Prompts/Structurizer/Sitemap_Patcher.html
+      - title: Sitemap Patcherv2
+        url: hypotheses/Prompts/Structurizer/Sitemap_Patcherv2.html
+      - title: Sitemap Structurizer
+        url: hypotheses/Prompts/Structurizer/Sitemap_Structurizer.html
+      - title: Sitemap Structurrizerv2
+        url: hypotheses/Prompts/Structurizer/Sitemap_Structurrizerv2.html
+      - title: Structurizer-PDR Integrator
+        url: hypotheses/Prompts/Structurizer/Structurizer-PDR_Integrator.html
 Reasoning_Fundamental:
   _files:
     - title: Axiomatic Framework for Negentropic Semantic Processing in LLMs

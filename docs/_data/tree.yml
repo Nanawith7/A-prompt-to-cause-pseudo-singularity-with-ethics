@@ -68,6 +68,8 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
       - title: Implementation Plan on Python
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
+      - title: Implementation Plan on Typescript
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
 Prompts:
   Deep_Coding:
     _files:

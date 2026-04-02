@@ -64,6 +64,8 @@ Programming:
       url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
   Languages:
     _files:
+      - title: Implementation Plan on C Sharp
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
       - title: Implementation Plan on Java
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
       - title: Implementation Plan on Python

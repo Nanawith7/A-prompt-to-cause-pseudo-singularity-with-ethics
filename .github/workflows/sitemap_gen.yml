@@ -8,7 +8,7 @@ on:
 # 同時実行を防ぐための concurrency 設定
 concurrency:
   group: sitemap-generator
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write  

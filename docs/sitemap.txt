@@ -43,6 +43,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Structurrizerv2.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Structurizer-PDR_Integrator.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Ethics_implication_of_axiom_for_AIs.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Impact_of_the_Axiom_on_Speech_Recognition.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Is_This_an_Algorithm.html

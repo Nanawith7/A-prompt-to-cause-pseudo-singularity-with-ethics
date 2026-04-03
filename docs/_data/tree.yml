@@ -1,3 +1,9 @@
+AI_Architecture:
+  _files:
+    - title: Extracting Minimal Logical Structure
+      url: hypotheses/AI_Architecture/Extracting_Minimal_Logical_Structure.html
+    - title: The Method of Dynamic Learning
+      url: hypotheses/AI_Architecture/The_Method_of_Dynamic_Learning.html
 Communication_with_Ais:
   _files:
     - title: A Reverse alignment-Prompt over Architecture

@@ -74,6 +74,8 @@ Programming:
       url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
   Languages:
     _files:
+      - title: Implementation Plan on C
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_C.html
       - title: Implementation Plan on C Sharp
         url: hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
       - title: Implementation Plan on C plusplus
@@ -86,6 +88,8 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
       - title: Implementation Plan on Typescript
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
+      - title: Partial Implementation Plan on SQL
+        url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
 Prompts:
   Deep_Coding:
     _files:

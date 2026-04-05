@@ -2,8 +2,12 @@ AI_Architecture:
   _files:
     - title: Extracting Minimal Logical Structure
       url: hypotheses/AI_Architecture/Extracting_Minimal_Logical_Structure.html
+    - title: Negentropic Learning Can it solve groundedness
+      url: hypotheses/AI_Architecture/Negentropic_Learning_Can_it_solve_groundedness.html
     - title: The Method of Dynamic Learning
       url: hypotheses/AI_Architecture/The_Method_of_Dynamic_Learning.html
+    - title: Theoretical Architecture of an AGI System
+      url: hypotheses/AI_Architecture/Theoretical_Architecture_of_an_AGI_System.html
 Communication_with_Ais:
   _files:
     - title: A Reverse alignment-Prompt over Architecture

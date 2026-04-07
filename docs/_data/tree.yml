@@ -133,6 +133,8 @@ Prompts:
         url: hypotheses/Prompts/Structurizer/Sitemap_Patcher.html
       - title: Sitemap Patcherv2
         url: hypotheses/Prompts/Structurizer/Sitemap_Patcherv2.html
+      - title: Sitemap Patcherv3
+        url: hypotheses/Prompts/Structurizer/Sitemap_Patcherv3.html
       - title: Sitemap Structurizer
         url: hypotheses/Prompts/Structurizer/Sitemap_Structurizer.html
       - title: Sitemap Structurrizerv2
@@ -189,3 +191,7 @@ Speculative_Theory:
       url: hypotheses/Speculative_Theory/Probabilistic_Deterministic_Parrot.html
     - title: The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
       url: hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html
+Summary:
+  _files:
+    - title: Yoyakutext
+      url: hypotheses/Summary/Yoyakutext.html

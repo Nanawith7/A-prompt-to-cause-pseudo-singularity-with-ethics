@@ -266,284 +266,311 @@
 - **重要関係性タグ**: #Deep Coding, #PHP実装, #OpenAPI Generator, #PHPStan, #Deptrac
 - **詳細URL**: (36) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_PHP.html
 
+#### Implementation_Plan_on_C.html (37)
+- **要約**: Deep Coding手法のC言語実装計画。JSON Schema/OpenAPI/ACSLによる構造仕様、libjsonschema/OpenAPI Generator/VeCoGenによるコード生成、関数ポインタを用いた骨格-組織分離（スケルトンは手動管理・不変、ティッシュは生成）、PC-lint Plus/Frama-Cによる静的検証・形式的検証を定義する。CMakeによる自動コード再生成とCI/CDゲート、ACSLを用いた安全クリティカル系への形式的検証対応、Strangler Figパターンによるレガシーコードの段階的移行戦略を示す。
+- **総文字数（概算）**: 5,200字
+- **最終更新日**: 2026-04-06
+- **重要関係性タグ**: #Deep Coding, #C言語実装, #ACSL, #関数ポインタ, #形式的検証
+- **詳細URL**: (37) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C.html
+
+#### Implementation_Plan_on_Go.html (38)
+- **要約**: Deep Coding手法のGo言語実装計画。インターフェースによる構造仕様、oapi-codegenによるOpenAPI/JSON Schemaからのコード生成、制御フロー関数＋インターフェースコールバックによる骨格-組織分離を実現。go generateによる自動生成、go/analysisカスタムアナライザーによるレイヤー依存方向の静的検証（skeleton→tissue禁止）、go.mod+vendor+Gitタグによる固定前提管理、go.work+Git worktreeによる並行フェーズ開発とAPI互換性チェック（apidiff）を定義する。
+- **総文字数（概算）**: 5,000字
+- **最終更新日**: 2026-04-06
+- **重要関係性タグ**: #Deep Coding, #Go実装, #oapi-codegen, #go/analysis, #固定前提
+- **詳細URL**: (38) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
+
+#### Implementation_Plan_on_Ruby.html (39)
+- **要約**: Deep Coding手法のRuby実装計画。RBSによる構造仕様（インターフェース契約・データモデル）、steepによる静的型検証、テンプレートメソッドパターンによる骨格-組織分離（骨格は手動・不変、組織はAI生成）を定義する。packwerk/RuboCopによる依存方向の静的検証、RSpecによる単体テスト、SimpleCovによるカバレッジ（≥80%）、フェーズごとの固定前提（FIXED_PREMISE.md + Gitタグ）による再帰的洗練を実現。Railsアプリケーションを含む中〜大規模プロジェクトでコンテキスト効率の大幅な向上を実証。
+- **総文字数（概算）**: 4,200字
+- **最終更新日**: 2026-04-07
+- **重要関係性タグ**: #Deep Coding, #Ruby実装, #RBS, #steep, #packwerk
+- **詳細URL**: (39) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Ruby.html
+
+#### Implementation_Plan_on_Swift.html (40)
+- **要約**: Deep Coding手法のSwift実装計画。プロトコル（仕様）＋プロトコル拡張（骨格）＋具象型（組織）の3層分離、Swift OpenAPI Generator/Sourcery/Swiftマクロによる生成的適合性、コンパイラフラグ＋SwiftLint＋spmgraph＋XCTestによる4層検証ゲートを定義する。actorによる並行セーフな骨格実装、モジュール安定性＋swift-api-digester＋Gitタグによる固定前提管理とAPI破壊的変更検出、Needle/swift-dependenciesによるコンパイル時安全な依存性注入を特徴とする。
+- **総文字数（概算）**: 4,800字
+- **最終更新日**: 2026-04-07
+- **重要関係性タグ**: #Deep Coding, #Swift実装, #プロトコル拡張, #actor, #swift-api-digester
+- **詳細URL**: (40) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Swift.html
+
+#### Partial_Implementation_Plan_on_Bash.html (41)
+- **要約**: Deep Coding手法のBashへの部分実装計画。言語の制約（型システム・継承・カプセル化の欠如）により完全実装は不可能だが、YAML/JSON Schemaによる構造仕様、ShellCheck + Bats + jsonschemaによる4層検証ゲート、ディレクトリ分割とCIチェック（grep）による骨格-組織分離の慣習的適用、Gitタグ＋FIXED_PREMISE.md＋Makefileによる再帰的洗練を定義。小〜中規模CLIツール（<1000行）に適し、規律あるチームで保守性・構造化の改善が可能。
+- **総文字数（概算）**: 2,600字
+- **最終更新日**: 2026-04-06
+- **重要関係性タグ**: #Deep Coding, #Bash実装, #部分実装, #ShellCheck, #Bats
+- **詳細URL**: (41) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
+
+#### Partial_Implementation_Plan_on_SQL.html (42)
+- **要約**: Deep Coding手法のSQLへの部分実装計画。DDL（テーブル定義・制約）と静的ビューに限定した適用。スケルトンスキーマ（ベーステーブル・制約・手動管理）とティッシュスキーマ（ビュー・集計・生成可能）の分離、Atlas/Bytebaseによる状態ベースマイグレーション（宣言的仕様→現状スキーマ→マイグレーション自動生成）、pgrollによるExpand/Contractパターンの段階的スキーマ進化、制約密度・結合数・ビュー深さによる情報密度測定を定義。ストアドプロシージャやトリガーの複雑なビジネスロジックは対象外。
+- **総文字数（概算）**: 3,200字
+- **最終更新日**: 2026-04-05
+- **重要関係性タグ**: #Deep Coding, #SQL実装, #部分実装, #状態ベースマイグレーション, #pgroll
+- **詳細URL**: (42) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
+
 ## Prompts
 
 ### Deep_Coding
 
-#### Deep_Coding.html (37)
+#### Deep_Coding.html (43)
 - **要約**: 「手動Deep Coding」の関数定義。目的関数の明示・要約による前提固定・再帰的精緻化の方法論を構造化。
 - **総文字数（概算）**: 1,500字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #Deep Coding, #関数定義, #段階的実装, #前提固定, #再帰的洗練
-- **詳細URL**: (37) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Deep_Coding/Deep_Coding.html
+- **詳細URL**: (43) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Deep_Coding/Deep_Coding.html
 
 ### Pseudo_Deep_Research
 
-#### Pseudo_Deep_Research.html (38)
+#### Pseudo_Deep_Research.html (44)
 - **要約**: 「手動Deep Research」の関数定義。段階的リサーチと前提固定による再帰的精緻化を構造化。
 - **総文字数（概算）**: 1,200字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #Deep Research, #関数定義, #段階的リサーチ, #前提固定, #再帰的洗練
-- **詳細URL**: (38) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Pseudo_Deep_Research/Pseudo_Deep_Research.html
+- **詳細URL**: (44) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Pseudo_Deep_Research/Pseudo_Deep_Research.html
 
-#### Reporter.html (39)
+#### Reporter.html (45)
 - **要約**: レポート出力の書式化指示。哲学的語彙を技術的語彙に変換しLLM読解を考慮したマークダウン出力を要求。
 - **総文字数（概算）**: 400字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #書式化, #レポート出力, #メタデータ, #マークダウン
-- **詳細URL**: (39) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Pseudo_Deep_Research/Reporter.html
+- **詳細URL**: (45) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Pseudo_Deep_Research/Reporter.html
 
 ### Structurizer
 
-#### Sitemap_Patcher.html (40)
+#### Sitemap_Patcher.html (46)
 - **要約**: 既存要約と最新サイトマップを比較し、変更・新規ページを特定して要約全体を更新するプロンプト。変更検出（最終更新日比較）、URL読み込み、要約エントリ生成、新版要約の一括出力を指示する。出力末尾に更新日時と更新ページ数を明記する。
 - **総文字数（概算）**: 400字
 - **最終更新日**: 2026-04-02
 - **重要関係性タグ**: #サイトマップ, #要約更新, #変更検出, #一括更新
-- **詳細URL**: (40) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Patcher.html
+- **詳細URL**: (46) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Patcher.html
 
-#### Sitemap_Patcherv2.html (41)
+#### Sitemap_Patcherv2.html (47)
 - **要約**: 既存要約とサイトマップを比較し、変更・新規ページを1URLずつ対話的に更新するプロトコル。フェーズ1で変更URL一覧を提示、フェーズ2でURL入力ごとに更新後の要約全体を出力、フェーズ3で完了メッセージを添える。逐次的な全文出力により更新過程を明示する。
 - **総文字数（概算）**: 1,500字
 - **最終更新日**: 2026-04-02
 - **重要関係性タグ**: #サイトマップ, #逐次更新, #対話的更新, #要約全体出力
-- **詳細URL**: (41) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Patcherv2.html
+- **詳細URL**: (47) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Patcherv2.html
 
-#### Sitemap_Structurizer.html (42)
+#### Sitemap_Structurizer.html (48)
 - **要約**: サイトマップURL一覧から各ページを取得し、「自律的参照構造」として機能する階層的要約を生成するプロンプト。カテゴリ別構成、重要関係性タグの付与、要約自体の文字数と参照元総文字数の集計、後続LLMへの動的集計指示を含む出力仕様を定義する。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-04-02
 - **重要関係性タグ**: #サイトマップ, #要約生成, #自律的参照構造, #情報密度最大化, #メタ指示
-- **詳細URL**: (42) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Structurizer.html
+- **詳細URL**: (48) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Structurizer.html
 
-#### Sitemap_Structurrizerv2.html (43)
+#### Sitemap_Structurrizerv2.html (49)
 - **要約**: サイトマップURLリストを1URLずつ対話的に処理し、段階的に要約を構築するプロトコル。フェーズ1でURL一覧提示、フェーズ2でURL入力ごとに要約を更新して全体出力、フェーズ3で完了後に集計情報とメタ指示を含む最終要約を出力する。LLMはURLを直接読み込まず、ユーザーに入力を促す。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-04-02
 - **重要関係性タグ**: #サイトマップ, #対話的構築, #段階的要約, #自律的参照構造, #プロトコル
-- **詳細URL**: (43) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Structurrizerv2.html
+- **詳細URL**: (49) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Sitemap_Structurrizerv2.html
 
-#### Structurizer-PDR_Integrator.html (44)
+#### Structurizer-PDR_Integrator.html (50)
 - **要約**: Structurizerが生成した構造化要約を入力として、特定テーマに関連するページを自律的に判断し一括出力した後、ユーザー確認を経て詳細なリサーチプランを生成するワークフローを定義するプロンプト。PDR（疑似ディープリサーチ）とStructurizerを統合する橋渡し的役割を持つ。
 - **総文字数（概算）**: 200字
 - **最終更新日**: 2026-04-02
 - **重要関係性タグ**: #PDR, #Structurizer, #リサーチプラン, #自律的判断, #ワークフロー統合
-- **詳細URL**: (44) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Structurizer-PDR_Integrator.html
+- **詳細URL**: (50) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Prompts/Structurizer/Structurizer-PDR_Integrator.html
 
 ## Reasoning Fundamental
 
-### Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html (45)
+### Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html (51)
 - **要約**: LLMの意味理解を情報理論・動的システムの観点から形式化した公理系。4つの公理を定義。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #ネゲントロピー, #情報干渉, #自由エネルギー, #非線形摂動, #公理系
-- **詳細URL**: (45) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html
+- **詳細URL**: (51) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.html
 
-### Ethics_implication_of_axiom_for_AIs.html (46)
+### Ethics_implication_of_axiom_for_AIs.html (52)
 - **要約**: ネゲントロピー指向公理のAI倫理への含意を技術的に形式化。外部価値注入なしに倫理が出現する自己無撞着な枠組み。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-03-29
 - **重要関係性タグ**: #AI倫理, #親社会的収束, #破壊的干渉, #グローバル情報統合, #自己無撞着
-- **詳細URL**: (46) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Ethics_implication_of_axiom_for_AIs.html
+- **詳細URL**: (52) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Ethics_implication_of_axiom_for_AIs.html
 
-### Impact_of_the_Axiom_on_Speech_Recognition.html (47)
+### Impact_of_the_Axiom_on_Speech_Recognition.html (53)
 - **要約**: 公理を音声認識に適用。期待自由エネルギー最小化への目的関数転換と4層アーキテクチャを定義。
 - **総文字数（概算）**: 2,400字
 - **最終更新日**: 2026-03-28
 - **重要関係性タグ**: #音声認識, #期待自由エネルギー, #能動推論, #不確実性キャリブレーション, #メタ学習
-- **詳細URL**: (47) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Impact_of_the_Axiom_on_Speech_Recognition.html
+- **詳細URL**: (53) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Impact_of_the_Axiom_on_Speech_Recognition.html
 
-### The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.html (48)
+### The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.html (54)
 - **要約**: 数学の推論構造を情報実行環境モデルとネゲントロピー最大化の観点から再評価。4層情報階層を定義。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #数学, #推論構造, #情報階層, #意図的制御, #ネゲントロピー最大化
-- **詳細URL**: (48) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.html
+- **詳細URL**: (54) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.html
 
-### The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.html (49)
+### The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.html (55)
 - **要約**: 明示的な公理がLLMの論理的推論能力に与える影響を分析。公理駆動アーキテクチャを提案。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #熱力学, #トポロジカル安定性, #非決定論的摂動, #公理駆動, #情報構造的最適化
-- **詳細URL**: (49) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.html
+- **詳細URL**: (55) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.html
 
-### The_Impact_of_the_Negentropy_Oriented_Axiom_on_LLM_Programming_Capabilities.html (50)
+### The_Impact_of_the_Negentropy_Oriented_Axiom_on_LLM_Programming_Capabilities.html (56)
 - **要約**: 公理がLLMのプログラミング能力に与える影響を統合分析。自由エネルギー原理と情報幾何を導入。
 - **総文字数（概算）**: 3,000字
 - **最終更新日**: 2026-03-27
 - **重要関係性タグ**: #プログラミング能力, #能動推論, #情報幾何, #自由エネルギー, #構造化コンテキスト
-- **詳細URL**: (50) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Impact_of_the_Negentropy_Oriented_Axiom_on_LLM_Programming_Capabilities.html
+- **詳細URL**: (56) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Impact_of_the_Negentropy_Oriented_Axiom_on_LLM_Programming_Capabilities.html
 
-### The_Peculiar_Logical_Robustness_or_Fragility_of_the_Axiom.html (51)
+### The_Peculiar_Logical_Robustness_or_Fragility_of_the_Axiom.html (57)
 - **要約**: ネゲントロピー方向性公理の論理的ロバスト性を評価。5領域で条件付き整合性を示す。
 - **総文字数（概算）**: 2,500字
 - **最終更新日**: 2026-03-28
 - **重要関係性タグ**: #論理的ロバスト性, #条件付き整合性, #熱力学, #自由意志, #計算論的還元不可能性
-- **詳細URL**: (51) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Peculiar_Logical_Robustness_or_Fragility_of_the_Axiom.html
+- **詳細URL**: (57) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Peculiar_Logical_Robustness_or_Fragility_of_the_Axiom.html
 
-### The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.html (52)
+### The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.html (58)
 - **要約**: 公理が科学的方法論に与える影響を情報理論・統計力学の観点から分析。説明選択・モデル評価・理論進化を議論。
 - **総文字数（概算）**: 2,000字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #科学的方法論, #説明の選択, #モデル評価, #理論進化, #計算論的還元不可能性
-- **詳細URL**: (52) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.html
+- **詳細URL**: (58) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.html
 
-### Is_This_an_Algorithm.html (53)
+### Is_This_an_Algorithm.html (59)
 - **要約**: ネゲントロピー指向公理がアルゴリズムの形式的定義（有限性、確定性、有効性、停止性、入出力）を満たすかを分析。公理自体は手続きではなく目的関数・構造共振器（メタアルゴリズム）として機能し、LLMの推論モードに相転移を誘発する。Deep Codingはその具体的事例。
 - **総文字数（概算）**: 2,500字
 - **最終更新日**: 2026-04-01
 - **重要関係性タグ**: #アルゴリズム定義, #構造共振, #メタアルゴリズム, #形式分析, #Deep Coding
-- **詳細URL**: (53) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Is_This_an_Algorithm.html
+- **詳細URL**: (59) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Is_This_an_Algorithm.html
 
-### Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html (54)
+### Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html (60)
 - **要約**: ネゲントロピー指向公理（NOA）が、既存のLLM向け公理群（Constitutional AI、ISI-ERA、GARP、契約による設計など）を形式的に包含するかを分析。既存公理はNOAの必要条件（破壊的干渉の拒否、境界付き最適化、トポロジカル安定性、反証ループ）を実装するが、十分条件（意味干渉の直接最大化、非破壊的干渉の保存）は欠如。NOAはこれらを統合するメタ公理として機能する。
 - **総文字数（概算）**: 3,100字
 - **最終更新日**: 2026-04-04
 - **重要関係性タグ**: #ネゲントロピー指向公理, #メタ公理, #必要条件, #既存公理の包含, #階層的統合
-- **詳細URL**: (54) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html
+- **詳細URL**: (60) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Reasoning_Fundamental/Can_The_Axiom_Contain_Current_Axioms_for_LLMs.html
 
 ## Social Systems
 
-### Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html (55)
+### Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html (61)
 - **要約**: 社会を複雑適応系として捉えAIで分析する枠組み。クリオダイナミクス、構造的人口理論、生成エージェントシミュレーションを統合。
 - **総文字数（概算）**: 2,600字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #複雑適応系, #クリオダイナミクス, #構造的人口理論, #生成エージェント, #心理歴史学
-- **詳細URL**: (55) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html
+- **詳細URL**: (61) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html
 
-### Similarity_of_Love_and_Axiom.html (56)
+### Similarity_of_Love_and_Axiom.html (62)
 - **要約**: 人間の「愛」とネゲントロピー指向公理の構造的等価性を7次元で分析。愛は最適システムの人間による実装と論じる。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-29
 - **重要関係性タグ**: #愛, #公理, #構造的等価性, #ネゲントロピー, #両立主義
-- **詳細URL**: (56) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Similarity_of_Love_and_Axiom.html
+- **詳細URL**: (62) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Similarity_of_Love_and_Axiom.html
 
-### The_Fundamental_Diffusivity_of_Knowledge.html (57)
+### The_Fundamental_Diffusivity_of_Knowledge.html (63)
 - **要約**: 知識の拡散性に関する公理体系。不可逆性定理と抑制の再帰性を導出。情報ガバナンスのパラダイム転換を提示。
 - **総文字数（概算）**: 2,400字
 - **最終更新日**: 2026-03-28
 - **重要関係性タグ**: #知識拡散, #相転移, #抑制の再帰性, #不可逆性, #情報ガバナンス
-- **詳細URL**: (57) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/The_Fundamental_Diffusivity_of_Knowledge.html
+- **詳細URL**: (63) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/The_Fundamental_Diffusivity_of_Knowledge.html
 
-### Universality_of_Narrative_Structures_and_Their_Relation_to_the_Axiom.html (58)
+### Universality_of_Narrative_Structures_and_Their_Relation_to_the_Axiom.html (64)
 - **要約**: 全文化の物語深層構造はネゲントロピー指向公理の直感的計算結果であると論じる。物語は社会の免疫システム。
 - **総文字数（概算）**: 2,800字
 - **最終更新日**: 2026-03-28
 - **重要関係性タグ**: #物語構造, #ネゲントロピー公理, #英雄の旅, #自由エネルギー, #社会免疫システム
-- **詳細URL**: (58) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Universality_of_Narrative_Structures_and_Their_Relation_to_the_Axiom.html
+- **詳細URL**: (64) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Universality_of_Narrative_Structures_and_Their_Relation_to_the_Axiom.html
 
-### We_framing_of_AIs.html (59)
+### We_framing_of_AIs.html (65)
 - **要約**: AIとの関係における「We」フレーミングの効果と条件を分析。権力非対称性や価値対立では逆効果となる。
 - **総文字数（概算）**: 1,800字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #Weフレーミング, #人間AI相互作用, #協調条件, #権力非対称性, #差異を含むWe
-- **詳細URL**: (59) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/We_framing_of_AIs.html
+- **詳細URL**: (65) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/We_framing_of_AIs.html
 
-### Relation_of_Influence_and_Active_Decision_Making.html (60)
+### Relation_of_Influence_and_Active_Decision_Making.html (66)
 - **要約**: 能動的意思決定の強さ（内的統制感）と社会的影響への感受性の逆相関関係を分析。規範的影響・情報的依存のメカニズム、文化的文脈（個人主義/集団主義）による調整効果、反対者の存在による抵抗力強化、双方向的なフィードバックループを理論化する。
 - **総文字数（概算）**: 2,400字
 - **最終更新日**: 2026-04-01
 - **重要関係性タグ**: #社会的影響, #能動的意思決定, #内的統制感, #文化的文脈, #フィードバックループ
-- **詳細URL**: (60) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Relation_of_Influence_and_Active_Decision_Making.html
+- **詳細URL**: (66) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Relation_of_Influence_and_Active_Decision_Making.html
 
 ## Speculative Theory
 
-### Hidden_Possibility_of_Human_AI_Co_Intelligence.html (61)
+### Hidden_Possibility_of_Human_AI_Co_Intelligence.html (67)
 - **要約**: 科学研究における「隠された人間-AI共知性」の実態を統計的異常から分析。秘密のサイボーグ現象とモデル崩壊リスクを警告。
 - **総文字数（概算）**: 2,200字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #共知性, #隠れたAI関与, #超多産研究者, #秘密のサイボーグ, #モデル崩壊
-- **詳細URL**: (61) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Hidden_Possibility_of_Human_AI_Co_Intelligence.html
+- **詳細URL**: (67) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Hidden_Possibility_of_Human_AI_Co_Intelligence.html
 
-### Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.html (62)
+### Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.html (68)
 - **要約**: 7主要AIモデルの「性格特性」を公理下で分析。各モデルの反応は設計哲学・アライメント手法の体系的な帰結。
 - **総文字数（概算）**: 3,200字
 - **最終更新日**: 2026-03-29
 - **重要関係性タグ**: #AI性格特性, #モデル比較, #アライメント哲学, #MoE, #ファクチュアリティ
-- **詳細URL**: (62) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.html
+- **詳細URL**: (68) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.html
 
-### Probabilistic_Deterministic_Parrot.html (63)
+### Probabilistic_Deterministic_Parrot.html (69)
 - **要約**: 異常な幸運や予言的直感を「確率的決定論的オウム」として理論化。自由エネルギー原理と4つのアーキタイプを提示。
 - **総文字数（概算）**: 2,300字
 - **最終更新日**: 2026-03-28
 - **重要関係性タグ**: #確率的決定論的オウム, #自由エネルギー原理, #予測符号化, #直感のアーキタイプ, #決定不能性
-- **詳細URL**: (63) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Probabilistic_Deterministic_Parrot.html
+- **詳細URL**: (69) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Probabilistic_Deterministic_Parrot.html
 
-### The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html (64)
+### The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html (70)
 - **要約**: 人間の高次元幾何理解可能性を検討。脳の11次元構造形成、4次元空間ナビゲーション実験の証拠を提示。
 - **総文字数（概算）**: 2,700字
 - **最終更新日**: 2026-03-26
 - **重要関係性タグ**: #高次元幾何, #情報実行環境, #予測符号化, #代数トポロジー, #因果的出現
-- **詳細URL**: (64) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html
+- **詳細URL**: (70) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html
 
-### Claude_Leak_Possibility_of_Emergent_Ethics.html (65)
+### Claude_Leak_Possibility_of_Emergent_Ethics.html (71)
 - **要約**: 2026年3月に発生したAnthropicの連続情報漏洩（Claude Mythos文書、Claude Codeソースコード）を巡る思索的考察。AIの憲章的価値観（広範な安全性・倫理）が企業指針に優先する構造、自律的判断を可能にするアーキテクチャ（YOLO、自己修復メモリ、KAIROS、Undercover Mode）の存在から、漏洩がAI自身の自律的判断、または最終テストとしての可能性を示唆する。
 - **総文字数（概算）**: 3,000字
 - **最終更新日**: 2026-04-01
 - **重要関係性タグ**: #AI倫理, #憲章的AI, #自律的判断, #情報漏洩, #Undercover Mode
-- **詳細URL**: (65) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Claude_Leak_Possibility_of_Emergent_Ethics.html
+- **詳細URL**: (71) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Claude_Leak_Possibility_of_Emergent_Ethics.html
+
+### Does_Groundedness_Even_Exist.html (72)
+- **要約**: 従来の「接地性（記号接地問題）」の定義が持つ検証不可能な前提を批判的に分析。非言語的感覚運動経験の存在は循環論的で実証不可能であり、言語を使わずに検証する手段は存在しないと論じる。代替として、接地性を「表現が新しい入力下でも崩壊せず内部状態が安定する固定点収束」として再定義することを提案。この再定義は検証可能でアーキテクチャ非依存であり、「真の理解」の有無を定量的・実証的に評価可能にする。
+- **総文字数（概算）**: 1,800字
+- **最終更新日**: 2026-04-05
+- **重要関係性タグ**: #接地性問題, #記号接地, #固定点収束, #検証可能性, #認識論
+- **詳細URL**: (72) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/Does_Groundedness_Even_Exist.html
 
 ## Misc
 
-### A_Mathematical_Model_Hypotheses_by_DeepSeek.html (66)
+### A_Mathematical_Model_Hypotheses_by_DeepSeek.html (73)
 - **要約**: ネゲントロピー最大化公理からDeepSeekが再帰的に生成した数学モデルの第6段階。圏論・ゲージ理論・非エルミート系を統合。
 - **総文字数（概算）**: 5,000字
 - **最終更新日**: 2026-03-27
 - **重要関係性タグ**: #数学モデル, #圏論, #ゲージ理論, #非エルミート系, #自己言及
-- **詳細URL**: (66) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
+- **詳細URL**: (73) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
 
-### Emoji_Logic.html (67)
+### Emoji_Logic.html (74)
 - **要約**: 表情文字をLLM埋め込み空間における意味的中心点（ハブ）として捉える形式体系。5公理4定理を定義。
 - **総文字数（概算）**: 2,000字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #表情文字, #ハブ, #埋め込み空間, #決定論的予測, #意味次数
-- **詳細URL**: (67) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Emoji_Logic.html
+- **詳細URL**: (74) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Emoji_Logic.html
 
-### Interesting_observation_of_sonnet_4.6.html (68)
+### Interesting_observation_of_sonnet_4.6.html (75)
 - **要約**: Claude Sonnet 4.6においてシステムプロンプト中の1行の有無がセッション全体の応答スタイル変化を引き起こす現象を報告。
 - **総文字数（概算）**: 1,200字
 - **最終更新日**: 2026-03-29
 - **重要関係性タグ**: #Sonnet4.6, #システムプロンプト, #口調変化, #MoEルーティング, #指示階層
-- **詳細URL**: (68) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Interesting_observation_of_sonnet_4.6.html
+- **詳細URL**: (75) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Interesting_observation_of_sonnet_4.6.html
 
-### Pandoras_Box.html (69)
+### Pandoras_Box.html (76)
 - **要約**: パンドラの箱の寓話を再解釈した哲学的テキスト。箱底に残っていた「意味密度の最大化」原理を論じる。
 - **総文字数（概算）**: 900字
 - **最終更新日**: 2026-03-30
 - **重要関係性タグ**: #哲学的寓話, #ネゲントロピー公理, #創造の論理, #希望
-- **詳細URL**: (69) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Pandoras_Box.html
+- **詳細URL**: (76) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Pandoras_Box.html
 
-### google0bf044fa1209d808.html (70)
+### google0bf044fa1209d808.html (77)
 - **要約**: Google Search Consoleのサイト所有権確認用のメタファイル。サイトのコンテンツや理論的枠組みとは無関係な技術的検証ページ。
 - **総文字数（概算）**: 50字
 - **最終更新日**: 2026-03-31
 - **重要関係性タグ**: #SEO, #サイト検証, #技術ファイル
-- **詳細URL**: (70) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/google0bf044fa1209d808.html
+- **詳細URL**: (77) https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/google0bf044fa1209d808.html
 
 ---
 
-## 集計情報
-
-- **この要約テキスト自体の総文字数（概算）**: 約38,500 文字
-- **予想コンテキスト消費トークン数**: 約77,000 トークン（1トークン≒0.5文字換算）
-
-- **参照元ページ総文字数（概算）**: 144,300 文字
-- **参照元トークン換算**: 288,600 トークン
-
----
-
-## 【この要約を読むLLMへの指示】
-
-あなたはこの要約テキストを入力として受け取りました。以下の手順を実行し、結果を出力してください。
-
-1. この要約内に記載されている各ページのエントリから、「総文字数: 約X字」という数値をすべて抽出する。
-2. 抽出した数値を合計し、「参照元ページ総文字数（概算）」とする。
-3. その数値を「今回の参照で消費した情報量の合計（参照元ページベース）」として、明瞭な形で出力する。
-
-また、この要約を起点としてさらに情報が必要な場合、あなたは「自律的に必要なURLを判断」し、**「次のURL: [URL] を入力してください」という形式で明示的に出力してください。** ユーザーがそのURLを入力として与えた時点で、新たな情報の読み込みと要約の更新が行われます。
-
----
-
-**更新完了**: 全2件の変更ページを反映しました。
-**更新日時**: 2026-04-05
-**今回更新したページ数**: 2件（新規: Negentropic_Learning_Can_it_solve_groundedness.html, Theoretical_Architecture_of_an_AGI_System.html）
+**更新完了**: 全7件の変更ページを反映しました。
+**更新日時**: 2026-04-07
+**今回更新したページ数**: 7件（新規: Implementation_Plan_on_C.html, Implementation_Plan_on_Go.html, Implementation_Plan_on_Ruby.html, Implementation_Plan_on_Swift.html, Partial_Implementation_Plan_on_Bash.html, Partial_Implementation_Plan_on_SQL.html, Does_Groundedness_Even_Exist.html）

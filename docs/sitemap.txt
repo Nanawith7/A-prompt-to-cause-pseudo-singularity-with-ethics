@@ -30,6 +30,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/AI-Driven_Construction_Methodology_for_Ultra-High-Precision,_Resource-Efficient_Quasi-Autonomous_Systems.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/An_Orchestration_Strategy.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Deep_Coding_in_Game_Development.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Language_Ecosystem_and_Its_Effect_of_Deep_Coding_abailability.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html

@@ -72,6 +72,8 @@ Programming:
       url: hypotheses/Programming/Logic_behind_Deep_Coding.html
     - title: The Potential of Deep Coding
       url: hypotheses/Programming/The_Potential_of_Deep_Coding.html
+    - title: Visual Diagram as an Optimized Middle Layer for Deep Coding
+      url: hypotheses/Programming/Visual_Diagram_as_an_Optimized_Middle_Layer_for_Deep_Coding.html
   Languages:
     _files:
       - title: Implementation Plan on C
@@ -84,18 +86,30 @@ Programming:
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
       - title: Implementation Plan on Java
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
+      - title: Implementation Plan on Kotlin
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Kotlin.html
       - title: Implementation Plan on PHP
         url: hypotheses/Programming/Languages/Implementation_Plan_on_PHP.html
       - title: Implementation Plan on Python
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Python.html
       - title: Implementation Plan on Ruby
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Ruby.html
+      - title: Implementation Plan on Rust
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Rust.html
+      - title: Implementation Plan on Scala
+        url: hypotheses/Programming/Languages/Implementation_Plan_on_Scala.html
       - title: Implementation Plan on Swift
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Swift.html
       - title: Implementation Plan on Typescript
         url: hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
       - title: Partial Implementation Plan on Bash
         url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
+      - title: Partial Implementation Plan on Lua
+        url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Lua.html
+      - title: Partial Implementation Plan on MATLAB
+        url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_MATLAB.html
+      - title: Partial Implementation Plan on R
+        url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_R.html
       - title: Partial Implementation Plan on SQL
         url: hypotheses/Programming/Languages/Partial_Implementation_Plan_on_SQL.html
 Prompts:

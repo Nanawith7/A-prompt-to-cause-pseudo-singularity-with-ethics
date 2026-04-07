@@ -33,6 +33,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_Sharp.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_C_plusplus.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Dart.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Go.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Java.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Kotlin.html
@@ -43,6 +44,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Scala.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Swift.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_Typescript.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Implementation_Plan_on_VBNET_8_or_9.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Bash.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_Lua.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Languages/Partial_Implementation_Plan_on_MATLAB.html

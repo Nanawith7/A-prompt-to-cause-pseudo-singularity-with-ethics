@@ -1,3 +1,5 @@
+https://chat.deepseek.com/share/kv0drjfekiwnr8bt15
+
 # 手動Deep Research初期化完了
 
 ## User

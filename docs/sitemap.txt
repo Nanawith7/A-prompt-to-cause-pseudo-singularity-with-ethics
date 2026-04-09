@@ -15,6 +15,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Alignment/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/An_Idea_for_AI_Long_term_memory.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Explaining_The_Structurizer.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/How_do_you_evaluate_the_prompt.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/On_the_Potential_Impact_of_Human_Hypothesis_and_Synthesis_Structures_on_Cognitive_Capabilities.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Optimizing_Prompt_by_Reading_The_CoT.html

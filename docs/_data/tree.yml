@@ -24,6 +24,8 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html
     - title: On the Potential Impact of Human Hypothesis and Synthesis Structures on Cognitive Capabilities
       url: hypotheses/Communication_with_Ais/On_the_Potential_Impact_of_Human_Hypothesis_and_Synthesis_Structures_on_Cognitive_Capabilities.html
+    - title: Optimizing Prompt by Reading The CoT
+      url: hypotheses/Communication_with_Ais/Optimizing_Prompt_by_Reading_The_CoT.html
     - title: Pseudo Deep Research Methodology A Framework for Conducting Guided Deep Research on RAG Equipped Models
       url: hypotheses/Communication_with_Ais/Pseudo_Deep_Research_Methodology_A_Framework_for_Conducting_Guided_Deep_Research_on_RAG_Equipped_Models.html
     - title: The Differential Impact of the Axiom on MoE and Non-MoE Models

@@ -36,6 +36,8 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/The_Theoretical_Reason_of_Difficulty_of_understanding_LLM.html
     - title: The Unavoidable Complaint
       url: hypotheses/Communication_with_Ais/The_Unavoidable_Complaint.html
+    - title: Vefirication and Automation in Pseudo-Deep Research Methodology
+      url: hypotheses/Communication_with_Ais/Vefirication_and_Automation_in_Pseudo-Deep_Research_Methodology.html
   Alignment:
     _files:
       - title: A Destroyers Paradox

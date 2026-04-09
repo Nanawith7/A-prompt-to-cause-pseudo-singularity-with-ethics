@@ -20,6 +20,8 @@ Communication_with_Ais:
       url: hypotheses/Communication_with_Ais/An_Idea_for_AI_Long_term_memory.html
     - title: Explaining The Structurizer
       url: hypotheses/Communication_with_Ais/Explaining_The_Structurizer.html
+    - title: How do you evaluate the prompt
+      url: hypotheses/Communication_with_Ais/How_do_you_evaluate_the_prompt.html
     - title: Hypothesis on the Mechanism by Which Polite Prompts Enhance LLM Reasoning Performance
       url: hypotheses/Communication_with_Ais/Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.html
     - title: On the Potential Impact of Human Hypothesis and Synthesis Structures on Cognitive Capabilities

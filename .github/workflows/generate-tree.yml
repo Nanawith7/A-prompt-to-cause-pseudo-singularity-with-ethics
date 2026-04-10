@@ -7,7 +7,7 @@ on:
 
   # 同時実行を防ぐ concurrency 設定
 concurrency:
-  group: sitemap-generator   # XML生成ワークフローと同じグループ名にすると両方同時に走らない
+  group: tree-generator   # XML生成ワークフローと同じグループ名にすると両方同時に走らない
   cancel-in-progress: false
 
 permissions:

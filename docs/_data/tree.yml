@@ -82,6 +82,8 @@ Misc:
       url: hypotheses/Misc/Meta_Analysis_of_100_turn_PDR_by_DeepSeek.html
     - title: Pandoras Box
       url: hypotheses/Misc/Pandoras_Box.html
+    - title: Post-hoc Rationalization in Business and AI
+      url: hypotheses/Misc/Post-hoc_Rationalization_in_Business_and_AI.html
 Programming:
   _files:
     - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems

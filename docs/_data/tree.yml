@@ -54,6 +54,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/Alignment/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
   Contexts:
     _files:
+      - title: Can Context Be Considered an Internal Structure in LLMs
+        url: hypotheses/Communication_with_Ais/Contexts/Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.html
       - title: Think Later or Think First
         url: hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 Daily_Lives:

@@ -50,6 +50,10 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/Alignment/The_Difference_Between_Context_and_Text_and_Its_Impact_on_Human_AI_Interaction.html
       - title: The Relationship Between RLHF and Groundedness A Technical Analysis
         url: hypotheses/Communication_with_Ais/Alignment/The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.html
+  Contexts:
+    _files:
+      - title: Think Later or Think First
+        url: hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 Daily_Lives:
   _files:
     - title: Axiom and Picture

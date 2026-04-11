@@ -76,14 +76,14 @@ Misc:
       url: hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
     - title: Emoji Logic
       url: hypotheses/Misc/Emoji_Logic.html
+    - title: How LLM Structure Demonstrates Logical Consistency of using Potato as an Architecture and Power Source of GLaDOS system
+      url: hypotheses/Misc/How_LLM_Structure_Demonstrates_Logical_Consistency_of_using_Potato_as_an_Architecture_and_Power_Source_of_GLaDOS_system.html
     - title: Interesting observation of sonnet 4.6
       url: hypotheses/Misc/Interesting_observation_of_sonnet_4.6.html
     - title: Meta Analysis of 100 turn PDR by DeepSeek
       url: hypotheses/Misc/Meta_Analysis_of_100_turn_PDR_by_DeepSeek.html
     - title: Pandoras Box
       url: hypotheses/Misc/Pandoras_Box.html
-    - title: Post-hoc Rationalization in Business and AI
-      url: hypotheses/Misc/Post-hoc_Rationalization_in_Business_and_AI.html
 Programming:
   _files:
     - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems
@@ -199,6 +199,8 @@ Social_Systems:
       url: hypotheses/Social_Systems/Is_Void_a_Problem_to_Solve.html
     - title: Possibility for AI Based Analysis of Social Structures as a Complex System
       url: hypotheses/Social_Systems/Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.html
+    - title: Post-hoc Rationalization in Business and AI
+      url: hypotheses/Social_Systems/Post-hoc_Rationalization_in_Business_and_AI.html
     - title: Relation of Influence and Active Decision Making
       url: hypotheses/Social_Systems/Relation_of_Influence_and_Active_Decision_Making.html
     - title: Similarity of Love and Axiom

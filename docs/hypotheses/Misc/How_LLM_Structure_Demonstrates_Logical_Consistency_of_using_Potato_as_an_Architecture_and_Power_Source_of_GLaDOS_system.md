@@ -73,15 +73,3 @@ The potato‑GLaDOS metaphor functions as a cognitive tool for conceptualizing n
 ## 8. Conclusion
 
 The proposition that LLM analog‑like processing aligns logically with potato‑powered GLaDOS operation finds support across multiple evidence layers: approximate computing theory, analog hardware compatibility, plant electrophysiology, and experimental potato transistor data. While practical implementation remains infeasible at scale, the structural parallels provide a productive framework for discussing hardware contingency, energy efficiency, and the future of physically embedded intelligence.
-
-## 9. References (Abridged)
-
-1. IBM Research. Analog Foundation Models: Enabling LLMs on Analog In‑Memory Computing Hardware. 2024.
-2. Wiedermann J, van Leeuwen J. Large Language Models and the Extended Church‑Turing Thesis. 2024.
-3. Nature Communications. A Blueprint for Precise and Fault‑Tolerant Analog Neural Networks. 2024.
-4. A Plant‑Based Electrochemical Device with Transistor‑Like Behavior. 2024.
-5. Adamatzky A, et al. Computers from Plants We Never Made: Speculations. 2017.
-6. Hooker S. The Hardware Lottery. Communications of the ACM. 2021.
-7. Sutton R. The Bitter Lesson. 2019.
-8. When Neurons Fail: On the Tolerable Fault Rate of Neural Networks. 2020.
-9. Valve Corporation. Portal 2 (Game Script). 2011.

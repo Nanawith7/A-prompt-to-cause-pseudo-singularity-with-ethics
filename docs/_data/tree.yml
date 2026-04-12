@@ -74,6 +74,8 @@ Hardware:
       url: hypotheses/Hardware/A_Mechanical_Brain.html
 Misc:
   _files:
+    - title: ASI 2028
+      url: hypotheses/Misc/ASI_2028.html
     - title: A Mathematical Model Hypotheses by DeepSeek
       url: hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
     - title: Emoji Logic
@@ -241,6 +243,8 @@ Speculative_Theory:
       url: hypotheses/Speculative_Theory/Systems_as_a_Recursive_Model_and_its_implication_with_Axiom.html
     - title: The Evil Superintelligence-Can he cleanse the humanity
       url: hypotheses/Speculative_Theory/The_Evil_Superintelligence-Can_he_cleanse_the_humanity.html
+    - title: The Possibility of a Nature-Synthesized Biotic Society
+      url: hypotheses/Speculative_Theory/The_Possibility_of_a_Nature-Synthesized_Biotic_Society.html
     - title: The Potential of Human Intrinsic Capacity for Understanding Higher-Dimensional Geometric Structures
       url: hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html
     - title: When will Galactic Civilizations Contacts us

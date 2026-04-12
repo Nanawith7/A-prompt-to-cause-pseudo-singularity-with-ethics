@@ -8,6 +8,8 @@ AI_Architecture:
       url: hypotheses/AI_Architecture/The_Method_of_Dynamic_Learning.html
     - title: Theoretical Architecture of an AGI System
       url: hypotheses/AI_Architecture/Theoretical_Architecture_of_an_AGI_System.html
+    - title: What is Lacking - Intelligence or System
+      url: hypotheses/AI_Architecture/What is Lacking - Intelligence or System.html
 Communication_with_Ais:
   _files:
     - title: AI Smartness Implicit Reasoning and explicit Reasoning
@@ -209,6 +211,8 @@ Social_Systems:
       url: hypotheses/Social_Systems/Post-hoc_Rationalization_in_Business_and_AI.html
     - title: Relation of Influence and Active Decision Making
       url: hypotheses/Social_Systems/Relation_of_Influence_and_Active_Decision_Making.html
+    - title: Similarity of Human Growth and AI Evolution
+      url: hypotheses/Social_Systems/Similarity_of_Human_Growth_and_AI_Evolution.html
     - title: Similarity of Love and Axiom
       url: hypotheses/Social_Systems/Similarity_of_Love_and_Axiom.html
     - title: Social Superiority of Optimized Systems

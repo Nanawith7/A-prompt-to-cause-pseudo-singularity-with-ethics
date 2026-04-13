@@ -92,6 +92,8 @@ Misc:
       url: hypotheses/Misc/Meta_Analysis_of_100_turn_PDR_by_DeepSeek.html
     - title: Pandoras Box
       url: hypotheses/Misc/Pandoras_Box.html
+    - title: Unintended Knowledge Unfolding in the AI Era
+      url: hypotheses/Misc/Unintended_Knowledge_Unfolding_in_the_AI_Era.html
 Programming:
   _files:
     - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems

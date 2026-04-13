@@ -1,5 +1,5 @@
 ---
-title: "Unintended Knowledge Unfolding in the AI Era: A Case Study of Multi-Agent Mediation and Unix Philosophy Rediscovery"
+title: "Fascinating Unintended Knowledge Unfolding in the AI Era: A Case Study of Multi-Agent Mediation and Unix Philosophy Rediscovery"
 description: "Analysis of a user-driven knowledge creation process involving Qwen, Claude, and ChatGPT, where a simple utility app request led to the rediscovery of Unix design principles and the tr command."
 author: "Nanawith7"
 layout: default

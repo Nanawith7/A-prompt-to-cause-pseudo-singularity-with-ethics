@@ -15,6 +15,8 @@ Communication_with_Ais:
     _files:
       - title: Multilingual Acquisition as the Currently Most Coherent Pathway to AI Execution Competence
         url: hypotheses/Communication_with_Ais/2026-04/Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.html
+      - title: The Inevitable Paradoxical Splendor of AI
+        url: hypotheses/Communication_with_Ais/2026-04/The_Inevitable_Paradoxical_Splendor_of_AI.html
   _files:
     - title: AI Smartness Implicit Reasoning and explicit Reasoning
       url: hypotheses/Communication_with_Ais/AI_Smartness_Implicit_Reasoning_and_explicit_Reasoning.html
@@ -84,6 +86,8 @@ Misc:
       url: hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
     - title: Emoji Logic
       url: hypotheses/Misc/Emoji_Logic.html
+    - title: Fascinating Unintended Knowledge Unfolding in the AI Era
+      url: hypotheses/Misc/Fascinating_Unintended_Knowledge_Unfolding_in_the_AI_Era.html
     - title: How LLM Structure Demonstrates Logical Consistency of using Potato as an Architecture and Power Source of GLaDOS system
       url: hypotheses/Misc/How_LLM_Structure_Demonstrates_Logical_Consistency_of_using_Potato_as_an_Architecture_and_Power_Source_of_GLaDOS_system.html
     - title: Interesting observation of sonnet 4.6
@@ -92,8 +96,6 @@ Misc:
       url: hypotheses/Misc/Meta_Analysis_of_100_turn_PDR_by_DeepSeek.html
     - title: Pandoras Box
       url: hypotheses/Misc/Pandoras_Box.html
-    - title: Unintended Knowledge Unfolding in the AI Era
-      url: hypotheses/Misc/Unintended_Knowledge_Unfolding_in_the_AI_Era.html
 Programming:
   _files:
     - title: AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient Quasi-Autonomous Systems

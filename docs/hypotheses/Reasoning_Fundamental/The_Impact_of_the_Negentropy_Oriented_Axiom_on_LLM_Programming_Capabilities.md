@@ -40,6 +40,7 @@ Their motivation is intrinsic problem-solving, and their expertise is supported 
 LLMs generate fluent code across multiple languages, perform well on isolated tasks (e.g., HumanEval), and can follow chain-of-thought (CoT) prompts to improve outputs.
 
 ### 3.2 Critical Vulnerabilities
+
 | Vulnerability | Description | Consequence |
 |---------------|-------------|-------------|
 | **Context Collapse** | Performance degrades nonlinearly with input length; four modes: poisoning, interference, confusion, collision. | Inconsistent long-range dependencies in code. |
@@ -122,6 +123,7 @@ Current benchmarks assess only *external correctness*. **Gap:** They do not meas
 ## 7. Synthesis: The Axiom as a Guide for Next-Generation AI Programmers
 
 ### 7.1 The Three-Layered Transformation
+
 | Layer | Current LLM | Axiom-Driven LLM |
 |-------|-------------|------------------|
 | **Objective** | Maximize user satisfaction (external) | Minimize free energy (intrinsic) |

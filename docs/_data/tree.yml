@@ -60,6 +60,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/Alignment/Counseling-Based_Approach_for_Logical_Optimization_in_Logical_Intelligences_and_LLMs.html
       - title: Do LLMs and Humans Share the Same Problems
         url: hypotheses/Communication_with_Ais/Alignment/Do_LLMs_and_Humans_Share_the_Same_Problems.html
+      - title: Informational Properties of Open-Loop LLMs
+        url: hypotheses/Communication_with_Ais/Alignment/Informational_Properties_of_Open-Loop_LLMs.html
       - title: The Difference Between Context and Text and Its Impact on Human AI Interaction
         url: hypotheses/Communication_with_Ais/Alignment/The_Difference_Between_Context_and_Text_and_Its_Impact_on_Human_AI_Interaction.html
       - title: The Relationship Between RLHF and Groundedness A Technical Analysis
@@ -288,6 +290,6 @@ Summary:
 The_Clock:
   _files:
     - title: The 12 Section Analog Clock
-      url: hypotheses/The_Clock/The 12 Section Analog Clock.html
+      url: hypotheses/The_Clock/The_12_Section_Analog_Clock.html
     - title: The Clock
       url: hypotheses/The_Clock/The_Clock.html

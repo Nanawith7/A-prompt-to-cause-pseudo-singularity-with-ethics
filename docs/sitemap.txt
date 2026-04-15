@@ -7,6 +7,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/AI_Architecture/The_Method_of_Dynamic_Learning.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/AI_Architecture/Theoretical_Architecture_of_an_AGI_System.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/AI_Architecture/What_is_Lacking-Intelligence_or_System.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/2026-04/A_Method_of_Analyzing_Bias-Comparing_Structures_Itself.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/2026-04/Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/2026-04/The_Inevitable_Paradoxical_Splendor_of_AI.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/AI_Smartness_Implicit_Reasoning_and_explicit_Reasoning.html
@@ -20,6 +21,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/An_Idea_for_AI_Long_term_memory.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Explaining_The_Structurizer.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/How_do_you_evaluate_the_prompt.html
@@ -122,5 +124,10 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Speculative_Theory/When_will_Galactic_Civilizations_Contacts_us.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Summary/Yoyakutext.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/The_Clock/The.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/12.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/Section.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/Analog.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/Clock.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/The_Clock/The_Clock.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/index.html

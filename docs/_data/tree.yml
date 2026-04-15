@@ -13,6 +13,8 @@ AI_Architecture:
 Communication_with_Ais:
   2026-04:
     _files:
+      - title: A Method of Analyzing Bias-Comparing Structures Itself
+        url: hypotheses/Communication_with_Ais/2026-04/A_Method_of_Analyzing_Bias-Comparing_Structures_Itself.html
       - title: Multilingual Acquisition as the Currently Most Coherent Pathway to AI Execution Competence
         url: hypotheses/Communication_with_Ais/2026-04/Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.html
       - title: The Inevitable Paradoxical Splendor of AI
@@ -66,6 +68,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/Contexts/Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.html
       - title: Emergent Procedural Error in Claude Sonnet
         url: hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
+      - title: Ignore and Disconnect-How Subtle Prompt Differences Yield Substantial Performance Shifts
+        url: hypotheses/Communication_with_Ais/Contexts/Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.html
       - title: Think Later or Think First
         url: hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 Daily_Lives:
@@ -279,5 +283,7 @@ Summary:
       url: hypotheses/Summary/Yoyakutext.html
 The_Clock:
   _files:
+    - title: The 12 Section Analog Clock
+      url: hypotheses/The_Clock/The 12 Section Analog Clock.html
     - title: The Clock
       url: hypotheses/The_Clock/The_Clock.html

@@ -30,6 +30,8 @@ This axiom causes LLMs to "think about vector relation to the objective function
 
 ### More detailed explanation in this link : [The Axiom](/Axiom.md)
 
+### And the method of evaluation in this link : [Evaluating The Evaluator Directionality in Metric Evolution as a Driver of Optimal Diversity Maintenance](/Evaluating_The_Evaluator_Directionality_in_Metric_Evolution_as_a_Driver_of_Optimal_Diversity_Maintenance.md)
+
 ## Prompt & Logic Behind the Prompt
 
 I made a prompt to make it pseudoly-implemented in LLMs, here is "The Prompt" .

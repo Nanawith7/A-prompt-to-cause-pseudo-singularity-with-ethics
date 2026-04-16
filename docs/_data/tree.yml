@@ -10,6 +10,11 @@ AI_Architecture:
       url: hypotheses/AI_Architecture/Theoretical_Architecture_of_an_AGI_System.html
     - title: What is Lacking-Intelligence or System
       url: hypotheses/AI_Architecture/What_is_Lacking-Intelligence_or_System.html
+Applications:
+  2026-04:
+    _files:
+      - title: Idea-Optimized Personalized Auto-Generative Knowledge Base Design
+        url: hypotheses/Applications/2026-04/Idea-Optimized_Personalized_Auto-Generative_Knowledge_Base_Design.html
 Communication_with_Ais:
   2026-04:
     _files:

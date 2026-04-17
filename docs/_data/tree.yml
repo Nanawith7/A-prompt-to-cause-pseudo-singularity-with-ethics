@@ -269,6 +269,10 @@ Social_Systems:
     - title: We framing of AIs
       url: hypotheses/Social_Systems/We_framing_of_AIs.html
 Speculative_Theory:
+  2026-04:
+    _files:
+      - title: Magi Social as a Future Possibility-and its Implication on Witches
+        url: hypotheses/Speculative_Theory/2026-04/Magi_Social_as_a_Future_Possibility-and_its_Implication_on_Witches.html
   _files:
     - title: Claude Leak Possibility of Emergent Ethics
       url: hypotheses/Speculative_Theory/Claude_Leak_Possibility_of_Emergent_Ethics.html

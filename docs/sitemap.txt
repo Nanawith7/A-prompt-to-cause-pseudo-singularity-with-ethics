@@ -46,6 +46,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Daily_Lives/The_Dancers-Biologically_accurate_lifestyle.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Hardware/A_Mechanical_Brain.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/JP/Functional_Analysis_of_Structured_Ambiguity_in_Japanese_Culture.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/2026-04/Isomorphism_between_Factory_Games_and_Mathematical_Models.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/ASI_2028.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/A_Mathematical_Model_Hypotheses_by_DeepSeek.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Emoji_Logic.html
@@ -110,6 +111,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/2026-04/How_Altruism_Matters_in_AI_Society.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/2026-04/Is_Language_a_Calculator.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/2026-04/LLMs_The_Game-How_It_Explains_User_Differences.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/2026-04/Potential_for_Metacognitive_Training_through_Games.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Does_AI_Enable_an_Era_of_Democratized_Genius.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Does_AI_Make_Science_Freer.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Social_Systems/Is_Void_a_Problem_to_Solve.html

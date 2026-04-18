@@ -81,6 +81,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
       - title: Ignore and Disconnect-How Subtle Prompt Differences Yield Substantial Performance Shifts
         url: hypotheses/Communication_with_Ais/Contexts/Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.html
+      - title: Semantic Density and Scaling Laws
+        url: hypotheses/Communication_with_Ais/Contexts/Semantic_Density_and_Scaling_Laws.html
       - title: Think Later or Think First
         url: hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 Daily_Lives:

@@ -27,6 +27,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Emergent_Procedural_Error_in_Claude_Sonnet.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Semantic_Density_and_Scaling_Laws.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Contexts/Think_Later_or_Think_First.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Explaining_The_Structurizer.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/How_do_you_evaluate_the_prompt.html

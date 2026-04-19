@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "The Amazing Emoji Diagram"
 description: "An empirical analysis of the cryptographic, ludic, and humorous properties of emoji-only Mermaid diagrams."
@@ -146,4 +145,3 @@ quadrantChart
 ## 8. Conclusion
 
 The emoji‑only Mermaid diagram operates as a form of meta‑ludic communication. It extracts the ambiguity of emoji from the domain of communicative failure and repositions it as the central mechanic of a collaborative, humorous act. The syntactic rigidity of the diagram form provides a stable scaffold against which the fluid semantics of emoji are juxtaposed. The dual representation of source code and rendered graph generates a layered humor response. Within the appropriate contextual frame, the output transforms from an ostensible data visualization into a shared cognitive puzzle. The diagram is simultaneously an object of interpretation and a visual statement on the flexible boundaries between signal, symbol, and play.
-```

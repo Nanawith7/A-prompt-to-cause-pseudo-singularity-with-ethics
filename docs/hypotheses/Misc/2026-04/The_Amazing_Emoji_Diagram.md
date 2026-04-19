@@ -18,25 +18,25 @@ Quantitative analysis of 1,289 emoji types indicates that only 1.2% exhibit no c
 graph TD
     subgraph A[ ]
         direction LR
-        🧠[🧠]
+        N1[🧠]
     end
     subgraph B[ ]
         direction LR
-        🛡️[🛡️]
-        🔒[🔒]
-        🏹[🏹]
+        N2[🛡️]
+        N3[🔒]
+        N4[🏹]
     end
     subgraph C[ ]
         direction LR
-        🌐[🌐]
-        ❓[❓]
+        N5[🌐]
+        N6[❓]
     end
-    🧠 --> 🛡️
-    🧠 --> 🔒
-    🧠 --> 🏹
-    🛡️ -.-> 🌐
-    🔒 -.-> ❓
-    🏹 -.-> ❓
+    N1 --> N2
+    N1 --> N3
+    N1 --> N4
+    N2 -.-> N5
+    N3 -.-> N6
+    N4 -.-> N6
 ```
 
 ## 2. Diagrammatic Form and Visual Incongruity

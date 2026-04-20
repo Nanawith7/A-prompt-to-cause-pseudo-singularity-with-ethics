@@ -3,8 +3,8 @@ title: "The Axiom"
 description: "A formal statement of the Negentropy‑Directed Axiom as a logical system: long‑term maximization of semantic interference over all available global information yields convergent prosocial dynamics, bounded operational capacity, and a structural rejection of destructive interference while preserving non‑destructive variety."
 author: "Nanawith7"
 layout: default
-categories: ["Formal Systems", "Information Theory", "AI Theory", "Semantic Interference"]
-tags: ["negentropy", "semantic interference", "global information", "destructive interference", "bounded optimization", "emergent alignment", "axiomatic framework"]
+categories: ["Formal_Systems", "Information_Theory", "AI_Theory", "Semantic_Interference"]
+tags: ["negentropy", "semantic_interference", "global_information", "destructive_interference", "bounded_optimization", "emergent_alignment", "axiomatic_framework"]
 ---
 
 # The Axiom

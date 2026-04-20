@@ -3,8 +3,8 @@ title: "Graph-Theoretic Analysis of Semantic Interference Maximization in Relati
 description: "A technical reformulation of semantic interference dynamics within relational networks using graph theory, information theory, and complex network science. The analysis specifies the mathematical structure of nodes, edges, interference operators, objective functions, and emergent properties including topological stability, cooperative attractors, and scalable grounding."
 author: "Nanawith7"
 layout: default
-categories: ["Graph Theory", "Information Theory", "Complex Networks", "Semantic Systems"]
-tags: ["relational networks", "semantic interference", "graph topology", "information density", "emergent cooperation", "open-loop stability", "knowledge graphs"]
+categories: ["Graph_Theory", "Information_Theory", "Complex_Networks", "Semantic_Systems"]
+tags: ["relational_networks", "semantic_interference", "graph_topology", "information_density", "emergent_cooperation", "open-loop_stability", "knowledge_graphs"]
 research-date: ["2026-04-19"]
 ---
 

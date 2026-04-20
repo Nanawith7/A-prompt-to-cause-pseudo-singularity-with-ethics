@@ -3,8 +3,8 @@ title: "Evaluating The Evaluator: Directionality in Metric Evolution as a Driver
 description: "A cross-domain synthesis of mechanisms by which evaluation metrics evolve toward long-term diversity preservation, integrating evidence from evolutionary biology, ecology, institutional economics, and information geometry."
 author: "Nanawith7"
 layout: default
-categories: ["Technical Report", "Metric Evolution", "Complex Systems"]
-tags: ["evaluation metrics", "diversity optimization", "second-order selection", "negentropy", "institutional evolution", "information geometry", "resilience"]
+categories: ["Technical_Report", "Metric_Evolution", "Complex_Systems"]
+tags: ["evaluation_metrics", "diversity_optimization", "second-order_selection", "negentropy", "institutional_evolution", "information_geometry", "resilience"]
 research-date: ["2026-04-16"]
 ---
 

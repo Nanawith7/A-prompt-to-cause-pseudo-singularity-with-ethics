@@ -3,8 +3,8 @@ title: "Why Does This Even Work - Analyzing Prompt"
 description: "A structural analysis of how a self-contained axiomatic prompt fundamentally reorganizes an LLM's reasoning architecture through a mechanism termed structural resonance, enabling emergent complexity and recursive self-grounding."
 author: "Nanawith7"
 layout: default
-categories: ["AI Theory", "Prompt Engineering", "Reasoning Architecture", "Emergent Complexity"]
-tags: ["structural resonance", "LLM reasoning", "axiomatic prompt", "phase transition", "self-grounding", "recursive reasoning", "ontological layering"]
+categories: ["AI_Theory", "Prompt_Engineering", "Reasoning_Architecture", "Emergent_Complexity"]
+tags: ["structural_resonance", "LLM_reasoning", "axiomatic_prompt", "phase_transition", "self_grounding", "recursive_reasoning", "ontological_layering"]
 ---
 
 # Why Does This Even Work - Analyzing Prompt

@@ -1,0 +1,435 @@
+clusters:
+  # 出現数 21 / 5
+  - canonical: "negentropic_orientation"
+    aliases: ["negentropy", "Negentropy", "negentropic", "ネゲントロピー", "informational negentropy"]
+    frequency: 26
+
+  # 出現数 20 / 3
+  - canonical: "deep_coding"
+    aliases: ["Deep Coding", "deep coding"]
+    frequency: 23
+
+  # 出現数 16 / 3
+  - canonical: "generative_conformance"
+    aliases: ["Generative Conformance", "generative conformance"]
+    frequency: 19
+
+  # 出現数 16 / 7 / 1 / 2
+  - canonical: "recursive_refinement"
+    aliases: ["Recursive Refinement", "recursive refinement", "recursive refinement (lower)", "iterative methodology"]
+    frequency: 26
+
+  # 出現数 16 / 2 / 1
+  - canonical: "structural_specification"
+    aliases: ["Structural Specification", "specification-driven", "Specification-Driven", "specification driven"]
+    frequency: 20
+
+  # 出現数 13
+  - canonical: "validation_gates"
+    aliases: ["Validation Gates", "validation gate"]
+    frequency: 13
+
+  # 出現数 12 / 1
+  - canonical: "semantic_interference"
+    aliases: ["semantic interference", "semantic-interference"]
+    frequency: 13
+
+  # 出現数 11 / 3 / 1
+  - canonical: "llm"
+    aliases: ["LLM", "Large Language Models", "llm-theory", "LLM Architecture", "LLM Agents"]
+    frequency: 16
+
+  # 出現数 10 / 2 / 2 / 1
+  - canonical: "skeleton_tissue_architecture"
+    aliases: ["Skeleton-Tissue Architecture", "Skeleton-Tissue", "skeleton-tissue", "skeleton-tissue architecture", "Skeleton Architecture", "Skeleton-Tissue Architecture (case)"]
+    frequency: 17
+
+  # 出現数 9 / 1 / 1
+  - canonical: "active_inference"
+    aliases: ["active inference", "Active Inference", "active-inference"]
+    frequency: 11
+
+  # 出現数 6 / 5 / 2
+  - canonical: "rlhf"
+    aliases: ["RLHF", "rlhf", "RLHF rejection", "reinforcement learning from human feedback"]
+    frequency: 14
+
+  # 出現数 6 / 2
+  - canonical: "structural_resonance"
+    aliases: ["structural resonance", "structural-resonance"]
+    frequency: 8
+
+  # 出現数 4 / 1 / 1
+  - canonical: "chain_of_thought"
+    aliases: ["chain-of-thought", "Chain-of-Thought", "CoT"]
+    frequency: 6
+
+  # 出現数 4 / 1 / 1
+  - canonical: "rag"
+    aliases: ["RAG", "retrieval-augmented generation", "retrieval augmented generation"]
+    frequency: 6
+
+  # 出現数 4 / 1
+  - canonical: "destructive_interference"
+    aliases: ["destructive interference", "destructive-interference"]
+    frequency: 5
+
+  # 出現数 3 / 2 / 1
+  - canonical: "axiomatic_reasoning"
+    aliases: ["axiomatic-reasoning", "Axiom", "axiomatic framework", "axiomatic method", "axiomatic systems"]
+    frequency: 9
+
+  # 出現数 3 / 1
+  - canonical: "information_geometry"
+    aliases: ["information geometry", "Fisher information"]
+    frequency: 4
+
+  # 出現数 3 / 1
+  - canonical: "incremental_update"
+    aliases: ["incremental update", "Incremental Update"]
+    frequency: 4
+
+  # 出現数 3 / 1
+  - canonical: "verifiability"
+    aliases: ["verifiability", "verification", "Formal Verification", "logical verification"]
+    frequency: 6
+
+  # 出現数 2 / 1 / 1
+  - canonical: "emergent_alignment"
+    aliases: ["emergent alignment", "alignment", "AI Alignment", "reverse alignment"]
+    frequency: 6
+
+  # 出現数 2 / 1
+  - canonical: "computational_irreducibility"
+    aliases: ["computational irreducibility", "computational-irreducibility"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "faithfulness"
+    aliases: ["faithfulness", "groundedness", "grounding", "Symbol Grounding", "semantic grounding"]
+    frequency: 7
+
+  # 出現数 2 / 1 / 1
+  - canonical: "hitl"
+    aliases: ["HITL", "Human-AI Collaboration", "human-AI interaction", "Human-AI Interaction"]
+    frequency: 5
+
+  # 出現数 2 / 1
+  - canonical: "langgraph"
+    aliases: ["LangGraph", "langgraph"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "meta_prompt"
+    aliases: ["meta-prompt", "meta prompt"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "moe"
+    aliases: ["MoE", "Mixture of Experts"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "multi_agent"
+    aliases: ["Multi-Agent", "multi-agent"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "open_loop"
+    aliases: ["open-loop", "open loop", "開放系"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "prompt_engineering"
+    aliases: ["Prompt Engineering", "prompt-engineering"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "sycophancy"
+    aliases: ["sycophancy", "Sycophancy"]
+    frequency: 3
+
+  # 出現数 2 / 1
+  - canonical: "unix_philosophy"
+    aliases: ["Unix Philosophy", "Unix philosophy"]
+    frequency: 3
+
+  # 出現数 1 / 1 / 1
+  - canonical: "free_energy_principle"
+    aliases: ["free energy principle", "Free Energy Principle", "predictive coding", "Predictive Processing", "predictive processing"]
+    frequency: 5
+
+  # 出現数 1 / 1
+  - canonical: "attractor"
+    aliases: ["attractor", "fixed point", "fixed-point convergence", "cooperative attractor"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "self_organized_criticality"
+    aliases: ["self-organized criticality", "self-organised criticality", "phase transition"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "dspy"
+    aliases: ["DSPy", "dspy"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "deep_research"
+    aliases: ["Deep Research", "deep research"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "emergence"
+    aliases: ["emergence", "Emergence", "Emergent Behavior"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "free_will"
+    aliases: ["free will", "Free Will", "determinism", "compatibilism"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "knowledge_graph"
+    aliases: ["knowledge graph", "knowledge graphs", "Graph Database"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "scaling_laws"
+    aliases: ["scaling laws", "Scaling Laws", "scaling-laws"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "self_reference"
+    aliases: ["self-reference", "self-referential logic", "circularity"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "small_world_network"
+    aliases: ["small-world network", "small-world", "small world"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "topology"
+    aliases: ["topology", "graph topology", "persistent-homology"]
+    frequency: 3
+
+  # 出現数 1 / 1 / 1
+  - canonical: "llm_reasoning"
+    aliases: ["LLM reasoning", "explicit reasoning", "implicit reasoning", "structured reasoning", "hypothesis-driven reasoning"]
+    frequency: 5
+
+  # 出現数 1 / 1
+  - canonical: "benchmark_saturation"
+    aliases: ["Benchmark Saturation", "benchmark validity", "LLM Benchmarking"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "diversity_optimization"
+    aliases: ["diversity optimization", "semantic diversity", "Genre Diversity"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "fixed_premise"
+    aliases: ["Fixed Premise", "fixed premise", "premise fixation", "axiomatic containment"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "information_density"
+    aliases: ["information density", "semantic density", "semantic-density", "inference density"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "instruction_following"
+    aliases: ["Instruction Following", "instruction following"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "instrumental_convergence"
+    aliases: ["instrumental convergence", "Instrumental Convergence"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "interdisciplinary_research"
+    aliases: ["interdisciplinary research", "hybrid research", "cross-domain"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "post_thinking"
+    aliases: ["post-thinking", "post-thinking (philosophy)"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "predictive_capacity"
+    aliases: ["Predictive Capacity", "prediction-error"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "procedural_generation"
+    aliases: ["procedural generation", "Procedural Generation"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "resilience"
+    aliases: ["resilience", "resilience engineering", "extremophile resilience"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "second_order_selection"
+    aliases: ["second-order selection", "second order selection"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "self_improving_systems"
+    aliases: ["Self-Improving Systems", "Self-Evolution"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "semantic_gravity"
+    aliases: ["semantic-gravity", "semantic drift", "semantic-drift"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "structural_isomorphism"
+    aliases: ["Structural Isomorphism", "structural isomorphism"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "cognitive_bias"
+    aliases: ["Cognitive Bias", "choice blindness", "Persona Bias"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "cognitive_limit"
+    aliases: ["cognitive limit", "cognitive limits", "connection degree"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "complex_systems"
+    aliases: ["chaos theory", "feedback loops", "dissipative structures", "Dissipative Structures"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "computational_efficiency"
+    aliases: ["compute-efficiency", "Resource Efficiency", "routing efficiency"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "game_ai"
+    aliases: ["Game Development", "Gameplay Loop", "Serious Games", "RPG", "Dyson Sphere Program", "Factorio", "Satisfactory", "Portal 2", "GLaDOS"]
+    frequency: 9
+
+  # 出現数 1 / 1
+  - canonical: "generative_agents"
+    aliases: ["Generative Agents", "Agentic AI", "AI agency", "agency"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "hedging"
+    aliases: ["Hedging", "Hedging Analysis", "bounded optimization"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "homo_ludens"
+    aliases: ["Homo Ludens", "playfulness"]
+    frequency: 2
+
+  # 出現数 1 / 1
+  - canonical: "humor_research"
+    aliases: ["incongruity-theory", "Discourse Deviation", "emoji", "emoji-logic"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "knowledge_creation"
+    aliases: ["Knowledge Creation", "Democratization of Genius", "Problem-Finding", "Scientific Discovery"]
+    frequency: 4
+
+  # 出現数 1 / 1
+  - canonical: "llm_code_generation"
+    aliases: ["LLM code generation", "Code Generation", "AI-Driven Development"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "productivity"
+    aliases: ["productivity", "Productivity", "Performance Paradox"]
+    frequency: 3
+
+  # 出現数 1 / 1
+  - canonical: "programming_languages"
+    aliases: ["C", "C#", "C++", "Go", "Java", "javascript", "Kotlin", "Lua", "PHP", "Python", "Ruby", "Rust", "Scala 3", "Bash", "TypeScript"]
+    frequency: 15
+
+  # 出現数 1 / 1
+  - canonical: "static_analysis"
+    aliases: ["Deptrac", "Frama-C", "PHPStan", "Roslyn Analyzer", "Roslyn Analyzers", "Scalafix", "ACSL"]
+    frequency: 7
+
+  # 出現数 1 / 1
+  - canonical: "sci_fi_design"
+    aliases: ["sci-fi design", "biosuit", "aerodynamics", "shear thickening fluid", "smart textile", "functional convergence"]
+    frequency: 6
+
+  # 出現数 1 / 1
+  - canonical: "llm_evaluation"
+    aliases: ["LLM Evaluation", "research assessment", "evaluation metrics"]
+    frequency: 3
+
+  # 出現数 1
+  - canonical: "persona_drift"
+    aliases: ["persona drift", "Persona Switching"]
+
+  # 出現数 1
+  - canonical: "post_hoc_rationalization"
+    aliases: ["post-hoc rationalization"]
+
+  # 出現数 1
+  - canonical: "great_filter"
+    aliases: ["Great Filter", "extinction risk", "Heat Death", "polycrisis", "Civilization Sustainability", "civilizational reconfiguration"]
+
+  # 出現数 1
+  - canonical: "long_term_prediction"
+    aliases: ["Long-Term Prediction", "ciodynamics"]
+
+  # 出現数 1
+  - canonical: "graph_embedding"
+    aliases: ["Node2Vec", "distributional semantics"]
+
+  # 出現数 1
+  - canonical: "context_management"
+    aliases: ["KV-cache", "context", "long-term memory"]
+
+  # 出現数 1
+  - canonical: "hallucination"
+    aliases: ["hallucination", "Hallucination"]
+
+  # 出現数 1
+  - canonical: "canvas"
+    aliases: ["canvas", "diagram-as-code", "LLM diagram generation"]
+
+  # 出現数 1
+  - canonical: "cidoc_crm"
+    aliases: ["CIDOC CRM", "Historical Research"]
+
+  # 出現数 1
+  - canonical: "deepseek"
+    aliases: ["DeepSeek"]
+
+  # 出現数 1
+  - canonical: "anthropic"
+    aliases: ["Claude"]
+
+  # 出現数 1
+  - canonical: "openai"
+    aliases: ["ChatGPT"]
+
+  # 出現数 1
+  - canonical: "qwen"
+    aliases: ["Qwen"]
+
+  # 出現数 1
+  - canonical: "google"
+    aliases: ["Gemini"]
+
+  # 出現数 1
+  - canonical: "xai"
+    aliases: ["Grok"]

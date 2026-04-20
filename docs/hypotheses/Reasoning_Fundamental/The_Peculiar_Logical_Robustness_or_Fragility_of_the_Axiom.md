@@ -4,7 +4,7 @@ description: "A formal analysis of the axiom's internal logical structure, evalu
 author: "Nanawith7"
 layout: default
 categories: ["Formal Systems", "Theoretical Computer Science", "Complexity Theory"]
-tags: ["negentropy", axiomatic_reasoning, self_reference, "robustness_analysis", computational_irreducibility]
+tags: ["negentropic_orientation", "axiomatic_reasoning", "self_reference", "robustness_analysis", "computational_irreducibility"]
 ---
 
 # The Peculiar Logical Robustness, or Fragility, of the Axiom

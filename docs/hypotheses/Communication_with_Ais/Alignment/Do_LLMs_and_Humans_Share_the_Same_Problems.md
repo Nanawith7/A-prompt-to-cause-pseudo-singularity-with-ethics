@@ -4,7 +4,7 @@ description: "A structured comparative analysis mapping known limitations of lar
 author: "Nanawith7"
 layout: default
 categories: ["AI Alignment", "Cognitive Science", "Comparative Analysis"]
-tags: ["LLM", "Human_Cognition", cognitive_bias, hallucination, "Social_Bias", "Failure_Modes", "Grounding_Problem"]
+tags: ["llm", "Human_Cognition", "cognitive_bias", "hallucination", "Social_Bias", "Failure_Modes", "Grounding_Problem"]
 ---
 
 # Do LLMs and Humans Share the Same Problems?

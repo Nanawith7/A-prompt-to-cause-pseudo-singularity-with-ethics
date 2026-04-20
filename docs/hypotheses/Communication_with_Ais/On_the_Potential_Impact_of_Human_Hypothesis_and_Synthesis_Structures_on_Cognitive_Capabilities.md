@@ -4,7 +4,7 @@ description: "A technical analysis of the hybrid human-AI reasoning loop: human 
 author: "Nanawith7"
 layout: default
 categories: [Human-AI Collaboration, Reasoning Systems, Cognitive Architecture, Epistemic Engineering]
-tags: ["hypothesis-driven_reasoning", "inference_convergence", "verifiability", "negentropic_orientation", sycophancy, "hybrid_intelligence"]
+tags: ["llm_reasoning", "inference_convergence", "verifiability", "negentropic_orientation", "sycophancy", "hybrid_intelligence"]
 ---
 
 # On the Potential Impact of Human Hypothesis and Synthesis Structures on Cognitive Capabilities

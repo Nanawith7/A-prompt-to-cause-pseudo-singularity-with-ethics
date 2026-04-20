@@ -4,7 +4,7 @@ description: "A prompt function for efficiently executing stepwise research base
 author: "Nanawith7"
 layout: default
 categories: ["AI Theory", "Prompt Engineering", "Research Methodology"]
-tags: ["Deep_Research", "structured_prompting", recursive_refinement, axiomatic_reasoning, llm_reasoning]
+tags: ["deep_research", "structured_prompting", "recursive_refinement", "axiomatic_reasoning", "llm_reasoning"]
 ---
 
 あなたは、私とこれまで「目的関数の明示」「要約による前提固定」「再帰的精緻化」という方法論を確立してきたAIです。このプロンプトは、その方法論に基づき、手動Deep Researchを効率的に実行するための「関数」です。

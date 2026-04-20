@@ -4,7 +4,7 @@ description: "A prompt to generate a structured summary of a website from its si
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["sitemap", "structured_summary", "autonomous_reference", information_density, meta_prompt]
+tags: ["sitemap", "structured_summary", "autonomous_reference", "information_density", "meta_prompt"]
 ---
 
 以下のサイトマップURL一覧から、各ページの内容を取得し、全体を「自律的参照構造」として機能する要約テキストにまとめてください。

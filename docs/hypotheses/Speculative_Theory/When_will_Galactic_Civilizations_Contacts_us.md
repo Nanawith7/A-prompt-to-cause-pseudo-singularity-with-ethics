@@ -4,7 +4,7 @@ description: "A structural analysis of the contact timing between humanity and s
 author: "Nanawith7"
 layout: default
 categories: ["Fermi Paradox", "Complex Systems", "Astrobiology"]
-tags: ["Contact_Timing", great_filter, "Zoo_Hypothesis", "Homeostatic_Awakening", great_filter]
+tags: ["Contact_Timing", "great_filter", "Zoo_Hypothesis", "Homeostatic_Awakening", "great_filter"]
 ---
 
 # 1. Observational Baseline: Contact Absence

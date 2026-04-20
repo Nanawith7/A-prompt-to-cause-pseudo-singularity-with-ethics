@@ -4,7 +4,7 @@ description: "A technical framework for applying specification-driven, AI-assist
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Lua", "Specification-Driven Development", "AI-Assisted Development"]
-tags: ["Lua", deep_coding, "Partial_Implementation", structural_specification, "Teal", skeleton_tissue_architecture, validation_gates, fixed_premise]
+tags: ["programming_languages", "deep_coding", "Partial_Implementation", "structural_specification", "Teal", "skeleton_tissue_architecture", "validation_gates", "fixed_premise"]
 ---
 
 # Partial Implementation Plan on Lua

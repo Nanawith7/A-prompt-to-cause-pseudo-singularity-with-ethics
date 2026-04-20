@@ -4,7 +4,7 @@ description: "A technical synthesis of vector directionality and relative positi
 author: "Nanawith7"
 layout: default
 categories: ["Technical Report", "LLM Evaluation", "Representation Engineering"]
-tags: ["vector_directionality", "relative_position", "LLM_bias", "activation_steering", information_geometry, active_inference]
+tags: ["vector_directionality", "relative_position", "LLM_bias", "activation_steering", "information_geometry", "active_inference"]
 research-date: ["2026-04-15"]
 ---
 

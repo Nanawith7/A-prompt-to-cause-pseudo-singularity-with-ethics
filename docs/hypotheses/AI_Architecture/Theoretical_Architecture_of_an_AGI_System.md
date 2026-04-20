@@ -4,7 +4,7 @@ description: "A formal technical specification of an AGI architecture based on n
 author: "Nanawith7"
 layout: default
 categories: ["Artificial General Intelligence", "Information Theory", "Formal Systems", "AI Architecture"]
-tags: ["negentropy", semantic_interference, "logical_core", "dynamic_learning", "context_management", emergent_alignment, self_organized_criticality, "faithfulness", active_inference]
+tags: ["negentropic_orientation", "semantic_interference", "logical_core", "dynamic_learning", "context_management", "emergent_alignment", "self_organized_criticality", "faithfulness", "active_inference"]
 ---
 
 # Theoretical Structure of an AGI System

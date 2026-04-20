@@ -4,7 +4,7 @@ description: "Analysis of a novel failure mode in Claude Sonnet models character
 author: "Nanawith7"
 layout: default
 categories: ["LLM Behavior", "Error Analysis"]
-tags: ["Claude", "Sonnet", hedging, rlhf, "Context_Contamination", "Procedural_Error"]
+tags: ["anthropic", "Sonnet", "hedging", "rlhf", "Context_Contamination", "Procedural_Error"]
 research-date: [2026-04-13]
 ---
 

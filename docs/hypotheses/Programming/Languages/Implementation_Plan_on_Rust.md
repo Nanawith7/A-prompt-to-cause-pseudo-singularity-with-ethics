@@ -4,7 +4,7 @@ description: "Technical implementation plan for specification-driven, AI-assiste
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Rust", "AI-Assisted Development"]
-tags: ["Rust", "Specification-Driven_Development", generative_conformance, skeleton_tissue_architecture, validation_gates, recursive_refinement, llm_code_generation]
+tags: ["programming_languages", "Specification-Driven_Development", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "recursive_refinement", "llm_code_generation"]
 ---
 
 # Implementation Plan on Rust

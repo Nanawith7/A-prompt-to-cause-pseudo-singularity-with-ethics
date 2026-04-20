@@ -4,7 +4,7 @@ description: "System architecture and implementation roadmap for transforming un
 author: "Nanawith7"
 layout: default
 categories: ["System Architecture", "Knowledge Management", "LLM Applications", "Research Automation"]
-tags: ["Deep_Research", langgraph, "Markdown_Knowledge_Base", "Quality_Metrics", "Single-Agent", incremental_update, "Tag_Graph", hitl]
+tags: ["deep_research", "langgraph", "Markdown_Knowledge_Base", "Quality_Metrics", "Single-Agent", "incremental_update", "Tag_Graph", "hitl"]
 research-date: ["2026-04-16"]
 ---
 

@@ -4,7 +4,7 @@ description: "An analytical review of the relationship between token-level seman
 author: "Nanawith7"
 layout: default
 categories: ["Language Models", "Scaling Laws", "Information Theory"]
-tags: ["semantic-density", scaling_laws, "tokenization", "compression", "computational_efficiency", "context-capacity"]
+tags: ["information_density", "scaling_laws", "tokenization", "compression", "computational_efficiency", "context-capacity"]
 research-date: [2026-04-17]
 ---
 

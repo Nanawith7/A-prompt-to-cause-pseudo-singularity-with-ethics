@@ -4,7 +4,7 @@ description: "Empirical analysis of corporate AI-layoff narratives as post-hoc j
 author: "Nanawith7"
 layout: default
 categories: ["AI Economics", "Organizational Behavior", "Labor Markets", "Cognitive Science"]
-tags: ["post-hoc_rationalization", "AI_layoffs", "productivity_paradox", "AI_washing", "augmentation_strategy", cognitive_bias, chain_of_thought, "firm_decision-making"]
+tags: ["post_hoc_rationalization", "AI_layoffs", "productivity_paradox", "AI_washing", "augmentation_strategy", "cognitive_bias", "chain_of_thought", "firm_decision-making"]
 research-date: ["2026-04-11"]
 ---
 

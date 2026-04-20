@@ -4,7 +4,7 @@ description: "An examination of the hypothesis that cognitive and knowledge-grap
 author: "Nanawith7"
 layout: default
 categories: ["Cognitive Science", "Graph Theory", "Knowledge Representation"]
-tags: ["connection_degree", "Miller's_Law", knowledge_graph, small_world_network, cognitive_limit, interdisciplinary_research, "degree_distribution"]
+tags: ["cognitive_limit", "Miller's_Law", "knowledge_graph", "small_world_network", "cognitive_limit", "interdisciplinary_research", "degree_distribution"]
 research-date: ["2026-04-19"]
 ---
 

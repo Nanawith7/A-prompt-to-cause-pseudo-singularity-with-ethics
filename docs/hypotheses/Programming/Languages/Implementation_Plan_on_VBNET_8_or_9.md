@@ -4,7 +4,7 @@ description: "A structured implementation plan for applying Deep Coding methodol
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", ".NET", "VB.NET", "AI-Assisted Development"]
-tags: ["Deep_Coding", "VB.NET", "NSwag", "NDepend", "Partial_Classes", "Template_Method", "static_analysis", "Git_Worktree", "CI/CD"]
+tags: ["deep_coding", "VB.NET", "NSwag", "NDepend", "Partial_Classes", "Template_Method", "static_analysis", "Git_Worktree", "CI/CD"]
 ---
 
 # Implementation Plan on VBNET 8 or 9

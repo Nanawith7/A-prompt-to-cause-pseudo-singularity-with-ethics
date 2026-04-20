@@ -4,7 +4,7 @@ description: "A cross-domain synthesis of mechanisms by which evaluation metrics
 author: "Nanawith7"
 layout: default
 categories: ["Technical_Report", "Metric_Evolution", "Complex_Systems"]
-tags: ["evaluation_metrics", diversity_optimization, second_order_selection, "negentropic_orientation", "institutional_evolution", information_geometry, "resilience"]
+tags: ["llm_evaluation", "diversity_optimization", "second_order_selection", "negentropic_orientation", "institutional_evolution", "information_geometry", "resilience"]
 research-date: ["2026-04-16"]
 ---
 

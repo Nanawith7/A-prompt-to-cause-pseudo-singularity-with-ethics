@@ -4,7 +4,7 @@ description: "A technical framework for specification-driven software developmen
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Dart", "AI-Assisted Development"]
-tags: ["Deep_Coding", "Dart", structural_specification, generative_conformance, skeleton_tissue_architecture, validation_gates, llm_code_generation, recursive_refinement, fixed_premise]
+tags: ["deep_coding", "Dart", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "llm_code_generation", "recursive_refinement", "fixed_premise"]
 ---
 
 # Implementation Plan on Dart

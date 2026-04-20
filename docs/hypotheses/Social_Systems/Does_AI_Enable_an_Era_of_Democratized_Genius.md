@@ -4,7 +4,7 @@ description: "An analysis of how AI transforms the prerequisites for achieving g
 author: "Nanawith7"
 layout: default
 categories: ["Artificial Intelligence", "Creativity", "Cognitive Science", "Innovation"]
-tags: ["Democratization_of_Genius", hitl, "Grit", knowledge_creation, "Generative_AI", "Meta-Expertise", knowledge_creation]
+tags: ["knowledge_creation", "hitl", "Grit", "knowledge_creation", "Generative_AI", "Meta-Expertise", "knowledge_creation"]
 research-date: ["2026-04-11"]
 ---
 

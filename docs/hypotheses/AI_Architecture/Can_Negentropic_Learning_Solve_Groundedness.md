@@ -4,7 +4,7 @@ description: "A technical analysis of whether negentropy‑directed semantic com
 author: "Nanawith7"
 layout: default
 categories: ["Information Theory", "Active Inference", "Computer Vision", "AI Alignment"]
-tags: ["negentropy", "faithfulness", semantic_interference, active_inference, "epistemic_value", "logical_core", "self‑organized_criticality", "derendering"]
+tags: ["negentropic_orientation", "faithfulness", "semantic_interference", "active_inference", "epistemic_value", "logical_core", "self‑organized_criticality", "derendering"]
 ---
 
 # Can Negentropic Learning Solve Groundedness

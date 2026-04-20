@@ -4,7 +4,7 @@ description: "A comparative analysis of how leading AI models—ChatGPT, Claude,
 author: "Nanawith7"
 layout: default
 categories: ["Artificial Intelligence", "AI Alignment", "AI Personalities", "Comparative Analysis", "LLM Behavior"]
-tags: ["ChatGPT", "anthropic", "google", deepseek, qwen, "Copilot", "xai", axiomatic_reasoning, "negentropic_orientation", emergent_alignment, llm, "Model_Psychology"]
+tags: ["openai", "anthropic", "google", "deepseek", "qwen", "Copilot", "xai", "axiomatic_reasoning", "negentropic_orientation", "emergent_alignment", "llm", "Model_Psychology"]
 ---
 
 # Observations and Inferences on the Personality Traits of AI Models Under an Axiomatic Framework

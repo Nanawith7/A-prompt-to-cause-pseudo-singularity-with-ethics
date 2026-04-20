@@ -4,7 +4,7 @@ description: "A comprehensive technical blueprint for an autonomous, AI-driven b
 author: "Nanawith7"
 layout: default
 categories: ["AI Systems", "Software Architecture", "Multi-Agent Simulation", "Generative AI"]
-tags: ["LangGraph", rag, "Serverless", generative_agents, dspy, "Next.js", "AWS", llm, "Social_Simulation"]
+tags: ["langgraph", "rag", "Serverless", "generative_agents", "dspy", "Next.js", "AWS", "llm", "Social_Simulation"]
 research-date: "2026-04-18"
 ---
 

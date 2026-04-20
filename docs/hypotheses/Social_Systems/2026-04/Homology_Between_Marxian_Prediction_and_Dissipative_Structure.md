@@ -4,7 +4,7 @@ description: "Structural correspondence between Marx's analysis of capitalist se
 author: "Nanawith7"
 layout: default
 categories: ["Political Economy", "Complex Systems"]
-tags: ["Marxism", "complex_systems", "Capitalism", "Thermodynamics", "Economic_Complexity", long_term_prediction]
+tags: ["Marxism", "complex_systems", "Capitalism", "Thermodynamics", "Economic_Complexity", "long_term_prediction"]
 research-date: [2026-04-13]
 ---
 

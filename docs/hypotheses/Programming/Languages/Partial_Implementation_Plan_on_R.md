@@ -4,7 +4,7 @@ description: "Technical framework for applying specification-driven, recursive r
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "R Programming", "Specification-Driven Development"]
-tags: ["R", "Partial_Implementation", structural_specification, "S4", "R6", validation_gates, fixed_premise, recursive_refinement, "Interface_Contracts"]
+tags: ["R", "Partial_Implementation", "structural_specification", "S4", "R6", "validation_gates", "fixed_premise", "recursive_refinement", "Interface_Contracts"]
 ---
 
 # Partial Implementation Plan on R

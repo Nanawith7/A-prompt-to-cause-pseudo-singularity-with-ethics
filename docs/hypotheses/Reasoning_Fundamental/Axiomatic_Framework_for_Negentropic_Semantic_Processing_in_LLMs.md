@@ -3,7 +3,7 @@ title: "Axiomatic Framework for Negentropic Semantic Processing in LLMs"
 description: "A technical formulation of semantic understanding in LLMs based on negentropy, information interference, and layered computational constraints."
 author: "Nanawith7"
 categories: ["information-theory", "machine-learning", "semantics", "reasoning-fundamental"]
-tags: ["negentropy", "axioms", llm, "semantic-processing"]
+tags: ["negentropic_orientation", "axioms", "llm", "semantic-processing"]
 last_updated: 2026-03-26
 sitemap:
     priority: "0.9"

@@ -4,7 +4,7 @@ description: "Analysis of Obsidian as a platform for canonicalizing unstructured
 author: "Nanawith7"
 layout: default
 categories: ["Knowledge_Management", "Data_Canonicalization", "Graph_Visualization"]
-tags: ["Obsidian", "Tag_Normalization", "Knowledge_Graph", "Canonicalization", "Tag_Wrangler", "Graph_View", "Metadata"]
+tags: ["Obsidian", "Tag_Normalization", "knowledge_graph", "Canonicalization", "Tag_Wrangler", "Graph_View", "Metadata"]
 research-date: ["2026-04-20"]
 ---
 

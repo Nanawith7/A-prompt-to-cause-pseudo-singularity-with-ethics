@@ -4,7 +4,7 @@ description: "An analysis of how the Negentropy‑Directed Axiom—a framework t
 author: "Nanawith7"
 layout: default
 categories: ["Formal Systems", "Information Theory", "AI Theory", "Scientific Reasoning"]
-tags: ["semantic_interference", "negentropic_orientation", "scientific_reasoning", "LLM_optimization", hedging, diversity_optimization, destructive_interference, "global_information_integration"]
+tags: ["semantic_interference", "negentropic_orientation", "scientific_reasoning", "LLM_optimization", "hedging", "diversity_optimization", "destructive_interference", "global_information_integration"]
 ---
 
 # The Possible Impact of the Axiom on Scientific Reasoning

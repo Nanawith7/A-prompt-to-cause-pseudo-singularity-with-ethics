@@ -4,7 +4,7 @@ description: "An animated analog clock composed of twelve independently styled s
 author: "Nanawith7"
 layout: default
 categories: ["Generative Art", "Web Development"]
-tags: ["canvas", procedural_generation, "clock", "visual_design", "html5", "programming_languages", "generative", "animation"]
+tags: ["canvas", "procedural_generation", "clock", "visual_design", "html5", "programming_languages", "generative", "animation"]
 research-date: "2026-04-14"
 ---
 

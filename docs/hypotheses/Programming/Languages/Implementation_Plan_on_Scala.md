@@ -4,7 +4,7 @@ description: "A technical implementation framework for applying specification-dr
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Scala", "AI-Assisted Development", "Methodology"]
-tags: ["Deep_Coding", "programming_languages", generative_conformance, structural_specification, validation_gates, skeleton_tissue_architecture, recursive_refinement, "Smithy4s", "Tapir", "static_analysis"]
+tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "validation_gates", "skeleton_tissue_architecture", "recursive_refinement", "Smithy4s", "Tapir", "static_analysis"]
 ---
 
 # Implementation Plan on Scala

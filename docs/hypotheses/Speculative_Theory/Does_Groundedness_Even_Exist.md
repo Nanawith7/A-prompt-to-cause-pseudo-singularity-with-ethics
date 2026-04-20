@@ -4,7 +4,7 @@ description: "A formal analysis of the symbol grounding problem, demonstrating t
 author: "Nanawith7"
 layout: default
 categories: ["Speculative Theory", "Information Theory", "Cognitive Science", "AI Epistemology"]
-tags: ["groundedness", "faithfulness", self_reference, self_reference, "attractor", "verifiability", "LLM_understanding"]
+tags: ["faithfulness", "faithfulness", "self_reference", "self_reference", "attractor", "verifiability", "LLM_understanding"]
 ---
 
 # Does Groundedness Even Exist?

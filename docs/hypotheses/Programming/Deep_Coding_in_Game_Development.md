@@ -4,7 +4,7 @@ description: "A structured analysis of how Deep Coding methodology—centered on
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Game Development", "AI-Assisted Development"]
-tags: ["Deep_Coding", "game_ai", llm_code_generation, structural_specification, generative_conformance, recursive_refinement, skeleton_tissue_architecture]
+tags: ["deep_coding", "game_ai", "llm_code_generation", "structural_specification", "generative_conformance", "recursive_refinement", "skeleton_tissue_architecture"]
 ---
 
 # Possibility of Deep Coding in Game Development

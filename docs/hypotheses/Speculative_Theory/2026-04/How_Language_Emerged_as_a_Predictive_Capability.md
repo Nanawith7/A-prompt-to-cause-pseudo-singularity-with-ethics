@@ -4,7 +4,7 @@ description: "Structural analysis of language as a complex adaptive system that 
 author: "Nanawith7"
 layout: default
 categories: ["Linguistic Theory", "Cognitive Science", "Artificial Intelligence"]
-tags: ["Emergent_Grammar", "Conceptual_Metaphor", "Analogical_Reasoning", llm, free_energy_principle, structural_isomorphism]
+tags: ["Emergent_Grammar", "Conceptual_Metaphor", "Analogical_Reasoning", "llm", "free_energy_principle", "structural_isomorphism"]
 research-date: ["2026-04-17"]
 ---
 

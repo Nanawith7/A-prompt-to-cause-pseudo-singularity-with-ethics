@@ -4,7 +4,7 @@ description: "A technical reformulation of semantic interference dynamics within
 author: "Nanawith7"
 layout: default
 categories: ["Graph_Theory", "Information_Theory", "Complex_Networks", "Semantic_Systems"]
-tags: ["relational_networks", semantic_interference, "topology", information_density, "emergent_cooperation", "open-loop_stability", knowledge_graph]
+tags: ["relational_networks", "semantic_interference", "topology", "information_density", "emergent_cooperation", "open-loop_stability", "knowledge_graph"]
 research-date: ["2026-04-19"]
 ---
 

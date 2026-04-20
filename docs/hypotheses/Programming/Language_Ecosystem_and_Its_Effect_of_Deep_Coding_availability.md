@@ -4,7 +4,7 @@ description: "A comparative analysis of six programming languages (Rust, TypeScr
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Programming Languages", "Specification-Driven Development"]
-tags: ["Deep_Coding", "Language_Comparison", structural_specification, generative_conformance, validation_gates, "Type_Systems", llm_code_generation]
+tags: ["deep_coding", "Language_Comparison", "structural_specification", "generative_conformance", "validation_gates", "Type_Systems", "llm_code_generation"]
 ---
 
 # Language Ecosystem and Its Effect on Deep Coding Availability

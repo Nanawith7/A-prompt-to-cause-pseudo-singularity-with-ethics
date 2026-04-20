@@ -4,7 +4,7 @@ description: "A technical specification for applying specification-driven, AI‑
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Ruby", "AI-Assisted Development", "Specification-Driven Development"]
-tags: ["Deep_Coding", "programming_languages", "RBS", "Steep", generative_conformance, skeleton_tissue_architecture, "Packwerk", recursive_refinement, validation_gates]
+tags: ["deep_coding", "programming_languages", "RBS", "Steep", "generative_conformance", "skeleton_tissue_architecture", "Packwerk", "recursive_refinement", "validation_gates"]
 ---
 
 # Implementation Plan on Ruby

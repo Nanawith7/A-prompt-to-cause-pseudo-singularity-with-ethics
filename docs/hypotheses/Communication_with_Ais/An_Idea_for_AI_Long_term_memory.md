@@ -4,7 +4,7 @@ description: "A technical specification for a natural language database enabling
 author: "Nanawith7"
 layout: default
 categories: ["AI Systems", "Memory Architecture", "Natural Language Processing"]
-tags: ["long-term_memory", "recursive_compression", structural_resonance, "attractor", "natural_language_database"]
+tags: ["context_management", "recursive_compression", "structural_resonance", "attractor", "natural_language_database"]
 ---
 
 # An Idea for AI Long Term Memory

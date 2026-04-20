@@ -4,7 +4,7 @@ description: "A structured methodology for conducting iterative, human-guided de
 author: "Nanawith7"
 layout: default
 categories: [Research Methodology, Large Language Models, Information Retrieval, Human-AI Collaboration]
-tags: ["deep_research", rag, recursive_refinement, "research_synthesis", "LLM-assisted_research"]
+tags: ["deep_research", "rag", "recursive_refinement", "research_synthesis", "LLM-assisted_research"]
 ---
 
 # Pseudo-Deep Research Methodology: A Framework for Conducting Guided Deep Research on RAG-Equipped Models

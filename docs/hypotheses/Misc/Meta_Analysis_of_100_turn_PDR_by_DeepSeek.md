@@ -4,7 +4,7 @@ description: "A meta‑analysis of a 121‑turn structured dialogue that constru
 author: "Nanawith7"
 layout: default
 categories: ["AI Research", "Meta‑Analysis", "AGI Methodology"]
-tags: ["Deep_Research", benchmark_saturation, "Cognitive_Scaffolding", recursive_refinement, "Self‑Evolution", generative_agents]
+tags: ["deep_research", "benchmark_saturation", "Cognitive_Scaffolding", "recursive_refinement", "Self‑Evolution", "generative_agents"]
 ---
 
 # 100 turn Pseudo Deep Research Methodology analyzed by DeepSeek

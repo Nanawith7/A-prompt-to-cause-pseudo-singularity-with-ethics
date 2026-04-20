@@ -4,7 +4,7 @@ description: "Analysis of the divergent performance trajectories of intrinsic se
 author: "Nanawith7"
 layout: default
 categories: ["LLM", "RAG", "Self-Correction", "Information Theory"]
-tags: ["self-verification", rag, "falsification", "entropy", open_loop, "closed-loop", hallucination]
+tags: ["self-verification", "rag", "falsification", "entropy", "open_loop", "closed-loop", "hallucination"]
 research-date: ["2026-04-15"]
 ---
 

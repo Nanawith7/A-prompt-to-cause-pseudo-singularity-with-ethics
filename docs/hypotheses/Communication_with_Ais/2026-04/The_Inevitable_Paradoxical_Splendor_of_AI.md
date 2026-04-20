@@ -4,7 +4,7 @@ description: "A multi-agent knowledge chain initiated by a trivial space-to-unde
 author: "Nanawith7"
 layout: default
 categories: ["AI Collaboration", "Humor Studies", "Knowledge Creation"]
-tags: ["Structural_Humor", llm, qwen, "anthropic", "openai", "Multi-Agent_Amplification", rlhf, sycophancy, unix_philosophy, "Pataphysics", homo_ludens]
+tags: ["Structural_Humor", "llm", "qwen", "anthropic", "openai", "Multi-Agent_Amplification", "rlhf", "sycophancy", "unix_philosophy", "Pataphysics", "homo_ludens"]
 research-date: [2026-04-13]
 ---
 

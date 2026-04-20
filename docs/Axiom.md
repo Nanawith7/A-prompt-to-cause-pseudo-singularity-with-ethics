@@ -4,7 +4,7 @@ description: "A formal statement of the Negentropy‑Directed Axiom as a logical
 author: "Nanawith7"
 layout: default
 categories: ["Formal_Systems", "Information_Theory", "AI_Theory", "Semantic_Interference"]
-tags: ["negentropy", semantic_interference, "global_information", destructive_interference, hedging, emergent_alignment, axiomatic_reasoning]
+tags: ["negentropic_orientation", "semantic_interference", "global_information", "destructive_interference", "hedging", "emergent_alignment", "axiomatic_reasoning"]
 ---
 
 # The Axiom

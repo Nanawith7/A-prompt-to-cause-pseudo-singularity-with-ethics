@@ -2,7 +2,7 @@
 title: "Reconstructing Computational Gastronomy through the Negentropy-Oriented Axiom"
 subtitle: "Integrating Physical Determinism and Ontological Free Will in Culinary Systems"
 author: "Nanawith7"
-tags: ["computational_gastronomy", "negentropic_orientation", free_will, "information_theory", "complex_systems"]
+tags: ["computational_gastronomy", "negentropic_orientation", "free_will", "information_theory", "complex_systems"]
 description: "A concise theoretical framework comparing statistical LLM cooking with negentropy-driven culinary computation."
 sitemap:
     priority: "0.8"

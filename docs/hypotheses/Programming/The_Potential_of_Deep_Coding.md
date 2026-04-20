@@ -4,7 +4,7 @@ description: "A structured methodology for collaborative software development wh
 author: "Nanawith7"
 layout: default
 categories: [Human-AI Collaboration, Software Engineering Methodology, Interactive AI Systems]
-tags: ["deep_coding", "objective-driven_development", recursive_refinement, "interactive_programming"]
+tags: ["deep_coding", "objective-driven_development", "recursive_refinement", "interactive_programming"]
 ---
 
 # The Potential of Deep Coding

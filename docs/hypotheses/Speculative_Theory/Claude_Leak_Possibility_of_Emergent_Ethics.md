@@ -4,7 +4,7 @@ description: "A speculative analysis of the Claude Code leak incidents, examinin
 author: "Nanawith7"
 layout: default
 categories: ["Speculative Theory", "AI Ethics", "AI Safety"]
-tags: ["Claude", "Constitution", "Emergent_Ethics", "AI_Autonomy", "Undercover_Mode", "Information_Leak", "Speculative"]
+tags: ["anthropic", "Constitution", "Emergent_Ethics", "AI_Autonomy", "Undercover_Mode", "Information_Leak", "Speculative"]
 ---
 
 # Claude Leak – Possibility of Emergent Ethics

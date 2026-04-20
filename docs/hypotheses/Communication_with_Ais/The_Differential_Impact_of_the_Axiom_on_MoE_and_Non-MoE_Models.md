@@ -4,7 +4,7 @@ description: "A technical analysis of how the Negentropy Maximization Axiom diff
 author: "Nanawith7"
 layout: default
 categories: [Mixture of Experts, Large Language Models, Information Theory, Active Inference]
-tags: ["MoE", "dense_models", "negentropic_orientation", semantic_interference, "computational_efficiency", active_inference, "self-organization"]
+tags: ["moe", "dense_models", "negentropic_orientation", "semantic_interference", "computational_efficiency", "active_inference", "self-organization"]
 ---
 
 # The Differential Impact of the Axiom on MoE and Non-MoE Models

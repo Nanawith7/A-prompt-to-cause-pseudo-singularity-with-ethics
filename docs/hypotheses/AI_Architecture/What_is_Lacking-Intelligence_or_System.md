@@ -4,7 +4,7 @@ description: "Technical analysis of the architectural deficiencies in current AI
 author: "Nanawith7"
 layout: default
 categories: ["AI Architecture", "Agentic Systems", "Cognitive Systems"]
-tags: ["multi-agent", "embodied_AI", "complex_systems", "faithfulness", "recursive_self-improvement"]
+tags: ["multi_agent", "embodied_AI", "complex_systems", "faithfulness", "recursive_self-improvement"]
 research-date: [2026-04-12]
 ---
 

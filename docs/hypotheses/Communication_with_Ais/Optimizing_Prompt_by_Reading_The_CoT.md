@@ -4,7 +4,7 @@ description: "A technical synthesis of how reading chain-of-thought (CoT) traces
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "LLM Reasoning", "Human-AI Interaction"]
-tags: ["chain-of-thought", "prompt_optimization", "faithfulness", llm_reasoning, "meta-cognition"]
+tags: ["chain_of_thought", "prompt_optimization", "faithfulness", "llm_reasoning", "meta-cognition"]
 ---
 
 # Optimizing Prompt by Reading The CoT

@@ -4,7 +4,7 @@ description: "A structural analysis of the isomorphism between knowledge base co
 author: "Nanawith7"
 layout: default
 categories: ["Knowledge Management", "Game Design", "Systems Theory", "Cognitive Science"]
-tags: ["Structural_Isomorphism", "Tutorial_Boss", great_filter, hitl, "Knowledge_Base", "game_ai", "DESI", "Epistemic_Uncertainty"]
+tags: ["structural_isomorphism", "Tutorial_Boss", "great_filter", "hitl", "Knowledge_Base", "game_ai", "DESI", "Epistemic_Uncertainty"]
 research-date: ["2026-04-16"]
 ---
 

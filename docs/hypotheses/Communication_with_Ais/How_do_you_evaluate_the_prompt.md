@@ -4,7 +4,7 @@ description: "A framework for evaluating prompts based on structured reasoning, 
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "LLM Evaluation", "Reasoning"]
-tags: ["prompt_evaluation", instruction_following, chain_of_thought, llm_reasoning, "faithfulness", "task-model_alignment"]
+tags: ["prompt_evaluation", "instruction_following", "chain_of_thought", "llm_reasoning", "faithfulness", "task-model_alignment"]
 ---
 
 # How do you evaluate the prompt

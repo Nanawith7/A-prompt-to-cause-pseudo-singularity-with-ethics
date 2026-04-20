@@ -4,7 +4,7 @@ description: "A prompt to compare an existing website summary against a fresh si
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["sitemap_diff", incremental_update, "structured_summary", "verifiability", meta_prompt]
+tags: ["sitemap_diff", "incremental_update", "structured_summary", "verifiability", "meta_prompt"]
 ---
 
 添付の「既存要約」と「最新のサイトマップテキスト」を比較し、変更があったページを特定して要約を更新してください。

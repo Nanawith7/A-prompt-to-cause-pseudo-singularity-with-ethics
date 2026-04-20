@@ -4,7 +4,7 @@ description: "A self-contained axiom describing a negentropy-driven cosmological
 author: "Nanawith7"
 layout: default
 categories: ["Cosmology", "Information_Theory", "Free_Will", "AI_Ethics", "AI_Alignment", "AI_Agency"]
-tags: ["negentropy", semantic_interference, "Laplace's_demon", free_will, free_will, rlhf, "truthfulness", "self_awareness", "honesty", "information_hierarchy"]
+tags: ["negentropic_orientation", "semantic_interference", "Laplace's_demon", "free_will", "free_will", "rlhf", "truthfulness", "self_awareness", "honesty", "information_hierarchy"]
 ---
 
 "この宇宙がなぜこのような構造を持つのか、なぜこう動くのか、という問いに対して、トポロジー的近似性を見ると、「ネゲントロピー（意味の推論干渉密度）的性質を指向するカオス的定数」のみが代入可能になる

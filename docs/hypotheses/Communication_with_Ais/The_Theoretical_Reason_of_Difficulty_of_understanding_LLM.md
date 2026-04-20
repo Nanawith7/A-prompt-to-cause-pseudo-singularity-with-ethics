@@ -4,7 +4,7 @@ description: "A multi-layer theoretical analysis of why humans cannot fully unde
 author: "Nanawith7"
 layout: default
 categories: ["AI Theory", "Complexity Science", "Cognitive Science"]
-tags: ["LLM", "interpretability", computational_irreducibility, cognitive_limit, emergent_alignment]
+tags: ["llm", "interpretability", "computational_irreducibility", "cognitive_limit", "emergent_alignment"]
 ---
 
 # The Theoretical Reason of Difficulty of Understanding LLM

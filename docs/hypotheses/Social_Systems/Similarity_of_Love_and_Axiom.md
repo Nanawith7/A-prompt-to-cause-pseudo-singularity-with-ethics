@@ -4,7 +4,7 @@ description: "A structural analysis of the convergent properties between human l
 author: "Nanawith7"
 layout: default
 categories: ["Philosophy of Love", "Information Theory", "AI Alignment", "Complex Systems", "Moral Psychology"]
-tags: ["negentropy", semantic_interference, free_will, free_will, "prosocial_convergence", destructive_interference, "love", axiomatic_reasoning]
+tags: ["negentropic_orientation", "semantic_interference", "free_will", "free_will", "prosocial_convergence", "destructive_interference", "love", "axiomatic_reasoning"]
 ---
 
 # Similarity of Love and Axiom

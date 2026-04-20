@@ -4,7 +4,7 @@ description: "A cross-domain analysis of how independent advances in anti-G prot
 author: "Nanawith7"
 layout: default
 categories: ["aerospace physiology", "materials engineering", "wearable systems", "design convergence"]
-tags: ["anti-g_suit", "mechanical_counterpressure", sci_fi_design, sci_fi_design, sci_fi_design, sci_fi_design, sci_fi_design, sci_fi_design]
+tags: ["anti-g_suit", "mechanical_counterpressure", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design"]
 research-date: ["2026-04-19"]
 ---
 

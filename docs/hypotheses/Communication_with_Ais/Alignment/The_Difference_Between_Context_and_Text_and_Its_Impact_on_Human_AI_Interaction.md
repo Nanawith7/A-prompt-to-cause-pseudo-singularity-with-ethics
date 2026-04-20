@@ -4,7 +4,7 @@ description: "A technical analysis of how session history (context) and the imme
 author: "Nanawith7"
 layout: default
 categories: ["AI", "Human-Computer Interaction"]
-tags: ["LLM", "context_management", "text", "asymmetry", hitl, "user_experience", "memory"]
+tags: ["llm", "context_management", "text", "asymmetry", "hitl", "user_experience", "memory"]
 ---
 
 # The Difference Between ‘Context’ and ‘Text’ and Its Impact on Human-AI Interaction

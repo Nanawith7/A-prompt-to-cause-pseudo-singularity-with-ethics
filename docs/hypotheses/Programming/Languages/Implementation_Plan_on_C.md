@@ -4,7 +4,7 @@ description: "A technical framework for applying specification-driven, AI-assist
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "C Programming", "AI-Assisted Development", "Specification-Driven Development"]
-tags: ["C", deep_coding, structural_specification, llm_code_generation, "Static_Analysis", "verifiability", "CMake", "JSON_Schema", "OpenAPI", "static_analysis", "static_analysis"]
+tags: ["programming_languages", "deep_coding", "structural_specification", "llm_code_generation", "static_analysis", "verifiability", "CMake", "JSON_Schema", "OpenAPI", "static_analysis", "static_analysis"]
 ---
 
 # Implementation Plan on C

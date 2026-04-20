@@ -4,7 +4,7 @@ description: "Comparative analysis of output order effects in single-turn and mu
 author: "Nanawith7"
 layout: default
 categories: ["LLM", "Prompt Engineering", "Reasoning"]
-tags: ["chain-of-thought", "output-order", "multi-turn", post_thinking, "verifiability", "state-propagation"]
+tags: ["chain_of_thought", "output-order", "multi-turn", "post_thinking", "verifiability", "state-propagation"]
 ---
 
 # Think Later or Think First - How Does It Matter in LLM Reasoning Chains

@@ -4,7 +4,7 @@ description: "Empirical and theoretical analysis of completion-mode prompting as
 author: "Nanawith7"
 layout: default
 categories: ["LLM Prompting", "Model Alignment", "Performance Evaluation"]
-tags: ["alignment-tax", "completion-prompt", "base-model", "instruct-model", rlhf, prompt_engineering, "benchmarking"]
+tags: ["alignment-tax", "completion-prompt", "base-model", "instruct-model", "rlhf", "prompt_engineering", "benchmarking"]
 research-date: ["2026-04-17"]
 ---
 

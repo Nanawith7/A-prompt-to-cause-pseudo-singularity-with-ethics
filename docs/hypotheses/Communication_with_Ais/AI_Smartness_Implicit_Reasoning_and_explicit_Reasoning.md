@@ -4,7 +4,7 @@ description: "A systematic analysis of how LLM performance metrics conflate impl
 author: "Nanawith7"
 layout: default
 categories: ["AI Evaluation", "LLM Benchmarks", "Cognitive Architecture"]
-tags: ["implicit_reasoning", llm_reasoning, "prompt_sensitivity", benchmark_saturation, "user_perception", "reasoning_decomposition"]
+tags: ["llm_reasoning", "llm_reasoning", "prompt_sensitivity", "benchmark_saturation", "user_perception", "reasoning_decomposition"]
 ---
 
 # AI Smartness: Implicit Reasoning and Explicit Reasoning

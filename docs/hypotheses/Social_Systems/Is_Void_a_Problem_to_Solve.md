@@ -4,7 +4,7 @@ description: "A technical synthesis of evidence indicating that perceived absenc
 author: "Nanawith7"
 layout: default
 categories: ["Cognitive Science", "Neuroscience", "Behavioral Dynamics"]
-tags: ["prediction-error", "default-mode-network", "information-gap", "homeostatic-regulation", "quiet-ego", "prosocial-behavior"]
+tags: ["predictive_capacity", "default-mode-network", "information-gap", "homeostatic-regulation", "quiet-ego", "prosocial-behavior"]
 ---
 
 # Is Void a Problem to Solve

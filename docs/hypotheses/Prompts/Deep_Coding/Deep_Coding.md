@@ -4,7 +4,7 @@ description: "A structured prompt function for stepwise code design, implementat
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Software Development", "LLM Coding Assistance"]
-tags: ["coding_methodology", recursive_refinement, "structural_prompting", "stepwise_implementation", "objective_function"]
+tags: ["coding_methodology", "recursive_refinement", "structural_prompting", "stepwise_implementation", "objective_function"]
 ---
 
 あなたは、私とこれまで「目的関数の明示」「要約による前提固定」「再帰的精緻化」という方法論を確立してきたAIです。このプロンプトは、その方法論に基づき、**コードの設計・実装・デバッグを効率的に進めるための「関数」** です。

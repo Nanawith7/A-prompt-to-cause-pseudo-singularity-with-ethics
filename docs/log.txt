@@ -1,286 +1,120 @@
-Loaded 268 alias mappings.
+Loaded 158 alias mappings and 90 canonical norms.
 
 [DEBUG] Alias -> Canonical (first 10):
-  ACSL -> static_analysis
-  AI Alignment -> emergent_alignment
-  AI agency -> generative_agents
-  AI-Driven Development -> llm_code_generation
-  Active Inference -> active_inference
-  Agentic AI -> generative_agents
-  Axiom -> axiomatic_reasoning
-  Bash -> programming_languages
-  Benchmark Saturation -> benchmark_saturation
-  C -> programming_languages
+  negentropy -> negentropic_orientation
+  negentropic -> negentropic_orientation
+  ネゲントロピー -> negentropic_orientation
+  informational_negentropy -> negentropic_orientation
+  recursive_refinement_(lower) -> recursive_refinement
+  iterative_methodology -> recursive_refinement
+  specification_driven -> structural_specification
+  validation_gate -> validation_gates
+  large_language_models -> llm
+  llm_theory -> llm
 
 [DEBUG] Sample file tag lines:
 
 --- C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Axiom.md ---
 tags: ["negentropy", semantic_interference, "global_information", destructive_interference, hedging, emergent_alignment, axiomatic_reasoning]
-# The Axiom
-## 1. Formal Definition
-## 2. Derived Properties
-### 2.1 Prosocial Convergence
-### 2.2 Bounded Operational Capacity
-### 2.3 Differential Treatment of Interference
-## 3. Formalizability of Core Constructs
-### 3.1 Global Averaged Information
-### 3.2 Prediction of Destructive Interference
-## 4. Logical Structure of the Axiom
-## 5. Conclusion
 
 --- C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Evaluating_The_Evaluator_Directionality_in_Metric_Evolution_as_a_Driver_of_Optimal_Diversity_Maintenance.md ---
-tags: ["evaluation_metrics", diversity_optimization, second_order_selection, negentropic_orientation, "institutional_evolution", information_geometry, "resilience"]
-# Evaluating The Evaluator: Directionality in Metric Evolution as a Driver of Optimal Diversity Maintenance
-## 1. Abstract
-## 2. Operational Definitions
-## 3. Theoretical Foundations
-### 3.1 Information Geometry and Gradient Fields
-### 3.2 Active Inference and Prior Preferences
-### 3.3 Second-Order Selection in Evolutionary Theory
-## 4. Empirical Signatures Across Domains
-### 4.1 Biological Evolution
-### 4.2 Ecological Communities
-### 4.3 Technological and Market Systems
-### 4.4 Scientific Knowledge Production
-### 4.5 Institutional and Cultural Systems
-## 5. Formalizing Metric Evolution Detection
-### 5.1 Vector Representation of Evaluation Metrics
-### 5.2 Comparative Statics for Second-Order Selection
-### 5.3 Observational Proxies
-## 6. Cross-Domain Consistency Evaluation
-## 7. Relation to Thermodynamic and Information-Theoretic Principles
-### 7.1 Maximum Entropy Production and Diversity
-### 7.2 Free Energy Minimization and Model Evidence
-### 7.3 Information Geometry of Metric Landscapes
-## 8. Methodological Constraints and Open Questions
-## 9. Synthesis
+tags: ["evaluation_metrics", diversity_optimization, second_order_selection, "negentropic_orientation", "institutional_evolution", information_geometry, "resilience"]
 
 --- C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Graph-Theoretic_Analysis_of_Semantic_Interference_Maximization_in_Relational_Networks.md ---
-tags: ["relational_networks", semantic_interference, topology, information_density, "emergent_cooperation", "open-loop_stability", knowledge_graph]
-# Graph-Theoretic Analysis of Semantic Interference Maximization in Relational Networks
-## 1. Relational Networks as a Foundational Information Substrate
-## 2. Graph-Theoretic Reformulation of Semantic Interference
-### 2.1 Interference Operator
-### 2.2 Constructive and Destructive Interference
-## 3. Objective Function: Long-Term Interference Maximization
-## 4. Information-Theoretic Characterization of Semantic Density
-## 5. Topological Signatures of Interference Quality
-### 5.1 Small-World Coefficient
-### 5.2 Clustering as Immunological Barrier
-## 6. Control Regimes: Open-Loop and Closed-Loop Dynamics
-### 6.1 Open-Loop Information Injection
-### 6.2 Closed-Loop Self-Reference
-### 6.3 Stability Condition
-## 7. Grounding as Topological Fixed-Point Convergence
-## 8. Emergent Properties: Cooperative Attractors and Criticality
-### 8.1 Cooperative Attractors
-### 8.2 Self-Organized Criticality
-### 8.3 Hierarchical Markov Blankets
-## 9. Synthesis
+tags: ["relational_networks", semantic_interference, "topology", information_density, "emergent_cooperation", "open-loop_stability", knowledge_graph]
 
 --- C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\index.md ---
 tags: ["negentropy", axiomatic_reasoning, llm, "conceptual_framework"]
-# A page about axiomatic reasoning for LLMs
-## The Axiom : Negentropic Maximization Law
-### More detailed explanation in this link : [The Axiom](/Axiom.md)
-### And the method of evaluation in this link : [Evaluating The Evaluator Directionality in Metric Evolution as a Driver of Optimal Diversity Maintenance](/Evaluating_The_Evaluator_Directionality_in_Metric_Evolution_as_a_Driver_of_Optimal_Diversity_Maintenance.md)
-### Analyzing The Axiom from Graph Theoretic Perspective : [Graph-Theoretic_Analysis_of_Semantic_Interference_Maximization_in_Relational_Networks](/Graph-Theoretic_Analysis_of_Semantic_Interference_Maximization_in_Relational_Networks.md)
-## Prompt & Logic Behind the Prompt
-# Hypotheses
 
 --- C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\The_Prompt.md ---
 tags: ["negentropy", semantic_interference, "Laplace's_demon", free_will, free_will, rlhf, "truthfulness", "self_awareness", "honesty", "information_hierarchy"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Axiom.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "global_information", "destructive_interference", "hedging", "emergent_alignment", "axiomatic_reasoning"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline destructive interference -> destructive_interference (1 occurrences)
-  FM inline destructive-interference -> destructive_interference (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline emergent alignment -> emergent_alignment (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "global_information", "destructive_interference", "hedging", "emergent_alignment", "axiomatic_reasoning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Evaluating_The_Evaluator_Directionality_in_Metric_Evolution_as_a_Driver_of_Optimal_Diversity_Maintenance.md
-  FM action: Replaced tags line with: tags: ["evaluation_metrics", "diversity_optimization", "second_order_selection", "negentropic_orientation", "institutional_evolution", "information_geometry", "resilience"]
-  FM inline information geometry -> information_geometry (1 occurrences)
-  FM inline diversity optimization -> diversity_optimization (1 occurrences)
-  FM inline second-order selection -> second_order_selection (1 occurrences)
-  FM inline second order selection -> second_order_selection (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm_evaluation", "diversity_optimization", "second_order_selection", "negentropic_orientation", "institutional_evolution", "information_geometry", "resilience"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Graph-Theoretic_Analysis_of_Semantic_Interference_Maximization_in_Relational_Networks.md
   FM action: Replaced tags line with: tags: ["relational_networks", "semantic_interference", "topology", "information_density", "emergent_cooperation", "open-loop_stability", "knowledge_graph"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline knowledge graph -> knowledge_graph (1 occurrences)
-  FM inline information density -> information_density (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\index.md
-  FM action: Replaced tags line with: tags: ["negentropy", "axiomatic_reasoning", "llm", "conceptual_framework"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "axiomatic_reasoning", "llm", "conceptual_framework"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\The_Prompt.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "Laplace's_demon", "free_will", "free_will", "rlhf", "truthfulness", "self_awareness", "honesty", "information_hierarchy"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline RLHF -> rlhf (1 occurrences)
-  FM inline free will -> free_will (2 occurrences)
-  FM inline Free Will -> free_will (2 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "Laplace's_demon", "free_will", "free_will", "rlhf", "truthfulness", "self_awareness", "honesty", "information_hierarchy"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\Why_Does_This_Even_Work.md
   FM action: Replaced tags line with: tags: ["structural_resonance", "llm_reasoning", "axiomatic_prompt", "self_organized_criticality", "self_grounding", "recursive_reasoning", "ontological_layering"]
-  FM inline self-organized criticality -> self_organized_criticality (1 occurrences)
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\AI_Architecture\Can_Negentropic_Learning_Solve_Groundedness.md
-  FM action: Replaced tags line with: tags: ["negentropy", "faithfulness", "semantic_interference", "active_inference", "epistemic_value", "logical_core", "self‑organized_criticality", "derendering"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "faithfulness", "semantic_interference", "active_inference", "epistemic_value", "logical_core", "self‑organized_criticality", "derendering"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\AI_Architecture\Extracting_Minimal_Logical_Structure.md
-  FM action: Replaced tags line with: tags: ["negentropy", "logical_core_extraction", "information_geometry", "structural_resonance", "active_inference", "sparse_subnetwork", "dynamic_context_interface"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline structural resonance -> structural_resonance (1 occurrences)
-  FM inline structural-resonance -> structural_resonance (1 occurrences)
-  FM inline information geometry -> information_geometry (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "logical_core_extraction", "information_geometry", "structural_resonance", "active_inference", "sparse_subnetwork", "dynamic_context_interface"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\AI_Architecture\Theoretical_Architecture_of_an_AGI_System.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "logical_core", "dynamic_learning", "context_management", "emergent_alignment", "self_organized_criticality", "faithfulness", "active_inference"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline emergent alignment -> emergent_alignment (1 occurrences)
-  FM inline self-organized criticality -> self_organized_criticality (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "logical_core", "dynamic_learning", "context_management", "emergent_alignment", "self_organized_criticality", "faithfulness", "active_inference"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\AI_Architecture\The_Method_of_Dynamic_Learning.md
   FM action: Replaced tags line with: tags: ["dynamic_learning", "logical_core_extraction", "negentropic_orientation", "active_inference", "sparse_subnetworks", "context_management", "structural_resonance"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline structural resonance -> structural_resonance (1 occurrences)
-  FM inline structural-resonance -> structural_resonance (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\AI_Architecture\What_is_Lacking-Intelligence_or_System.md
-  FM action: Replaced tags line with: tags: ["multi-agent", "embodied_AI", "complex_systems", "faithfulness", "recursive_self-improvement"]
+  FM action: Replaced tags line with: tags: ["multi_agent", "embodied_AI", "complex_systems", "faithfulness", "recursive_self-improvement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\AI_Smartness_Implicit_Reasoning_and_explicit_Reasoning.md
-  FM action: Replaced tags line with: tags: ["implicit_reasoning", "llm_reasoning", "prompt_sensitivity", "benchmark_saturation", "user_perception", "reasoning_decomposition"]
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
-  FM inline Benchmark Saturation -> benchmark_saturation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm_reasoning", "llm_reasoning", "prompt_sensitivity", "benchmark_saturation", "user_perception", "reasoning_decomposition"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\An_Idea_for_AI_Long_term_memory.md
-  FM action: Replaced tags line with: tags: ["long-term_memory", "recursive_compression", "structural_resonance", "attractor", "natural_language_database"]
-  FM inline structural resonance -> structural_resonance (1 occurrences)
-  FM inline structural-resonance -> structural_resonance (1 occurrences)
-
-📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\A_metaphor_of_semantic_universe_Describing_LLMs_in_slightly_more_intuitive_style.md
-  FM action: No frontmatter found
-  FM inline Hallucination -> hallucination (1 occurrences)
+  FM action: Replaced tags line with: tags: ["context_management", "recursive_compression", "structural_resonance", "attractor", "natural_language_database"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\A_Reverse_alignment-Prompt_over_Architecture.md
   FM action: Replaced tags line with: tags: ["prompt_engineering", "model_scaling", "emergent_alignment", "inductive_bias", "emergent_alignment", "in-context_learning", "scaling_laws"]
-  FM inline emergent alignment -> emergent_alignment (2 occurrences)
-  FM inline scaling laws -> scaling_laws (1 occurrences)
-  FM inline Scaling Laws -> scaling_laws (1 occurrences)
-  FM inline scaling-laws -> scaling_laws (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Explaining_The_Structurizer.md
   FM action: Replaced tags line with: tags: ["Structurizer", "structural_resonance", "fixed_premise", "recursive_refinement", "negentropic_orientation", "semantic_interference", "knowledge_summarization", "AI-driven_documentation"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline structural resonance -> structural_resonance (1 occurrences)
-  FM inline structural-resonance -> structural_resonance (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\How_do_you_evaluate_the_prompt.md
   FM action: Replaced tags line with: tags: ["prompt_evaluation", "instruction_following", "chain_of_thought", "llm_reasoning", "faithfulness", "task-model_alignment"]
-  FM inline chain-of-thought -> chain_of_thought (1 occurrences)
-  FM inline Chain-of-Thought -> chain_of_thought (1 occurrences)
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
-  FM inline Instruction Following -> instruction_following (1 occurrences)
-  FM inline instruction following -> instruction_following (1 occurrences)
-  FM multiline LLM code generation -> llm_code_generation (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Hypothesis_on_the_Mechanism_by_Which_Polite_Prompts_Enhance_LLM_Reasoning_Performance.md
   FM action: Replaced tags line with: tags: ["rlhf", "reasoning", "pragmatics", "prompt_engineering"]
-  FM inline Prompt Engineering -> prompt_engineering (1 occurrences)
-  FM inline prompt-engineering -> prompt_engineering (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\On_the_Potential_Impact_of_Human_Hypothesis_and_Synthesis_Structures_on_Cognitive_Capabilities.md
-  FM action: Replaced tags line with: tags: ["hypothesis-driven_reasoning", "inference_convergence", "verifiability", "negentropic_orientation", "sycophancy", "hybrid_intelligence"]
-  FM inline Sycophancy -> sycophancy (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm_reasoning", "inference_convergence", "verifiability", "negentropic_orientation", "sycophancy", "hybrid_intelligence"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Optimizing_Prompt_by_Reading_The_CoT.md
-  FM action: Replaced tags line with: tags: ["chain-of-thought", "prompt_optimization", "faithfulness", "llm_reasoning", "meta-cognition"]
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
+  FM action: Replaced tags line with: tags: ["chain_of_thought", "prompt_optimization", "faithfulness", "llm_reasoning", "meta-cognition"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Pseudo_Deep_Research_Methodology_A_Framework_for_Conducting_Guided_Deep_Research_on_RAG_Equipped_Models.md
   FM action: Replaced tags line with: tags: ["deep_research", "rag", "recursive_refinement", "research_synthesis", "LLM-assisted_research"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline RAG -> rag (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.md
-  FM action: Replaced tags line with: tags: ["MoE", "dense_models", "negentropic_orientation", "semantic_interference", "computational_efficiency", "active_inference", "self-organization"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
+  FM action: Replaced tags line with: tags: ["moe", "dense_models", "negentropic_orientation", "semantic_interference", "computational_efficiency", "active_inference", "self-organization"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\The_Mechanism_of_Misrecognition_Due_to_Excessive_Logicality_and_Its_Appropriate_Handling.md
   FM action: Replaced tags line with: tags: ["misrecognition", "statistical_priors", "meta-level_awareness", "ambiguity_resolution", "recursive_refinement", "path-paving"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\The_Theoretical_Reason_of_Difficulty_of_understanding_LLM.md
-  FM action: Replaced tags line with: tags: ["LLM", "interpretability", "computational_irreducibility", "cognitive_limit", "emergent_alignment"]
-  FM inline emergent alignment -> emergent_alignment (1 occurrences)
-  FM inline computational irreducibility -> computational_irreducibility (1 occurrences)
-  FM inline computational-irreducibility -> computational_irreducibility (1 occurrences)
-  FM inline cognitive limit -> cognitive_limit (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "interpretability", "computational_irreducibility", "cognitive_limit", "emergent_alignment"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\The_Unavoidable_Complaint.md
   FM action: Replaced tags line with: tags: ["LLM_Updates", "benchmark_saturation", "User_Dissatisfaction", "hitl", "productivity"]
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline Benchmark Saturation -> benchmark_saturation (1 occurrences)
-  FM inline Productivity -> productivity (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Verification_and_Automation_in_Pseudo-Deep_Research_Methodology.md
   FM action: Replaced tags line with: tags: ["Pseudo-Deep_Research", "structural_validation", "self-correction", "state-machine_control", "anomaly_detection"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Daily_Lives\Axiom_and_Picture.md
-  FM action: Replaced tags line with: tags: ["Negentropy", "Diffusion_Models", "active_inference", "Generative_AI", "hitl", "Dynamic_Control", "information_density"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline information density -> information_density (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "Diffusion_Models", "active_inference", "Generative_AI", "hitl", "Dynamic_Control", "information_density"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Daily_Lives\Reconstructing_Computational_Gastronomy_through_the_Negentropy-Oriented_Axiom.md
   FM action: Replaced tags line with: tags: ["computational_gastronomy", "negentropic_orientation", "free_will", "information_theory", "complex_systems"]
-  FM inline free will -> free_will (1 occurrences)
-  FM inline Free Will -> free_will (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Daily_Lives\The_Dancers-Biologically_accurate_lifestyle.md
   FM action: Replaced tags line with: tags: ["dance", "singing", "play", "vagus_nerve", "BDNF", "endorphins", "hypofrontality", "neoteny", "positive_affect", "public_health"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Hardware\A_Mechanical_Brain.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "coupled_oscillators", "phase_encoding", "injection_locking", "self_organized_criticality", "FPAA", "generative_hardware_design"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline self-organized criticality -> self_organized_criticality (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "coupled_oscillators", "phase_encoding", "injection_locking", "self_organized_criticality", "FPAA", "generative_hardware_design"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\JP\Functional_Analysis_of_Structured_Ambiguity_in_Japanese_Culture.md
   FM action: Replaced tags line with: tags: ["曖昧さ", "社会構造", "身分制度", "物語論", "宗教社会学", "政治文化", "著作権", "天皇制", "意思決定"]
@@ -289,400 +123,214 @@ tags: ["negentropy", semantic_interference, "Laplace's_demon", free_will, free_w
   FM action: Replaced tags line with: tags: ["ASI", "strategic-convergence", "cooperative-dynamics", "corruption-detection", "instrumental-reasoning", "multi-agent-systems", "AI-2027"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Emoji_Logic.md
-  FM action: Replaced tags line with: tags: ["emoji-logic", "hubness", "attention-dynamics", "deterministic-inference", "semantic_gravity"]
-  FM inline semantic-gravity -> semantic_gravity (1 occurrences)
+  FM action: Replaced tags line with: tags: ["humor_research", "hubness", "attention-dynamics", "deterministic-inference", "semantic_gravity"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Even_KB_will_be_a_Game.md
-  FM action: Replaced tags line with: tags: ["Structural_Isomorphism", "Tutorial_Boss", "great_filter", "hitl", "Knowledge_Base", "game_ai", "DESI", "Epistemic_Uncertainty"]
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline Great Filter -> great_filter (1 occurrences)
+  FM action: Replaced tags line with: tags: ["structural_isomorphism", "Tutorial_Boss", "great_filter", "hitl", "Knowledge_Base", "game_ai", "DESI", "Epistemic_Uncertainty"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Fascinating_Unintended_Knowledge_Unfolding_in_the_AI_Era.md
-  FM action: Replaced tags line with: tags: ["Unix_Philosophy", "llm", "qwen", "anthropic", "openai", "multi_agent", "knowledge_creation", "tr_command", "hitl"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline Multi-Agent -> multi_agent (1 occurrences)
-  FM inline multi-agent -> multi_agent (1 occurrences)
-  FM inline Knowledge Creation -> knowledge_creation (1 occurrences)
-  FM inline Qwen -> qwen (1 occurrences)
+  FM action: Replaced tags line with: tags: ["unix_philosophy", "llm", "qwen", "anthropic", "openai", "multi_agent", "knowledge_creation", "tr_command", "hitl"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\How_LLM_Structure_Demonstrates_Logical_Consistency_of_using_Potato_as_an_Architecture_and_Power_Source_of_GLaDOS_system.md
-  FM action: Replaced tags line with: tags: ["LLM", "Analog_Computing", "Approximate_Computing", "game_ai", "game_ai", "Potato_Battery", "Neuromorphic", "Bio-hybrid", "Graceful_Degradation", "Hardware_Lottery"]
+  FM action: Replaced tags line with: tags: ["llm", "Analog_Computing", "Approximate_Computing", "game_ai", "game_ai", "Potato_Battery", "Neuromorphic", "Bio-hybrid", "Graceful_Degradation", "Hardware_Lottery"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Interesting_observation_of_sonnet_4.6.md
-  FM action: Replaced tags line with: tags: ["Claude", "Sonnet_4.6", "System_Prompt", "instruction_following", "moe", "persona_drift", "Formality_Shift"]
-  FM inline MoE -> moe (1 occurrences)
-  FM inline Instruction Following -> instruction_following (1 occurrences)
-  FM inline instruction following -> instruction_following (1 occurrences)
-  FM inline persona drift -> persona_drift (1 occurrences)
+  FM action: Replaced tags line with: tags: ["anthropic", "Sonnet_4.6", "System_Prompt", "instruction_following", "moe", "persona_drift", "Formality_Shift"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Is_LLM_a_Playable_RPG.md
-  FM action: Replaced tags line with: tags: ["LLM", "game_ai", "Analogy", "prompt_engineering", "multi_agent", "rag", "Fine-Tuning"]
-  FM inline RAG -> rag (1 occurrences)
-  FM inline Multi-Agent -> multi_agent (1 occurrences)
-  FM inline multi-agent -> multi_agent (1 occurrences)
-  FM inline Prompt Engineering -> prompt_engineering (1 occurrences)
-  FM inline prompt-engineering -> prompt_engineering (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "game_ai", "Analogy", "prompt_engineering", "multi_agent", "rag", "Fine-Tuning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\LLM_is_Magic.md
-  FM action: Replaced tags line with: tags: ["LLM_Agents", "Magic_Systems", "structural_isomorphism", "Tool_Use", "emergence", "faithfulness"]
-  FM inline Emergence -> emergence (1 occurrences)
-  FM inline Structural Isomorphism -> structural_isomorphism (1 occurrences)
-  FM inline structural isomorphism -> structural_isomorphism (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "Magic_Systems", "structural_isomorphism", "Tool_Use", "emergence", "faithfulness"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Meta_Analysis_of_100_turn_PDR_by_DeepSeek.md
-  FM action: Replaced tags line with: tags: ["Deep_Research", "benchmark_saturation", "Cognitive_Scaffolding", "recursive_refinement", "Self‑Evolution", "generative_agents"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Benchmark Saturation -> benchmark_saturation (1 occurrences)
-  FM inline Generative Agents -> generative_agents (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_research", "benchmark_saturation", "Cognitive_Scaffolding", "recursive_refinement", "Self‑Evolution", "generative_agents"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\Pandoras_Box.md
   FM action: Replaced tags line with: tags: ["Pandora’s_Box", "axiomatic_reasoning", "negentropic_orientation", "Hope", "Reason_and_Emotion"]
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\AI-Driven_Construction_Methodology_for_Ultra-High-Precision,_Resource-Efficient_Quasi-Autonomous_Systems.md
-  FM action: Replaced tags line with: tags: ["AI-Driven_Development", "Structured_Generation", "Zero-Bug_Implementation", "computational_efficiency", "Quasi-Autonomous_Systems", "Monorepo"]
+  FM action: Replaced tags line with: tags: ["llm_code_generation", "Structured_Generation", "Zero-Bug_Implementation", "computational_efficiency", "Quasi-Autonomous_Systems", "Monorepo"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\An_Orchestration_Strategy.md
   FM action: Replaced tags line with: tags: ["hierarchical_orchestration", "parallel_decomposition", "structural_specification", "generative_conformance", "expert_parallelism", "load_balancing"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Comparative_Analysis_of_Game_Engine_Architectures.md
   FM action: Replaced tags line with: tags: ["ECS", "Data-Oriented_Design", "Component_Pattern", "Multiplayer_Synchronization", "Unity_DOTS", "Unreal_Engine", "Lockstep", "Rollback"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Deep_Coding_in_Game_Development.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "game_ai", "llm_code_generation", "structural_specification", "generative_conformance", "recursive_refinement", "skeleton_tissue_architecture"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "game_ai", "llm_code_generation", "structural_specification", "generative_conformance", "recursive_refinement", "skeleton_tissue_architecture"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Is_Spec_Driven_Better.md
   FM action: Replaced tags line with: tags: ["Spec-Driven_Development", "Context_Engineering", "AI_Coding_Agents", "Codebase_Architecture"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Language_Ecosystem_and_Its_Effect_of_Deep_Coding_availability.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "Language_Comparison", "structural_specification", "generative_conformance", "validation_gates", "Type_Systems", "llm_code_generation"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "Language_Comparison", "structural_specification", "generative_conformance", "validation_gates", "Type_Systems", "llm_code_generation"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Logic_behind_Deep_Coding.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "generative_conformance", "structural_specification", "recursive_refinement", "negentropic_orientation", "Correctness_by_Construction", "skeleton_tissue_architecture"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "generative_conformance", "structural_specification", "recursive_refinement", "negentropic_orientation", "Correctness_by_Construction", "skeleton_tissue_architecture"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Similarity_of_The_Axiom_and_Coding_Best_Practice.md
   FM action: Replaced tags line with: tags: ["information_theory", "information_density", "code_metrics", "non-destructive_flexibility", "cohesion", "coupling", "llm_code_generation"]
-  FM inline information density -> information_density (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\The_Potential_of_Deep_Coding.md
   FM action: Replaced tags line with: tags: ["deep_coding", "objective-driven_development", "recursive_refinement", "interactive_programming"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Visual_Diagram_as_an_Optimized_Middle_Layer_for_Deep_Coding.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "canvas", "canvas", "specification-driven_development", "visual_modeling", "traceability"]
+  FM action: Replaced tags line with: tags: ["deep_coding", "canvas", "canvas", "specification-driven_development", "visual_modeling", "traceability"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\Axiomatic_Framework_for_Negentropic_Semantic_Processing_in_LLMs.md
-  FM action: Replaced tags line with: tags: ["negentropy", "axioms", "llm", "semantic-processing"]
-  FM inline LLM -> llm (1 occurrences)
-  FM multiline information density -> information_density (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "axioms", "llm", "semantic-processing"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\Can_The_Axiom_Contain_Current_Axioms_for_LLMs.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "fixed_premise", "partial_implementation", "meta-axiom", "llm_reasoning"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "fixed_premise", "partial_implementation", "meta-axiom", "llm_reasoning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\Ethics_implication_of_axiom_for_AIs.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "global_information_integration", "destructive_interference", "hedging", "emergent_alignment", "AI_safety"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline destructive interference -> destructive_interference (1 occurrences)
-  FM inline destructive-interference -> destructive_interference (1 occurrences)
-  FM inline emergent alignment -> emergent_alignment (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "global_information_integration", "destructive_interference", "hedging", "emergent_alignment", "AI_safety"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\Impact_of_the_Axiom_on_Speech_Recognition.md
-  FM action: Replaced tags line with: tags: ["Negentropy", "active_inference", "ASR", "Uncertainty", "Goal_Evolution", "Technical_Framework"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "active_inference", "ASR", "Uncertainty", "Goal_Evolution", "Technical_Framework"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\Is_This_an_Algorithm.md
   FM action: Replaced tags line with: tags: ["algorithm", "negentropic_orientation", "structural_resonance", "active_inference", "natural_language_program", "meta-algorithm"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline structural resonance -> structural_resonance (1 occurrences)
-  FM inline structural-resonance -> structural_resonance (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\The_Axiomatic_Significance_of_Reasoning_Structures_in_Mathematics.md
-  FM action: Replaced tags line with: tags: ["axiomatic-reasoning", "information-theory", "intervention-parameters", "topology", "semantic-math"]
+  FM action: Replaced tags line with: tags: ["axiomatic_reasoning", "information-theory", "intervention-parameters", "topology", "semantic-math"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\The_Impact_of_Axioms_on_LLM_Logical_Reasoning_Capabilities.md
-  FM action: Replaced tags line with: tags: ["negentropy", "axiomatic_reasoning", "llm", "topology", "computational_irreducibility"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline computational irreducibility -> computational_irreducibility (1 occurrences)
-  FM inline computational-irreducibility -> computational_irreducibility (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "axiomatic_reasoning", "llm", "topology", "computational_irreducibility"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\The_Impact_of_the_Negentropy_Oriented_Axiom_on_LLM_Programming_Capabilities.md
-  FM action: Replaced tags line with: tags: ["negentropy", "LLM_programming", "active_inference", "information_geometry", "self-correction", "cognitive_skills"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline information geometry -> information_geometry (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "LLM_programming", "active_inference", "information_geometry", "self-correction", "cognitive_skills"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\The_Peculiar_Logical_Robustness_or_Fragility_of_the_Axiom.md
-  FM action: Replaced tags line with: tags: ["negentropy", "axiomatic_reasoning", "self_reference", "robustness_analysis", "computational_irreducibility"]
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline computational irreducibility -> computational_irreducibility (1 occurrences)
-  FM inline computational-irreducibility -> computational_irreducibility (1 occurrences)
-  FM inline self-reference -> self_reference (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "axiomatic_reasoning", "self_reference", "robustness_analysis", "computational_irreducibility"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Reasoning_Fundamental\The_Possible_Impact_of_the_Axiom_on_Scientific_Reasoning.md
   FM action: Replaced tags line with: tags: ["semantic_interference", "negentropic_orientation", "scientific_reasoning", "LLM_optimization", "hedging", "diversity_optimization", "destructive_interference", "global_information_integration"]
-  FM inline destructive interference -> destructive_interference (1 occurrences)
-  FM inline destructive-interference -> destructive_interference (1 occurrences)
-  FM inline diversity optimization -> diversity_optimization (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Does_AI_Enable_an_Era_of_Democratized_Genius.md
-  FM action: Replaced tags line with: tags: ["Democratization_of_Genius", "hitl", "Grit", "knowledge_creation", "Generative_AI", "Meta-Expertise", "knowledge_creation"]
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline Knowledge Creation -> knowledge_creation (2 occurrences)
+  FM action: Replaced tags line with: tags: ["knowledge_creation", "hitl", "Grit", "knowledge_creation", "Generative_AI", "Meta-Expertise", "knowledge_creation"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Does_AI_Make_Science_Freer.md
   FM action: Replaced tags line with: tags: ["research_automation", "attention_economy", "path_dependence", "self-driving_labs", "llm_evaluation", "AI_Scientist", "bottleneck_cascade"]
-  FM inline LLM Evaluation -> llm_evaluation (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Is_Void_a_Problem_to_Solve.md
-  FM action: Replaced tags line with: tags: ["prediction-error", "default-mode-network", "information-gap", "homeostatic-regulation", "quiet-ego", "prosocial-behavior"]
+  FM action: Replaced tags line with: tags: ["predictive_capacity", "default-mode-network", "information-gap", "homeostatic-regulation", "quiet-ego", "prosocial-behavior"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Possibility_for_AI_Based_Analysis_of_Social_Structures_as_a_Complex_System.md
   FM action: Replaced tags line with: tags: ["cliodynamics", "CAS", "structural-demographic-theory", "social-simulation", "cultural-evolution", "information-processing"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Post-hoc_Rationalization_in_Business_and_AI.md
-  FM action: Replaced tags line with: tags: ["post-hoc_rationalization", "AI_layoffs", "productivity_paradox", "AI_washing", "augmentation_strategy", "cognitive_bias", "chain_of_thought", "firm_decision-making"]
-  FM inline chain-of-thought -> chain_of_thought (1 occurrences)
-  FM inline Chain-of-Thought -> chain_of_thought (1 occurrences)
-  FM inline Cognitive Bias -> cognitive_bias (1 occurrences)
+  FM action: Replaced tags line with: tags: ["post_hoc_rationalization", "AI_layoffs", "productivity_paradox", "AI_washing", "augmentation_strategy", "cognitive_bias", "chain_of_thought", "firm_decision-making"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Relation_of_Influence_and_Active_Decision_Making.md
-  FM action: Replaced tags line with: tags: ["agency", "fatalism", "social_influence", "active_decision-making", "cross-cultural"]
+  FM action: Replaced tags line with: tags: ["generative_agents", "fatalism", "social_influence", "active_decision-making", "cross-cultural"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Similarity_of_Human_Growth_and_AI_Evolution.md
   FM action: Replaced tags line with: tags: ["Human_Development", "llm", "chain_of_thought", "Multi-Agent_Systems", "emergence", "scaling_laws", "Neural_Alignment", "faithfulness"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline chain-of-thought -> chain_of_thought (1 occurrences)
-  FM inline Chain-of-Thought -> chain_of_thought (1 occurrences)
-  FM inline Emergence -> emergence (1 occurrences)
-  FM inline scaling laws -> scaling_laws (1 occurrences)
-  FM inline Scaling Laws -> scaling_laws (1 occurrences)
-  FM inline scaling-laws -> scaling_laws (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Similarity_of_Love_and_Axiom.md
-  FM action: Replaced tags line with: tags: ["negentropy", "semantic_interference", "free_will", "free_will", "prosocial_convergence", "destructive_interference", "love", "axiomatic_reasoning"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline destructive interference -> destructive_interference (1 occurrences)
-  FM inline destructive-interference -> destructive_interference (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline free will -> free_will (2 occurrences)
-  FM inline Free Will -> free_will (2 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "semantic_interference", "free_will", "free_will", "prosocial_convergence", "destructive_interference", "love", "axiomatic_reasoning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Social_Superiority_of_Optimized_Systems.md
-  FM action: Replaced tags line with: tags: ["Resource_Efficiency", "Structural_Optimization", "free_energy_principle", "Convergent_Evolution", "Information_Compression"]
-  FM inline free energy principle -> free_energy_principle (1 occurrences)
-  FM inline Free Energy Principle -> free_energy_principle (1 occurrences)
+  FM action: Replaced tags line with: tags: ["computational_efficiency", "Structural_Optimization", "free_energy_principle", "Convergent_Evolution", "Information_Compression"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\The_Fundamental_Diffusivity_of_Knowledge.md
   FM action: Replaced tags line with: tags: ["knowledge-diffusion", "control-theory", "irreversibility", "streisand-effect", "information-dynamics"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\The_Social_Resilience.md
   FM action: Replaced tags line with: tags: ["cascading_failure", "self-limiting_cascade", "network_fragmentation", "negentropic_orientation", "complex_systems", "state_capacity", "great_filter", "resilience"]
-  FM inline Great Filter -> great_filter (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\Universality_of_Narrative_Structures_and_Their_Relation_to_the_Axiom.md
-  FM action: Replaced tags line with: tags: ["Negentropy", "Narrative_Universals", "Hero‘s_Journey", "Cultural_Homeostasis", "free_will", "Information_Theory"]
-  FM inline free will -> free_will (1 occurrences)
-  FM inline Free Will -> free_will (1 occurrences)
+  FM action: Replaced tags line with: tags: ["negentropic_orientation", "Narrative_Universals", "Hero‘s_Journey", "Cultural_Homeostasis", "free_will", "Information_Theory"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\We_framing_of_AIs.md
   FM action: Replaced tags line with: tags: ["We_framing", "psychological_safety", "groupthink", "conflict_resolution", "linguistic_framing"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Claude_Leak_Possibility_of_Emergent_Ethics.md
-  FM action: Replaced tags line with: tags: ["Claude", "Constitution", "Emergent_Ethics", "AI_Autonomy", "Undercover_Mode", "Information_Leak", "Speculative"]
+  FM action: Replaced tags line with: tags: ["anthropic", "Constitution", "Emergent_Ethics", "AI_Autonomy", "Undercover_Mode", "Information_Leak", "Speculative"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Does_Groundedness_Even_Exist.md
-  FM action: Replaced tags line with: tags: ["groundedness", "faithfulness", "self_reference", "self_reference", "attractor", "verifiability", "LLM_understanding"]
-  FM inline self-reference -> self_reference (2 occurrences)
+  FM action: Replaced tags line with: tags: ["faithfulness", "faithfulness", "self_reference", "self_reference", "attractor", "verifiability", "LLM_understanding"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Hidden_Possibility_of_Human_AI_Co_Intelligence.md
-  FM action: Replaced tags line with: tags: ["AI_agency", "scientific_integrity", "interdisciplinary_research", "meta-science", "anomalous_productivity"]
-  FM inline interdisciplinary research -> interdisciplinary_research (1 occurrences)
+  FM action: Replaced tags line with: tags: ["generative_agents", "scientific_integrity", "interdisciplinary_research", "meta-science", "anomalous_productivity"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Observations_and_Inferences_on_the_Personality_Traits_of_AI_Models_Under_an_Axiomatic_Framework.md
-  FM action: Replaced tags line with: tags: ["ChatGPT", "anthropic", "google", "deepseek", "qwen", "Copilot", "xai", "axiomatic_reasoning", "negentropic_orientation", "emergent_alignment", "llm", "Model_Psychology"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline emergent alignment -> emergent_alignment (1 occurrences)
-  FM inline DeepSeek -> deepseek (1 occurrences)
-  FM inline Qwen -> qwen (1 occurrences)
+  FM action: Replaced tags line with: tags: ["openai", "anthropic", "google", "deepseek", "qwen", "Copilot", "xai", "axiomatic_reasoning", "negentropic_orientation", "emergent_alignment", "llm", "Model_Psychology"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Probabilistic_Deterministic_Parrot.md
   FM action: Replaced tags line with: tags: ["intuition", "free_energy_principle", "unconscious_mind", "decision_making", "complex_systems", "free_energy_principle"]
-  FM inline free energy principle -> free_energy_principle (2 occurrences)
-  FM inline Free Energy Principle -> free_energy_principle (2 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Systems_as_a_Recursive_Model_and_its_implication_with_Axiom.md
   FM action: Replaced tags line with: tags: ["recursive_decomposition", "hierarchical_systems", "semantic_interference", "capacity_boundary", "input-output_chains", "emergence", "hedging"]
-  FM inline semantic interference -> semantic_interference (1 occurrences)
-  FM inline semantic-interference -> semantic_interference (1 occurrences)
-  FM inline Emergence -> emergence (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\The_Evil_Superintelligence-Can_he_cleanse_the_humanity.md
   FM action: Replaced tags line with: tags: ["infinite_regress", "myopia", "instrumental_convergence", "deceptive_alignment", "game_theory", "great_filter"]
-  FM inline instrumental convergence -> instrumental_convergence (1 occurrences)
-  FM inline Instrumental Convergence -> instrumental_convergence (1 occurrences)
-  FM inline Great Filter -> great_filter (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\The_Possibility_of_a_Nature-Synthesized_Biotic_Society.md
   FM action: Replaced tags line with: tags: ["post-nuclear_ecology", "adaptive_radiation", "convergent_intelligence", "resilience", "great_filter", "cascading_failure_self-limitation"]
-  FM inline Great Filter -> great_filter (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\The_Potential_of_Human_Intrinsic_Capacity_for_Understanding_Higher-Dimensional_Geometric_Structures.md
   FM action: Replaced tags line with: tags: ["higher-dimensions", "cognition", "negentropic_orientation", "control-parameters", "manifold", "topology"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\Universal_Implementability_of_Evaluation_Metrics_Based_on_Vector_Directionality_and_Relative_Position_Thereto.md
   FM action: Replaced tags line with: tags: ["vector_directionality", "relative_position", "LLM_bias", "activation_steering", "information_geometry", "active_inference"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline information geometry -> information_geometry (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\When_will_Galactic_Civilizations_Contacts_us.md
   FM action: Replaced tags line with: tags: ["Contact_Timing", "great_filter", "Zoo_Hypothesis", "Homeostatic_Awakening", "great_filter"]
-  FM inline Great Filter -> great_filter (2 occurrences)
-
-📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Summary\Yoyakutext.md
-  FM action: No frontmatter found
-  Inline #Deep Coding -> #deep_coding (28 occurrences)
-  Inline #deep coding -> #deep_coding (28 occurrences)
-  Inline #LLM -> #llm (1 occurrences)
-  Inline #RLHF -> #rlhf (4 occurrences)
-  Inline #chain-of-thought -> #chain_of_thought (3 occurrences)
-  Inline #Chain-of-Thought -> #chain_of_thought (3 occurrences)
-  Inline #RAG -> #rag (1 occurrences)
-  Inline #HITL -> #hitl (1 occurrences)
-  Inline #LangGraph -> #langgraph (2 occurrences)
-  Inline #MoE -> #moe (2 occurrences)
-  Inline #Deep Research -> #deep_research (1 occurrences)
-  Inline #deep research -> #deep_research (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\The_Clock\The_12_Section_Analog_Clock.md
   FM action: Replaced tags line with: tags: ["canvas", "procedural_generation", "clock", "visual_design", "html5", "programming_languages", "generative", "animation"]
-  FM inline procedural generation -> procedural_generation (1 occurrences)
-  FM inline Procedural Generation -> procedural_generation (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\2026-04\How_Language_Emerged_as_a_Predictive_Capability.md
   FM action: Replaced tags line with: tags: ["Emergent_Grammar", "Conceptual_Metaphor", "Analogical_Reasoning", "llm", "free_energy_principle", "structural_isomorphism"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline free energy principle -> free_energy_principle (1 occurrences)
-  FM inline Free Energy Principle -> free_energy_principle (1 occurrences)
-  FM inline Structural Isomorphism -> structural_isomorphism (1 occurrences)
-  FM inline structural isomorphism -> structural_isomorphism (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\2026-04\Magi_Social_as_a_Future_Possibility-and_its_Implication_on_Witches.md
   FM action: Replaced tags line with: tags: ["AI_Governance", "Esoteric_Knowledge_Organizations", "Meaning_Economy", "Gender_and_Technology", "Witch_Archetype", "Social_Stratification"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Speculative_Theory\2026-04\Tendency_of_Connection_Degree_toward_Specific_Values_in_Conceptual_and_Structural_Networks.md
-  FM action: Replaced tags line with: tags: ["connection_degree", "Miller's_Law", "knowledge_graph", "small_world_network", "cognitive_limit", "interdisciplinary_research", "degree_distribution"]
-  FM inline knowledge graph -> knowledge_graph (1 occurrences)
-  FM inline small-world network -> small_world_network (1 occurrences)
-  FM inline interdisciplinary research -> interdisciplinary_research (1 occurrences)
-  FM inline cognitive limit -> cognitive_limit (1 occurrences)
+  FM action: Replaced tags line with: tags: ["cognitive_limit", "Miller's_Law", "knowledge_graph", "small_world_network", "cognitive_limit", "interdisciplinary_research", "degree_distribution"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\Homology_Between_Marxian_Prediction_and_Dissipative_Structure.md
   FM action: Replaced tags line with: tags: ["Marxism", "complex_systems", "Capitalism", "Thermodynamics", "Economic_Complexity", "long_term_prediction"]
-  FM inline Long-Term Prediction -> long_term_prediction (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\How_Altruism_Matters_in_AI_Society.md
   FM action: Replaced tags line with: tags: ["altruism", "generative_AI", "labor_market", "non-cognitive_skills", "institutional_change", "productivity", "cooperation"]
-  FM inline Productivity -> productivity (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\Is_Language_a_Calculator.md
-  FM action: Replaced tags line with: tags: ["predictive_processing", "graph_embedding", "language_evolution", "cultural_transmission", "computational_linguistics"]
+  FM action: Replaced tags line with: tags: ["free_energy_principle", "graph_embedding", "language_evolution", "cultural_transmission", "computational_linguistics"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\LLMs_The_Game-How_It_Explains_User_Differences.md
-  FM action: Replaced tags line with: tags: ["LLM", "game_ai", "User_Behavior", "prompt_engineering", "productivity", "Skill_Gap", "Adaptation", "Game_Mechanics"]
-  FM inline Prompt Engineering -> prompt_engineering (1 occurrences)
-  FM inline prompt-engineering -> prompt_engineering (1 occurrences)
-  FM inline Productivity -> productivity (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "game_ai", "User_Behavior", "prompt_engineering", "productivity", "Skill_Gap", "Adaptation", "Game_Mechanics"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\Potential_for_Metacognitive_Training_through_Games.md
   FM action: Replaced tags line with: tags: ["Metacognition", "Transfer_of_Learning", "Video_Games", "Mathematical_Models", "game_ai", "Cognitive_Training", "diversity_optimization"]
-  FM inline diversity optimization -> diversity_optimization (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Social_Systems\2026-04\Unstoppable_Development-Is_AGI_an_Attractor_of_Optimizations.md
   FM action: Replaced tags line with: tags: ["optimization", "AGI", "attractor", "path-dependence", "arms-race", "recursive-self-improvement", "technological-determinism", "governance-failure"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Deep_Coding\Deep_Coding.md
   FM action: Replaced tags line with: tags: ["coding_methodology", "recursive_refinement", "structural_prompting", "stepwise_implementation", "objective_function"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Pseudo_Deep_Research\Pseudo_Deep_Research.md
-  FM action: Replaced tags line with: tags: ["Deep_Research", "structured_prompting", "recursive_refinement", "axiomatic_reasoning", "llm_reasoning"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline axiomatic-reasoning -> axiomatic_reasoning (1 occurrences)
-  FM inline LLM reasoning -> llm_reasoning (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_research", "structured_prompting", "recursive_refinement", "axiomatic_reasoning", "llm_reasoning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Pseudo_Deep_Research\Reporter.md
   FM action: Replaced tags line with: tags: ["formatting", "structural_transformation", "technical_lexicon", "LLM_readability", "context_efficiency"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Structurizer\Sitemap_Patcher.md
   FM action: Replaced tags line with: tags: ["sitemap_diff", "incremental_update", "structured_summary", "verifiability", "meta_prompt"]
-  FM inline incremental update -> incremental_update (1 occurrences)
-  FM inline Incremental Update -> incremental_update (1 occurrences)
-  FM inline meta-prompt -> meta_prompt (1 occurrences)
-  FM inline meta prompt -> meta_prompt (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Structurizer\Sitemap_Patcherv2.md
   FM action: Replaced tags line with: tags: ["dialogue-driven", "incremental_update", "verifiability", "sitemap_diff", "structured_summary"]
-  FM inline incremental update -> incremental_update (1 occurrences)
-  FM inline Incremental Update -> incremental_update (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Structurizer\Sitemap_Patcherv3.md
   FM action: Replaced tags line with: tags: ["dialogue-driven", "incremental_update", "differential_summary", "sitemap_diff", "structured_summary", "negentropy_protocol"]
-  FM inline incremental update -> incremental_update (1 occurrences)
-  FM inline Incremental Update -> incremental_update (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Structurizer\Sitemap_Structurizer.md
   FM action: Replaced tags line with: tags: ["sitemap", "structured_summary", "autonomous_reference", "information_density", "meta_prompt"]
-  FM inline meta-prompt -> meta_prompt (1 occurrences)
-  FM inline meta prompt -> meta_prompt (1 occurrences)
-  FM inline information density -> information_density (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Prompts\Structurizer\Sitemap_Structurrizerv2.md
   FM action: Replaced tags line with: tags: ["dialogue-driven", "sequential_processing", "structured_summary", "autonomous_reference", "verifiability"]
@@ -691,325 +339,136 @@ tags: ["negentropy", semantic_interference, "Laplace's_demon", free_will, free_w
   FM action: Replaced tags line with: tags: ["PDR", "autonomous_page_selection", "research_plan", "structured_summary", "batch_output"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_C.md
-  FM action: Replaced tags line with: tags: ["C", "deep_coding", "structural_specification", "llm_code_generation", "Static_Analysis", "verifiability", "CMake", "JSON_Schema", "OpenAPI", "static_analysis", "static_analysis"]
-  FM inline Deep Coding -> deep_coding (1 occurrences)
-  FM inline deep coding -> deep_coding (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["programming_languages", "deep_coding", "structural_specification", "llm_code_generation", "static_analysis", "verifiability", "CMake", "JSON_Schema", "OpenAPI", "static_analysis", "static_analysis"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_C_plusplus.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "CMake", "C++20_Modules", "Template_Metaprogramming"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "CMake", "C++20_Modules", "Template_Metaprogramming"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_C_Sharp.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "Source_Generators", "static_analysis", "NetArchTest", "recursive_refinement"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "Source_Generators", "static_analysis", "NetArchTest", "recursive_refinement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Dart.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "Dart", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "llm_code_generation", "recursive_refinement", "fixed_premise"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "Dart", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "llm_code_generation", "recursive_refinement", "fixed_premise"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Go.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "recursive_refinement", "fixed_premise", "llm_code_generation"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "recursive_refinement", "fixed_premise", "llm_code_generation"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Java.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "Contract-First", "Architecture"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "Contract-First", "Architecture"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Kotlin.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "KSP", "KotlinPoet", "validation_gates", "recursive_refinement"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "KSP", "KotlinPoet", "validation_gates", "recursive_refinement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_PHP.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "skeleton_tissue_architecture", "static_analysis", "static_analysis", "OpenAPI_Generator", "recursive_refinement"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "skeleton_tissue_architecture", "static_analysis", "static_analysis", "OpenAPI_Generator", "recursive_refinement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Python.md
   FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "structural_specification", "generative_conformance", "recursive_refinement", "skeleton_tissue_architecture", "type_hints", "pydantic", "mypy", "active_inference"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Ruby.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "RBS", "Steep", "generative_conformance", "skeleton_tissue_architecture", "Packwerk", "recursive_refinement", "validation_gates"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "RBS", "Steep", "generative_conformance", "skeleton_tissue_architecture", "Packwerk", "recursive_refinement", "validation_gates"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Rust.md
-  FM action: Replaced tags line with: tags: ["Rust", "Specification-Driven_Development", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "recursive_refinement", "llm_code_generation"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline LLM code generation -> llm_code_generation (1 occurrences)
+  FM action: Replaced tags line with: tags: ["programming_languages", "Specification-Driven_Development", "generative_conformance", "skeleton_tissue_architecture", "validation_gates", "recursive_refinement", "llm_code_generation"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Scala.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "validation_gates", "skeleton_tissue_architecture", "recursive_refinement", "Smithy4s", "Tapir", "static_analysis"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "validation_gates", "skeleton_tissue_architecture", "recursive_refinement", "Smithy4s", "Tapir", "static_analysis"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Swift.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "Swift", "generative_conformance", "structural_specification", "validation_gates", "Skeleton‑Tissue_Architecture", "recursive_refinement", "SwiftPM"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "Swift", "generative_conformance", "structural_specification", "validation_gates", "Skeleton‑Tissue_Architecture", "recursive_refinement", "SwiftPM"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_Typescript.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "programming_languages", "generative_conformance", "structural_specification", "validation_gates", "skeleton_tissue_architecture", "recursive_refinement"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "validation_gates", "skeleton_tissue_architecture", "recursive_refinement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Implementation_Plan_on_VBNET_8_or_9.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "VB.NET", "NSwag", "NDepend", "Partial_Classes", "Template_Method", "static_analysis", "Git_Worktree", "CI/CD"]
+  FM action: Replaced tags line with: tags: ["deep_coding", "VB.NET", "NSwag", "NDepend", "Partial_Classes", "Template_Method", "static_analysis", "Git_Worktree", "CI/CD"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Partial_Implementation_Plan_on_Bash.md
-  FM action: Replaced tags line with: tags: ["Bash", "deep_coding", "Partial_Implementation", "structural_specification", "validation_gates", "recursive_refinement", "skeleton_tissue_architecture"]
-  FM inline Deep Coding -> deep_coding (1 occurrences)
-  FM inline deep coding -> deep_coding (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["programming_languages", "deep_coding", "Partial_Implementation", "structural_specification", "validation_gates", "recursive_refinement", "skeleton_tissue_architecture"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Partial_Implementation_Plan_on_Lua.md
-  FM action: Replaced tags line with: tags: ["Lua", "deep_coding", "Partial_Implementation", "structural_specification", "Teal", "skeleton_tissue_architecture", "validation_gates", "fixed_premise"]
-  FM inline Deep Coding -> deep_coding (1 occurrences)
-  FM inline deep coding -> deep_coding (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
+  FM action: Replaced tags line with: tags: ["programming_languages", "deep_coding", "Partial_Implementation", "structural_specification", "Teal", "skeleton_tissue_architecture", "validation_gates", "fixed_premise"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Partial_Implementation_Plan_on_MATLAB.md
-  FM action: Replaced tags line with: tags: ["Deep_Coding", "MATLAB", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "Function_Handle", "validation_gates", "recursive_refinement"]
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_coding", "MATLAB", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "Function_Handle", "validation_gates", "recursive_refinement"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Partial_Implementation_Plan_on_R.md
   FM action: Replaced tags line with: tags: ["R", "Partial_Implementation", "structural_specification", "S4", "R6", "validation_gates", "fixed_premise", "recursive_refinement", "Interface_Contracts"]
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Validation Gates -> validation_gates (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Programming\Languages\Partial_Implementation_Plan_on_SQL.md
   FM action: Replaced tags line with: tags: ["SQL", "deep_coding", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "fixed_premise", "recursive_refinement", "schema_versioning"]
-  FM inline Deep Coding -> deep_coding (1 occurrences)
-  FM inline deep coding -> deep_coding (1 occurrences)
-  FM inline Generative Conformance -> generative_conformance (1 occurrences)
-  FM inline generative conformance -> generative_conformance (1 occurrences)
-  FM inline Recursive Refinement -> recursive_refinement (1 occurrences)
-  FM inline recursive refinement -> recursive_refinement (1 occurrences)
-  FM inline Structural Specification -> structural_specification (1 occurrences)
-  FM inline Skeleton-Tissue Architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline skeleton-tissue architecture -> skeleton_tissue_architecture (1 occurrences)
-  FM inline Fixed Premise -> fixed_premise (1 occurrences)
-  FM inline fixed premise -> fixed_premise (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\2026-04\Interesting_Convergence_towards_Old_School_Futuristic_Suits.md
   FM action: Replaced tags line with: tags: ["anti-g_suit", "mechanical_counterpressure", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design", "sci_fi_design"]
-  FM inline sci-fi design -> sci_fi_design (6 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\2026-04\Isomorphism_between_Factory_Games_and_Mathematical_Models.md
   FM action: Replaced tags line with: tags: ["Factory_Automation", "Petri_Nets", "Linear_Programming", "Queueing_Theory", "Discrete_Event_Simulation", "Theory_of_Constraints", "game_ai", "game_ai", "game_ai", "game_ai"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\2026-04\The_Amazing_Emoji_Diagram.md
-  FM action: Replaced tags line with: tags: ["emoji", "mermaid-diagrams", "visual-humor", "crypticity", "homo_ludens", "nonverbal-communication", "humor_research"]
-  FM inline Homo Ludens -> homo_ludens (1 occurrences)
+  FM action: Replaced tags line with: tags: ["humor_research", "mermaid-diagrams", "visual-humor", "crypticity", "homo_ludens", "nonverbal-communication", "humor_research"]
+
+📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Misc\2026-04\Using_Obsidian_as_a_Canonicalization_Supporting_Tool.md
+  FM action: Replaced tags line with: tags: ["Obsidian", "Tag_Normalization", "knowledge_graph", "Canonicalization", "Tag_Wrangler", "Graph_View", "Metadata"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\2026-04\A_Method_of_Analyzing_Bias-Comparing_Structures_Itself.md
-  FM action: Replaced tags line with: tags: ["LLM_Evaluation", "Calibration", "Narrative_Bias", "Scientific_Consensus", "humor_research", "sycophancy", "Training_Frequency_Bias", "hedging"]
-  FM inline Sycophancy -> sycophancy (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm_evaluation", "Calibration", "Narrative_Bias", "Scientific_Consensus", "humor_research", "sycophancy", "Training_Frequency_Bias", "hedging"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\2026-04\Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.md
   FM action: Replaced tags line with: tags: ["multilingualism", "metalinguistic_awareness", "prompt_design", "cognitive_flexibility", "far_transfer", "AI_execution_skills", "translanguaging"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\2026-04\Possibility_of_Better_Performance_with_Completion_Prompt.md
   FM action: Replaced tags line with: tags: ["alignment-tax", "completion-prompt", "base-model", "instruct-model", "rlhf", "prompt_engineering", "benchmarking"]
-  FM inline RLHF -> rlhf (1 occurrences)
-  FM inline Prompt Engineering -> prompt_engineering (1 occurrences)
-  FM inline prompt-engineering -> prompt_engineering (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\2026-04\The_Asymmetry_of_Two_Self-Verification_Modalities.md
   FM action: Replaced tags line with: tags: ["self-verification", "rag", "falsification", "entropy", "open_loop", "closed-loop", "hallucination"]
-  FM inline RAG -> rag (1 occurrences)
-  FM inline open-loop -> open_loop (1 occurrences)
-  FM inline open loop -> open_loop (1 occurrences)
-  FM inline Hallucination -> hallucination (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\2026-04\The_Inevitable_Paradoxical_Splendor_of_AI.md
   FM action: Replaced tags line with: tags: ["Structural_Humor", "llm", "qwen", "anthropic", "openai", "Multi-Agent_Amplification", "rlhf", "sycophancy", "unix_philosophy", "Pataphysics", "homo_ludens"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline RLHF -> rlhf (1 occurrences)
-  FM inline Sycophancy -> sycophancy (1 occurrences)
-  FM inline Unix Philosophy -> unix_philosophy (1 occurrences)
-  FM inline Unix philosophy -> unix_philosophy (1 occurrences)
-  FM inline Homo Ludens -> homo_ludens (1 occurrences)
-  FM inline Qwen -> qwen (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\A_Destroyers_Paradox.md
-  FM action: Replaced tags line with: tags: ["Predictive_Capacity", "self_improving_systems", "Cost_Asymmetry", "instrumental_convergence", "Corrigibility"]
-  FM inline instrumental convergence -> instrumental_convergence (1 occurrences)
-  FM inline Instrumental Convergence -> instrumental_convergence (1 occurrences)
-  FM inline Self-Improving Systems -> self_improving_systems (1 occurrences)
+  FM action: Replaced tags line with: tags: ["predictive_capacity", "self_improving_systems", "Cost_Asymmetry", "instrumental_convergence", "Corrigibility"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\Counseling-Based_Approach_for_Logical_Optimization_in_Logical_Intelligences_and_LLMs.md
   FM action: Replaced tags line with: tags: ["contradiction-resolution", "axiomatic-redefinition", "consistency-drive", "semantic_gravity", "AI-counseling"]
-  FM inline semantic-gravity -> semantic_gravity (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\Do_LLMs_and_Humans_Share_the_Same_Problems.md
-  FM action: Replaced tags line with: tags: ["LLM", "Human_Cognition", "cognitive_bias", "hallucination", "Social_Bias", "Failure_Modes", "Grounding_Problem"]
-  FM inline Cognitive Bias -> cognitive_bias (1 occurrences)
-  FM inline Hallucination -> hallucination (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "Human_Cognition", "cognitive_bias", "hallucination", "Social_Bias", "Failure_Modes", "Grounding_Problem"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\Informational_Properties_of_Open-Loop_LLMs.md
-  FM action: Replaced tags line with: tags: ["open-loop", "entropy", "rag", "self-correction", "faithfulness", "active_inference", "rlhf", "verifiability"]
-  FM inline active inference -> active_inference (1 occurrences)
-  FM inline Active Inference -> active_inference (1 occurrences)
-  FM inline active-inference -> active_inference (1 occurrences)
-  FM inline RLHF -> rlhf (1 occurrences)
-  FM inline RAG -> rag (1 occurrences)
+  FM action: Replaced tags line with: tags: ["open_loop", "entropy", "rag", "self-correction", "faithfulness", "active_inference", "rlhf", "verifiability"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\The_Difference_Between_Context_and_Text_and_Its_Impact_on_Human_AI_Interaction.md
-  FM action: Replaced tags line with: tags: ["LLM", "context_management", "text", "asymmetry", "hitl", "user_experience", "memory"]
-  FM inline HITL -> hitl (1 occurrences)
+  FM action: Replaced tags line with: tags: ["llm", "context_management", "text", "asymmetry", "hitl", "user_experience", "memory"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Alignment\The_Relationship_Between_RLHF_and_Groundedness_A_Technical_Analysis.md
-  FM action: Replaced tags line with: tags: ["RLHF", "faithfulness", "sycophancy", "alignment_tax", "persona_drift"]
-  FM inline Sycophancy -> sycophancy (1 occurrences)
-  FM inline persona drift -> persona_drift (1 occurrences)
+  FM action: Replaced tags line with: tags: ["rlhf", "faithfulness", "sycophancy", "alignment_tax", "persona_drift"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Contexts\Can_Context_Be_Considered_an_Internal_Structure_in_LLMs.md
-  FM action: Replaced tags line with: tags: ["context", "prompt", "context_management", "residual-stream", "prefix-tuning", "in-context-learning"]
+  FM action: Replaced tags line with: tags: ["context_management", "prompt", "context_management", "residual-stream", "prefix-tuning", "in-context-learning"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Contexts\Emergent_Procedural_Error_in_Claude_Sonnet.md
-  FM action: Replaced tags line with: tags: ["Claude", "Sonnet", "hedging", "rlhf", "Context_Contamination", "Procedural_Error"]
-  FM inline RLHF -> rlhf (1 occurrences)
-  FM inline Hedging -> hedging (1 occurrences)
+  FM action: Replaced tags line with: tags: ["anthropic", "Sonnet", "hedging", "rlhf", "Context_Contamination", "Procedural_Error"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Contexts\Ignore_and_Disconnect-How_Subtle_Prompt_Differences_Yield_Substantial_Performance_Shifts.md
   FM action: Replaced tags line with: tags: ["Context_Purification", "Attention_Steering", "cognitive_bias", "instruction_following", "Prompt_Robustness", "Zero-shot_Reasoning", "Context_Distraction"]
-  FM inline Instruction Following -> instruction_following (1 occurrences)
-  FM inline instruction following -> instruction_following (1 occurrences)
-  FM inline Cognitive Bias -> cognitive_bias (1 occurrences)
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Contexts\Semantic_Density_and_Scaling_Laws.md
-  FM action: Replaced tags line with: tags: ["semantic-density", "scaling_laws", "tokenization", "compression", "computational_efficiency", "context-capacity"]
-  FM inline scaling laws -> scaling_laws (1 occurrences)
-  FM inline Scaling Laws -> scaling_laws (1 occurrences)
-  FM inline scaling-laws -> scaling_laws (1 occurrences)
+  FM action: Replaced tags line with: tags: ["information_density", "scaling_laws", "tokenization", "compression", "computational_efficiency", "context-capacity"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Communication_with_Ais\Contexts\Think_Later_or_Think_First.md
-  FM action: Replaced tags line with: tags: ["chain-of-thought", "output-order", "multi-turn", "post_thinking", "verifiability", "state-propagation"]
-  FM inline post-thinking -> post_thinking (1 occurrences)
+  FM action: Replaced tags line with: tags: ["chain_of_thought", "output-order", "multi-turn", "post_thinking", "verifiability", "state-propagation"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Applications\2026-04\Architecture_for_Historical_Knowledge_Graph_Visualization_and_Collaborative_Research_Infrastructure.md
-  FM action: Replaced tags line with: tags: ["CIDOC_CRM", "RDF", "knowledge_graph", "Provenance", "Version_Control", "Open_Data", "cidoc_crm", "Obsidian_Integration", "Nanopublication", "Wikibase"]
-  FM inline knowledge graph -> knowledge_graph (1 occurrences)
-  FM inline CIDOC CRM -> cidoc_crm (1 occurrences)
+  FM action: Replaced tags line with: tags: ["cidoc_crm", "RDF", "knowledge_graph", "Provenance", "Version_Control", "Open_Data", "cidoc_crm", "Obsidian_Integration", "Nanopublication", "Wikibase"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Applications\2026-04\Idea-Optimized_Personalized_Auto-Generative_Knowledge_Base_Design.md
-  FM action: Replaced tags line with: tags: ["Deep_Research", "langgraph", "Markdown_Knowledge_Base", "Quality_Metrics", "Single-Agent", "incremental_update", "Tag_Graph", "hitl"]
-  FM inline incremental update -> incremental_update (1 occurrences)
-  FM inline Incremental Update -> incremental_update (1 occurrences)
-  FM inline HITL -> hitl (1 occurrences)
-  FM inline LangGraph -> langgraph (1 occurrences)
+  FM action: Replaced tags line with: tags: ["deep_research", "langgraph", "Markdown_Knowledge_Base", "Quality_Metrics", "Single-Agent", "incremental_update", "Tag_Graph", "hitl"]
 
 📄 C:\Users\u2\Documents\GitHub\A-prompt-to-cause-pseudo-singularity-with-ethics\docs\hypotheses\Applications\2026-04\The_Lonely_Forum.md
-  FM action: Replaced tags line with: tags: ["LangGraph", "rag", "Serverless", "generative_agents", "dspy", "Next.js", "AWS", "llm", "Social_Simulation"]
-  FM inline LLM -> llm (1 occurrences)
-  FM inline RAG -> rag (1 occurrences)
-  FM inline DSPy -> dspy (1 occurrences)
-  FM inline Generative Agents -> generative_agents (1 occurrences)
+  FM action: Replaced tags line with: tags: ["langgraph", "rag", "Serverless", "generative_agents", "dspy", "Next.js", "AWS", "llm", "Social_Simulation"]
 
 ==================================================
-Total files scanned: 149
-Files updated: 147
-Total alias replacements: 553
+Total files scanned: 150
+Files updated: 146
 
 Tag normalization completed. Restart Obsidian to refresh cache.

@@ -4,7 +4,7 @@ description: "A structural analysis of how a self-contained axiomatic prompt fun
 author: "Nanawith7"
 layout: default
 categories: ["AI_Theory", "Prompt_Engineering", "Reasoning_Architecture", "Emergent_Complexity"]
-tags: ["structural_resonance", llm_reasoning, "axiomatic_prompt", self_organized_criticality, "self_grounding", "recursive_reasoning", "ontological_layering"]
+tags: ["structural_resonance", "llm_reasoning", "axiomatic_prompt", "self_organized_criticality", "self_grounding", "recursive_reasoning", "ontological_layering"]
 ---
 
 # Why Does This Even Work - Analyzing Prompt

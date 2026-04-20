@@ -4,7 +4,7 @@ description: "A structured index of the Negentropic Maximization Axiom and its d
 author: "Nanawith7"
 layout: default
 categories: [axiom, hypotheses, llm, reasoning]
-tags: ["negentropy", axiomatic_reasoning, llm, "conceptual_framework"]
+tags: ["negentropic_orientation", "axiomatic_reasoning", "llm", "conceptual_framework"]
 ---
 {::nomarkdown}
 <style>

@@ -4,7 +4,7 @@ description: "Analysis of information-theoretic dynamics differentiating open-lo
 author: "Nanawith7"
 layout: default
 categories: ["Information Theory", "LLM Architectures", "Agentic Systems", "Control Theory"]
-tags: ["open-loop", "entropy", rag, "self-correction", "faithfulness", active_inference, rlhf, "verifiability"]
+tags: ["open_loop", "entropy", "rag", "self-correction", "faithfulness", "active_inference", "rlhf", "verifiability"]
 research-date: [2026-04-16]
 ---
 

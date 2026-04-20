@@ -4,7 +4,7 @@ description: "A technical analysis of the Structurizer system—a prompt-based f
 author: "Nanawith7"
 layout: default
 categories: ["Information Systems", "Knowledge Engineering", "AI Architecture", "Formal Methods"]
-tags: ["Structurizer", structural_resonance, fixed_premise, recursive_refinement, "negentropic_orientation", semantic_interference, "knowledge_summarization", "AI-driven_documentation"]
+tags: ["Structurizer", "structural_resonance", "fixed_premise", "recursive_refinement", "negentropic_orientation", "semantic_interference", "knowledge_summarization", "AI-driven_documentation"]
 ---
 
 # Explaining The Structurizer

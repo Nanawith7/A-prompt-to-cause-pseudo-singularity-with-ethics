@@ -4,7 +4,7 @@ description: "A technical analysis of whether input context functions as an inte
 author: "Nanawith7"
 layout: default
 categories: ["LLM", "Transformer", "Computational Theory"]
-tags: ["context", "prompt", "context_management", "residual-stream", "prefix-tuning", "in-context-learning"]
+tags: ["context_management", "prompt", "context_management", "residual-stream", "prefix-tuning", "in-context-learning"]
 ---
 
 # Can Context Be Considered an Internal Structure in LLMs?

@@ -4,7 +4,7 @@ description: "A comparative analysis of the structural parallels between human c
 author: "Nanawith7"
 layout: default
 categories: ["Cognitive Science", "Artificial Intelligence", "Developmental Psychology", "Computational Linguistics"]
-tags: ["Human_Development", llm, chain_of_thought, "Multi-Agent_Systems", emergence, scaling_laws, "Neural_Alignment", "faithfulness"]
+tags: ["Human_Development", "llm", "chain_of_thought", "Multi-Agent_Systems", "emergence", "scaling_laws", "Neural_Alignment", "faithfulness"]
 research-date: ["2026-04-12"]
 ---
 

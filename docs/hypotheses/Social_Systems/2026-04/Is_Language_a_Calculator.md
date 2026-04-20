@@ -4,7 +4,7 @@ description: "A synthesis of information-theoretic, distributional, cognitive, a
 author: "Nanawith7"
 layout: default
 categories: ["Linguistics", "Cognitive Science", "Information Theory"]
-tags: ["predictive_processing", "graph_embedding", "language_evolution", "cultural_transmission", "computational_linguistics"]
+tags: ["free_energy_principle", "graph_embedding", "language_evolution", "cultural_transmission", "computational_linguistics"]
 research-date: [2026-04-14]
 ---
 

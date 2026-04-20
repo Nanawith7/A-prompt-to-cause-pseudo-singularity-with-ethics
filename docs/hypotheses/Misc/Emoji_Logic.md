@@ -4,7 +4,7 @@ description: "A technical framework reinterpreting emoji as high-degree semantic
 author: "Nanawith7"
 layout: default
 categories: ["Formal Logic", "LLM Embeddings", "Computational Semantics"]
-tags: ["emoji-logic", "hubness", "attention-dynamics", "deterministic-inference", semantic_gravity]
+tags: ["humor_research", "hubness", "attention-dynamics", "deterministic-inference", "semantic_gravity"]
 ---
 
 # Emoji Logic

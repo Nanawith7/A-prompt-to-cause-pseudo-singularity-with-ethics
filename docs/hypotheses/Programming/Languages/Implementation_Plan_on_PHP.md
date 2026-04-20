@@ -4,7 +4,7 @@ description: "A technical implementation plan for applying Deep Coding methodolo
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "PHP", "AI-Assisted Development", "Specification-Driven Development"]
-tags: ["Deep_Coding", "programming_languages", generative_conformance, structural_specification, skeleton_tissue_architecture, "static_analysis", "static_analysis", "OpenAPI_Generator", recursive_refinement]
+tags: ["deep_coding", "programming_languages", "generative_conformance", "structural_specification", "skeleton_tissue_architecture", "static_analysis", "static_analysis", "OpenAPI_Generator", "recursive_refinement"]
 ---
 
 # Implementation Plan on PHP

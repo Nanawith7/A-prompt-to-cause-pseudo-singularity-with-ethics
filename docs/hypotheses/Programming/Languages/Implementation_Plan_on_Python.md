@@ -4,7 +4,7 @@ description: "A structured methodology for implementing Deep Coding in Python-ba
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "Python", "AI-Assisted Development", "Specification-Driven Development"]
-tags: ["deep_coding", "programming_languages", structural_specification, generative_conformance, recursive_refinement, skeleton_tissue_architecture, "type_hints", "pydantic", "mypy", active_inference]
+tags: ["deep_coding", "programming_languages", "structural_specification", "generative_conformance", "recursive_refinement", "skeleton_tissue_architecture", "type_hints", "pydantic", "mypy", "active_inference"]
 ---
 
 # This is a snapshot plan of 2026/04/02

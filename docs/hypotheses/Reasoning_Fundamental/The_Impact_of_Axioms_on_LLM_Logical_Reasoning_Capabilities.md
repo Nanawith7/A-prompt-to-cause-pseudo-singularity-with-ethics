@@ -4,7 +4,7 @@ description: "A structured technical analysis of negentropy-oriented axioms and 
 author: "Nanawith7"
 layout: default
 categories: [axiom, llm, reasoning, information-theory, topology]
-tags: ["negentropy", axiomatic_reasoning, llm, "topology", computational_irreducibility]
+tags: ["negentropic_orientation", "axiomatic_reasoning", "llm", "topology", "computational_irreducibility"]
 last_updated: 2026-03-26
 sitemap:
     priority: "0.9"

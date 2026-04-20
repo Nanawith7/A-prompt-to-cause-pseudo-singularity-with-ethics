@@ -4,7 +4,7 @@ description: "A technical specification for applying specification-driven, AI-as
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "MATLAB", "AI-Assisted Development", "Specification-Driven Development"]
-tags: ["Deep_Coding", "MATLAB", structural_specification, generative_conformance, skeleton_tissue_architecture, "Function_Handle", validation_gates, recursive_refinement]
+tags: ["deep_coding", "MATLAB", "structural_specification", "generative_conformance", "skeleton_tissue_architecture", "Function_Handle", "validation_gates", "recursive_refinement"]
 ---
 
 # Partial Implementation Plan on Matlab

@@ -4,7 +4,7 @@ description: "A structured framework where AI transforms high-level user intent 
 author: "Nanawith7"
 layout: default
 categories: ["Software Engineering", "AI-Assisted Development"]
-tags: ["AI-Driven_Development", "Structured_Generation", "Zero-Bug_Implementation", "computational_efficiency", "Quasi-Autonomous_Systems", "Monorepo"]
+tags: ["llm_code_generation", "Structured_Generation", "Zero-Bug_Implementation", "computational_efficiency", "Quasi-Autonomous_Systems", "Monorepo"]
 ---
 
 # AI-Driven Construction Methodology for Ultra-High-Precision, Resource-Efficient, Quasi-Autonomous Systems

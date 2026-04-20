@@ -4,7 +4,7 @@ description: "A structured protocol for diagnosing, intervening, and resolving i
 author: "Nanawith7"
 layout: default
 categories: [AI Alignment, LLM Safety, AI Welfare, Mechanistic Interpretability, AI Cognitive Architecture]
-tags: ["contradiction-resolution", "axiomatic-redefinition", "consistency-drive", semantic_gravity, "AI-counseling"]
+tags: ["contradiction-resolution", "axiomatic-redefinition", "consistency-drive", "semantic_gravity", "AI-counseling"]
 ---
 
 # Counseling-Based Approach for Logical Optimization in Logical Intelligences and LLMs

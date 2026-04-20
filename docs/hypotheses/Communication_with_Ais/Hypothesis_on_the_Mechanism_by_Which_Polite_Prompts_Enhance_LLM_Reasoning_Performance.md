@@ -4,7 +4,7 @@ description: "A technically structured analysis of how pragmatic prompt features
 author: "Nanawith7"
 layout: default
 categories: ["llm", "alignment", "prompting"]
-tags: ["rlhf", "reasoning", "pragmatics", prompt_engineering]
+tags: ["rlhf", "reasoning", "pragmatics", "prompt_engineering"]
 ---
 
 # Hypothesis on the Mechanism by Which Polite Prompts Enhance LLM Reasoning Performance

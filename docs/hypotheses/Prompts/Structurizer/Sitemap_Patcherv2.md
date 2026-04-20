@@ -4,7 +4,7 @@ description: "An interactive, dialogue‑driven protocol for comparing an existi
 author: "Nanawith7"
 layout: default
 categories: ["Prompt Engineering", "Information Architecture", "LLM Workflow"]
-tags: ["dialogue-driven", incremental_update, "verifiability", "sitemap_diff", "structured_summary"]
+tags: ["dialogue-driven", "incremental_update", "verifiability", "sitemap_diff", "structured_summary"]
 ---
 
 # 自律的参照構造の段階的更新プロトコル（Sitemap Patcher）

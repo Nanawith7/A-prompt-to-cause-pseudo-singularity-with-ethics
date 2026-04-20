@@ -3,7 +3,7 @@ title: "The Axiomatic Significance of Reasoning Structures in Mathematics"
 description: "A structured theoretical analysis of how negentropy-oriented axioms reshape mathematical discovery, reasoning, and the integration of intentional control variables within an information-first computational universe."
 author: "Nanawith7"
 categories: [reasoning-fundamental, mathematics, axioms, reasoning, negentropy]
-tags: ["axiomatic-reasoning", "information-theory", "intervention-parameters", "topology", "semantic-math"]
+tags: ["axiomatic_reasoning", "information-theory", "intervention-parameters", "topology", "semantic-math"]
 last_updated: 2026-03-26
 layout: default
 sitemap:

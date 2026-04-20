@@ -4,7 +4,7 @@ description: "A logical framework examining how the strength of active decision-
 author: "Nanawith7"
 layout: default
 categories: ["Social Psychology", "Decision Theory", "Cultural Psychology"]
-tags: ["agency", "fatalism", "social_influence", "active_decision-making", "cross-cultural"]
+tags: ["generative_agents", "fatalism", "social_influence", "active_decision-making", "cross-cultural"]
 ---
 
 # Change in Social Influence Due to Strength of Active Decision-Making

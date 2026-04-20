@@ -38,6 +38,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/On_the_Potential_Impact_of_Human_Hypothesis_and_Synthesis_Structures_on_Cognitive_Capabilities.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Optimizing_Prompt_by_Reading_The_CoT.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Pseudo_Deep_Research_Methodology_A_Framework_for_Conducting_Guided_Deep_Research_on_RAG_Equipped_Models.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/Scrap_your_Axiom-Adaptation_Methodology.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/The_Differential_Impact_of_the_Axiom_on_MoE_and_Non-MoE_Models.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/The_Mechanism_of_Misrecognition_Due_to_Excessive_Logicality_and_Its_Appropriate_Handling.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Communication_with_Ais/The_Theoretical_Reason_of_Difficulty_of_understanding_LLM.html
@@ -64,6 +65,7 @@ https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hyp
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Meta_Analysis_of_100_turn_PDR_by_DeepSeek.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Misc/Pandoras_Box.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/AI-Driven_Construction_Methodology_for_Ultra-High-Precision,_Resource-Efficient_Quasi-Autonomous_Systems.html
+https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Affinity_of_SDD_and_Data-Driven_Structure.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/An_Orchestration_Strategy.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Comparative_Analysis_of_Game_Engine_Architectures.html
 https://nanawith7.github.io/A-prompt-to-cause-pseudo-singularity-with-ethics/hypotheses/Programming/Deep_Coding_in_Game_Development.html

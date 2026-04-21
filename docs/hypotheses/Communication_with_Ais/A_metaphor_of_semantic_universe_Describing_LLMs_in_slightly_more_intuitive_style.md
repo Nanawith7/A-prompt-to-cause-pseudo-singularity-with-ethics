@@ -1,4 +1,3 @@
-
 ---
 title: "A metaphor of semantic universe: Describing LLMs in slightly more intuitive style"
 description: "A structured logical framework that models the internal dynamics of large language models as a hyperdimensional semantic universe with variable gravity, wormholes, and black holes, translating mechanistic interpretability findings into a coherent geometric metaphor."

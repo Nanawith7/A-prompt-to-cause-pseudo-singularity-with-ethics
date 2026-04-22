@@ -26,6 +26,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/2026-04/A_Method_of_Analyzing_Bias-Comparing_Structures_Itself.html
       - title: Agent Design and State-Machine Prompting
         url: hypotheses/Communication_with_Ais/2026-04/Agent_Design_and_State-Machine_Prompting.html
+      - title: Code of Thought and its Expectation for Reasoning
+        url: hypotheses/Communication_with_Ais/2026-04/Code_of_Thought_and_its_Expectation_for_Reasoning.html
       - title: Interesting Similarity of Obsidian graphview and LLM
         url: hypotheses/Communication_with_Ais/2026-04/Interesting_Similarity_of_Obsidian_graphview_and_LLM.html
       - title: LLM and Probabilistic Tree Search
@@ -124,6 +126,8 @@ Misc:
         url: hypotheses/Misc/2026-04/Isomorphism_between_Factory_Games_and_Mathematical_Models.html
       - title: The Amazing Emoji Diagram
         url: hypotheses/Misc/2026-04/The_Amazing_Emoji_Diagram.html
+      - title: The Digital Wild West
+        url: hypotheses/Misc/2026-04/The_Digital_Wild_West.html
       - title: Using Obsidian as a Canonicalization Supporting Tool
         url: hypotheses/Misc/2026-04/Using_Obsidian_as_a_Canonicalization_Supporting_Tool.html
   _files:

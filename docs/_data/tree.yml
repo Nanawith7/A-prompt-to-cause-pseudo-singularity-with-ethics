@@ -28,6 +28,8 @@ Communication_with_Ais:
         url: hypotheses/Communication_with_Ais/2026-04/Agent_Design_and_State-Machine_Prompting.html
       - title: Interesting Similarity of Obsidian graphview and LLM
         url: hypotheses/Communication_with_Ais/2026-04/Interesting_Similarity_of_Obsidian_graphview_and_LLM.html
+      - title: LLM and Probabilistic Tree Search
+        url: hypotheses/Communication_with_Ais/2026-04/LLM_and_Probabilistic_Tree_Search.html
       - title: Multilingual Acquisition as the Currently Most Coherent Pathway to AI Execution Competence
         url: hypotheses/Communication_with_Ais/2026-04/Multilingual_Acquisition_as_the_Currently_Most_Coherent_Pathway_to_AI_Execution_Competence.html
       - title: Possibility of Better Performance with Completion Prompt

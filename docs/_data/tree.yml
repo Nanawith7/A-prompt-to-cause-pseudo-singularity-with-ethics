@@ -80,6 +80,10 @@ Communication_with_Ais:
     - title: Verification and Automation in Pseudo-Deep Research Methodology
       url: hypotheses/Communication_with_Ais/Verification_and_Automation_in_Pseudo-Deep_Research_Methodology.html
   Alignment:
+    2026-04:
+      _files:
+        - title: Can The Lack of Chaos Explain Groundedness Problem
+          url: hypotheses/Communication_with_Ais/Alignment/2026-04/Can_The_Lack_of_Chaos_Explain_Groundedness_Problem.html
     _files:
       - title: A Destroyers Paradox
         url: hypotheses/Communication_with_Ais/Alignment/A_Destroyers_Paradox.html

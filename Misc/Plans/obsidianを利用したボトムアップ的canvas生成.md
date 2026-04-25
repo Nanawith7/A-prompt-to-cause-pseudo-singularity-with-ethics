@@ -30,7 +30,7 @@ flowchart TD
         S[指定キーでソート]
     end
     subgraph "座標計算"
-        C[全typeのキー値から仮想グリッド構築<br>type別に行配置<br>lining別にサブ行割当]
+        C[X軸キー値からコンテナ生成<br>type別に行配置<br>コンテナ幅を内包ノード数で決定]
     end
     subgraph "Canvas生成"
         G[ノードとエッジをJSON化]
@@ -60,11 +60,9 @@ related:
 ---
 ```
 
-### 2.2 X軸仮想グリッド
+### 2.2 X軸コンテナ
 
-ノードが持つ任意のプロパティを`x_axis_key`として指定すると、全ノードの共通時間軸（仮想グリッド）が構築される。スクリプトは、指定されたキー（例: `year`）の値を**すべてのtypeのノード**から収集し、一意な値を昇順に並べたグローバルな列軸を生成する。このグローバル軸がすべてのtype行で共有され、ノードは自身のプロパティ値に合致する列に配置される。
-
-この方式により、あるtype（例: `YEAR`）のノード数が少なくとも、別のtype（例: `EVENT`）のノードが持つ値によって列が補完される。結果として、時系列の欠落がない、完全なタイムラインが形成される。
+ノードが持つ任意のプロパティを`x_axis_key`として指定すると、そのキーの値に基づいてX軸上にコンテナが生成される。スクリプトは、フィルタされた全ノードから指定キーの一意な値を収集し、値を昇順にソートした順にコンテナを配置する。各コンテナのX方向の幅は、そのコンテナに属するtypeの中で最大のノード数（`lining`によるサブ行分割後）によって決定される。コンテナ内部では、ノードは左端から順に配置される。あるコンテナに特定のtypeのノードが存在しない場合、そのtype行の当該コンテナ内は空領域となる。
 
 ### 2.3 関係性の表現
 
@@ -101,38 +99,35 @@ Obsidian外部のスクリプト（Python、Node.js）を用いる場合、Vault
 
 ### 4.1 レイアウトアルゴリズム
 
-ノードの座標は以下の決定論的ルールに従って計算される。座標系は、**Y軸が垂直方向（type行の縦並び）、X軸が水平方向（各行内でのノードの横配置）** として定義される。
+ノードの座標は以下の決定論的ルールに従って計算される。座標系は、**Y軸が垂直方向（type行の縦並び）、X軸が水平方向（コンテナの横並びとコンテナ内でのノードの位置）** として定義される。
 
-`x_axis_key`が指定された場合、レイアウトは以下の三層で決定される。
-1.  **仮想グリッドの構築（全type共通）**：全ノードから`x_axis_key`の値を収集し、昇順ソートされた一意な値のリストをグローバルな列軸として生成する。
-2.  **type行の配置（Y軸）**：各列内で、ノードの`type`値に対応する行インデックスに基づき、type行全体のY座標が決定される。
-3.  **サブ行の配置（lining）**：各type行は`lining`値に応じてサブ行に分割され、ノードはソート順に従って各サブ行内の適切な列に配置される。
+`x_axis_key`が指定された場合、レイアウトは以下の層で決定される。
+1.  **コンテナの生成**: 全ノードから`x_axis_key`の一意な値を収集し、昇順にソートして順序を確定する。この順序に従い、X軸上に各コンテナの始点を設定する。
+2.  **コンテナ幅の決定**: 各コンテナの最終的な幅は、そのコンテナに属する全typeの中で最大の実ノード数によって決定される。コンテナ内に1つもノードを持たないtype行は幅の計算から除外される。
+3.  **ノードの配置**: コンテナ内部では、ノードは左端から順に等間隔で配置される。`lining`が指定されている場合、ノードはまずサブ行に順次振り分けられ、各サブ行内で左端から配置される。
 
-本モードでは、各列の位置と幅がグローバル軸によって固定されるため、`centering`プロパティは**自動的に無効化**される。
+- **X座標**: 各コンテナの始点X座標に、ノードのコンテナ内インデックスと`column_width`を乗じた値を加えたもの。コンテナの始点は、その前方にある全コンテナの幅の合計で決定される。
 
-- **X座標（仮想グリッドの列位置）**：
-  1.  `x_axis_key`が指定された場合、スクリプトはフィルタされた**全typeの全ノード**を走査し、指定キーの一意な値をすべて収集する。
-  2. それらを昇順にソートし、列インデックスを割り当てる。各列のX座標は`列インデックス * column_width`で決定される。
-  3. ノードは自身のプロパティ値に応じて、該当する列のX座標に配置される。
+- **Y座標（type行の位置）**: 各ノードの`type`に基づき割り当てられる行のインデックスに`row_height`を乗じたもの。`lining`が指定されている場合は、サブ行のインデックスも加味される。
 
-- **Y座標（type行の位置）**：
-  1.  各列内で、ノードの`type`値に対応する行インデックスに基づき、type行全体のY座標が決定される。行の高さは固定値`row_height`で乗算される。
-  2.  新規`type`値は既存行の下側に追加される。各type行は、`lining`値に応じて`lining`個のサブ行に分割され、行全体の占有高さは`lining * row_height`となる。
-  3.  同一typeに属するノードは、ソートキーに従った順序でサブ行に順次振り分けられる。各サブ行内のノード数は、全列にわたる配置のため制限されない。
-
-- **エッジ**：ノート間の`[[ ]]`リンク、または`related`プロパティに基づいて生成される。同一ノードペアに複数のリンクが存在する場合、単一のエッジとして扱われる。
+- **エッジ**: ノート間の`[[ ]]`リンク、または`related`プロパティに基づいて生成される。同一ノードペアに複数のリンクが存在する場合、単一のエッジとして扱われる。
 
 #### 配置の視覚的イメージ
 
-以下の例は、`year`を`x_axis_key`とし、YEAR type（`lining=1`、ノード数4）、EVENT type（`lining=1`、ノード数4）、STORY type（`lining=1`、ノード数6）が配置されたCanvasを示す。全ノードの`year`値から収集されたグローバル軸は、2024〜2029の6列となる。YEARノードは4年分のみ、EVENTノードも一部の年にしか存在しないが、グローバル軸によって列が補完され、欠落したセルは`EMPTY`として表示される。
+`year`を`x_axis_key`として、以下のノード群を配置した結果を示す。
+
+- **2024年**: 2024, EVENT-A, STORY-1, STORY-2, STORY-3 を内包する。STORYのノード数3が最大のため、この年のコンテナ幅は3となる。
+- **2025年**: 2025, EVENT-B, EVENT-C, STORY-4, STORY-5, STORY-6 を内包する。STORYのノード数3が最大のため、この年のコンテナ幅は3となる。
+- **2026年**: 2026, EVENT-D, EVENT-E, STORY-7 を内包する。STORYのノード数3が最大のため、この年のコンテナ幅は3となる。
+- **2027年**: 2027, STORY-8, STORY-9 を内包する。STORYのノード数2が最大のため、この年のコンテナ幅は2となる。
 
 ```
-YEAR-ROW  | 2024 | 2025 | 2026 | 2027 | EMPTY | EMPTY |
-EVENT-ROW | A    | EMPTY| B    | C    | EMPTY | D     |
-STORY-ROW | 1    | 2    | 3    | 4    | 5     | 6     |
+YEAR-ROW  | 2024   | (空)   | (空)   || 2025   | (空)   | (空)   || 2026   | (空)   | (空)   || 2027   | (空)   |
+EVENT-ROW | A      | (空)   | (空)   || B      | C      | (空)   || D      | E      | (空)   || (空)   | (空)   |
+STORY-ROW | 1      | 2      | 3      || 4      | 5      | 6      || 7      | (空)   | (空)   || 8      | 9      |
 ```
 
-全typeのノードが同一の時間軸に沿って整列し、一部のtypeでデータが存在しない時点もグリッドに組み込まれることで、完全なタイムラインが形成される。`lining`が指定されたtype行では、各列内でさらに細分化されたサブ行にノードが配置される。
+ノードの名前は、YAMLフロントマターで定義されたそのノード自身のタイトル（ここでは年号）がそのまま表示される。これにより、抽象化されたインデックスではなく、ユーザーが普段接しているデータが視覚化される。
 
 ### 4.2 JSON Canvas仕様への変換
 
@@ -172,8 +167,8 @@ STORY-ROW | 1    | 2    | 3    | 4    | 5     | 6     |
 | `filter_types` | list | 抽出対象を限定する`type`値のリスト。 |
 | `sort_by` | string | ソートキー（`date`, `updated`, `appearances`など）。 |
 | `depth` | integer | 起点ノードからのリンク探索深度。 |
-| `x_axis_key` | string | 全typeのノードから共通の仮想グリッドを生成するためのプロパティ名。指定時は全ノードの一意な値が列軸となる。 |
-| `column_width` | integer | 同一サブ行内のノード間のX方向間隔。 |
+| `x_axis_key` | string | X軸上にコンテナを生成するためのプロパティ名。指定されたキーの一意な値ごとにコンテナが作られる。 |
+| `column_width` | integer | コンテナ内でノードを配置する際の、単位インデックスあたりのX方向間隔。 |
 | `row_height` | integer | 行間のY方向間隔。 |
 
 ## 5. 拡張性と保守性
@@ -184,11 +179,11 @@ STORY-ROW | 1    | 2    | 3    | 4    | 5     | 6     |
 
 ### 5.2 動的lining調整
 
-`lining`値の変更もノートのプロパティ編集のみで完結する。同一type内でのサブ行数は`lining`値に応じて動的に調整され、ノードの振り分けはソートキーに基づいて自動的に行われる。`x_axis_key`が指定された仮想グリッドモードでも、列内のサブ行分割として機能し続ける。
+`lining`値の変更もノートのプロパティ編集のみで完結する。同一type内でのサブ行数は`lining`値に応じて動的に調整され、ノードの振り分けはソートキーに基づいて自動的に行われる。`x_axis_key`が指定されたコンテナモードでも、コンテナ内のサブ行分割として機能し続ける。
 
-### 5.3 グローバル仮想グリッドによる完全なタイムライン
+### 5.3 データ駆動のコンテナ
 
-`x_axis_key`が指定された場合、全typeのノードから収集された一意なキー値によってグローバルな列軸が構築される。いずれかのtypeに欠落している時点があっても、他のtypeのノードがその時点のデータを持っていれば、列は補完される。これにより、データの欠損に強い完全なタイムラインが形成される。
+`x_axis_key`が指定された場合、X軸上の区切りとその幅はデータによってのみ決定される。特定のコンテナ内のノード数に応じてコンテナ幅が変化するため、情報の密度に応じた視覚的なスペース配分が自動的に行われる。
 
 ### 5.4 データと表現の分離
 
@@ -208,30 +203,26 @@ def generate_canvas(base_node, filter_tags, filter_types, sort_by, x_axis_key):
     nodes = filter_by_tags_and_types(nodes, filter_tags, filter_types)
     nodes = sort_nodes(nodes, sort_by)
     
-    # 仮想グリッドの構築
     if x_axis_key:
-        all_values = get_all_property_values(nodes, x_axis_key)
-        global_column_order = sorted(list(set(all_values)))
-    else:
-        global_column_order = None
-    
-    # 各列内でtype行のY座標を割り当て、サブ行を構築
-    all_canvas_nodes = []
-    if global_column_order:
-        for col_index, col_value in enumerate(global_column_order):
-            x_position = col_index * COLUMN_WIDTH
-            col_nodes = [n for n in nodes if get_property(n, x_axis_key) == col_value]
-            type_rows = assign_y_coordinates(col_nodes, ROW_HEIGHT)
+        # コンテナとその内部ノード数の決定
+        containers = build_containers(nodes, x_axis_key)
+        container_widths = compute_container_widths(containers, COLUMN_WIDTH)
+        
+        all_canvas_nodes = []
+        for container in containers:
+            # コンテナ内にtype行とサブ行を生成
+            type_rows = assign_y_coordinates(container.nodes, ROW_HEIGHT)
             for type_name, row_nodes in type_rows.items():
                 subrow_assignments = assign_subrows(row_nodes, get_lining(row_nodes[0]))
                 for subrow in subrow_assignments:
-                    node_x = x_position
+                    node_x = container.start_x
                     for node in subrow.nodes:
                         node.x = node_x
                         node.y = subrow.y
+                        node_x += COLUMN_WIDTH
                         all_canvas_nodes.append(node)
     else:
-        # 従来のグリッドレイアウト（centering対応を含む）
+        # 従来のグリッドレイアウト
         pass
     
     canvas_json = build_canvas_json(all_canvas_nodes, edges)
@@ -240,4 +231,4 @@ def generate_canvas(base_node, filter_tags, filter_types, sort_by, x_axis_key):
 
 ## 7. 結論
 
-Obsidian Vault内の構造化メタデータを源泉とし、動的パラメータに基づいてCanvasを生成する本手法は、データの一貫性、保守性、視覚化の柔軟性を両立する。ユーザーはノートへのプロパティ付与という日常的作業を通じて、自動レイアウトされた関係図を任意の視点で取得できる。`lining`プロパティによるサブ行分割、そして`x_axis_key`パラメータによる全type共通の仮想グリッド構築により、時系列やカテゴリの欠損を補完した完全なタイムラインビューが実現される。
+Obsidian Vault内の構造化メタデータを源泉とし、動的パラメータに基づいてCanvasを生成する本手法は、データの一貫性、保守性、視覚化の柔軟性を両立する。ユーザーはノートへのプロパティ付与という日常的作業を通じて、自動レイアウトされた関係図を任意の視点で取得できる。`lining`プロパティによるサブ行分割、そして`x_axis_key`パラメータによるデータ駆動のコンテナ配置により、データの欠損は視覚的な空白として自然に表現され、情報の密度に応じたスペース配分が実現される。
